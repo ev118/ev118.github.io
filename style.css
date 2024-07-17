@@ -1,21 +1,24 @@
 body {
-    background-color: darkslategray;
-    text-align: center;
+    background-color: #20203c;
 }
 h1 {
     color: ghostwhite;
     font-size: 4em;
+    text-align: center;
 }
 h2 {
     color: #d8d8d8;
     font-size: 2.5em;
+    text-align: center;
 }
 h3 {
     color: lightgray;
-    font-size: 3em;
+    font-size: 3.5em;
+    text-align: center;
 }
 p {
     color: #f0f4f8;
+    text-align: center;
 }
 .quotes {
     font-size: 1.2em;
@@ -37,6 +40,6 @@ p {
     justify-self: center;
 }
 img {
-    width: 5em;
-    height: 5em;
+    width: 50px;
+    height: 50px;
 }
