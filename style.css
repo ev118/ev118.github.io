@@ -1,5 +1,5 @@
 body {
-    background-color: #181820;
+    background-color: #141828;
 }
 h1 {
     color: ghostwhite;
@@ -7,18 +7,23 @@ h1 {
     text-align: center;
 }
 h2 {
+    color: lightgray;
+    font-size: 3em;
+    text-align: center;
+    text-weight: normal;
+}
+h3 {
     color: #d8d8d8;
     font-size: 2.5em;
     text-align: center;
-}
-h3 {
-    color: lightgray;
-    font-size: 3.5em;
-    text-align: center;
+    text-weight: bold;
 }
 p {
     color: #f0f4f8;
     text-align: center;
+}
+a {
+    color: #f0f4f8;
 }
 .quotes {
     font-size: 1.4em;
@@ -27,16 +32,17 @@ p {
 .grid {
     display: grid;
     grid-template-areas: "i-dc p-dc" "i-ig p-ig" "i-gh p-gh" "i-os p-os" "i-pm p-pm";
-    grid-gap: 6px 2px;
+    grid-gap: 8px;
     align-items: center;
-
-    font-size: 1.75em;
+    justify-content: center;
+    align-content: center;
 }
 .grid > p {
     justify-self: left;
+    font-size: 1.75em;
 }
-.grid > a {
-    justify-self: center;
+.grid > img, a {
+    justify-self: right;
 }
 img {
     width: 50px;
