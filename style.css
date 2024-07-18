@@ -1,34 +1,36 @@
 body {
-    background-color: darkslategray;
-    text-align: center;
+    background-color: #181820;
 }
 h1 {
     color: ghostwhite;
     font-size: 4em;
+    text-align: center;
 }
 h2 {
     color: #d8d8d8;
     font-size: 2.5em;
+    text-align: center;
 }
 h3 {
     color: lightgray;
-    font-size: 3em;
+    font-size: 3.5em;
+    text-align: center;
 }
 p {
     color: #f0f4f8;
+    text-align: center;
 }
 .quotes {
-    font-size: 1.2em;
+    font-size: 1.4em;
     line-height: 1.2;
 }
 .grid {
     display: grid;
     grid-template-areas: "i-dc p-dc" "i-ig p-ig" "i-gh p-gh" "i-os p-os" "i-pm p-pm";
-    grid-template-columns: 1fr auto auto 1fr;
     grid-gap: 6px 2px;
     align-items: center;
 
-    font-size: 1.4em;
+    font-size: 1.75em;
 }
 .grid > p {
     justify-self: left;
@@ -37,6 +39,6 @@ p {
     justify-self: center;
 }
 img {
-    width: 5em;
-    height: 5em;
+    width: 50px;
+    height: auto;
 }
