@@ -2,33 +2,41 @@ body {
     background-color: #101414;
 }
 h1 {
-    color: ghostwhite;
-    font-size: 4em;
+    color: #d8d8d8;
+    font-size: 4rem;
     text-align: center;
-    line-height: 0.7;
+    line-height: 0.5;
 }
 h2 {
     color: lightgray;
-    font-size: 2.8em;
+    font-size: 3rem;
     text-align: center;
     font-weight: normal;
-    line-height: 1;
+    line-height: 0.5;
     width: 80%;
     margin: auto;
 }
 h3 {
-    color: #d8d8d8;
-    font-size: 2.2em;
+    color: #f80060;
+    font-size: 2.75rem;
     text-align: center;
     font-weight: normal;
-    line-height: 1;
+    font-style: oblique;
+    line-height: 0.5;
+}
+h4 {
+    color: #40ff00;
+    font-size: 2.5rem;
+    text-align: center;
+    font-weight: bold;
+    line-height: 0.5;
 }
 p {
-    color: #f0f4f8;
+    color: ghostwhite;
     text-align: center;
 }
 p > a {
-    color: #f0f4f8;
+    color: ghostwhite;
 }
 .quotes {
     font-size: 1.4em;
@@ -39,7 +47,7 @@ p > a {
 .grid {
     display: grid;
     grid-template-areas: "i-dc p-dc ." "i-ig p-ig ." "i-gh p-gh ." "i-os p-os ." "i-pm p-pm .";
-    grid-template-columns: auto auto 30rem;
+    grid-template-columns: auto auto 5rem;
     gap: 10px;
     align-items: center;
     justify-content: center;
