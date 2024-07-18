@@ -16,15 +16,15 @@ h2 {
     width: 80%;
     margin: auto;
 }
-h4 {
+.pronouns {
     color: #f80060;
     font-size: 2.75rem;
     text-align: center;
     font-weight: normal;
-    font-style: oblique;
+    font-style: italic;
     line-height: 0.5;
 }
-h3 {
+.grid-header {
     color: #40ff00;
     font-size: 2.5rem;
     text-align: center;
