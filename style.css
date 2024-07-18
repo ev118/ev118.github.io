@@ -5,29 +5,34 @@ h1 {
     color: ghostwhite;
     font-size: 4em;
     text-align: center;
+    line-height: 0.7;
 }
 h2 {
     color: lightgray;
     font-size: 3em;
     text-align: center;
-    text-weight: normal;
+    font-weight: normal;
+    line-height: 1.5;
 }
 h3 {
     color: #d8d8d8;
-    font-size: 2.5em;
+    font-size: 1.9em;
     text-align: center;
-    text-weight: bold;
+    font-weight: bold;
+    line-height: 0.7;
 }
 p {
     color: #f0f4f8;
     text-align: center;
 }
-a {
+p > a {
     color: #f0f4f8;
 }
 .quotes {
     font-size: 1.4em;
     line-height: 1.2;
+    width: 75%;
+    margin: auto;
 }
 .grid {
     display: grid;
@@ -41,7 +46,8 @@ a {
     justify-self: left;
     font-size: 1.75em;
 }
-.grid > img, a {
+.grid > img,
+.grid > a {
     justify-self: right;
 }
 img {
