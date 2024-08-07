@@ -10,12 +10,12 @@ h1 {
 }
 .orange {
     color: #e08700;
-    font-family: "Sacramento", cursive;
+    font-family: "Playwrite South Africa", cursive;
 }
 h2 {
     color: lightgray;
     font-family: "Advent Pro", "Trebuchet MS", sans-serif;
-    font-size: 3rem;
+    font-size: 2.75rem;
     text-align: center;
     font-weight: normal;
     width: 90%;
@@ -24,7 +24,7 @@ h2 {
 .pronouns {
     color: #4098e0;
     font-family: "Poiret One", "Trebuchet MS", sans-serif;
-    font-size: 2.75rem;
+    font-size: 2.9rem;
     text-align: center;
     font-weight: normal;
     font-style: italic;
@@ -39,8 +39,8 @@ h2 {
     margin: 0.75em auto 0.5em;
 }
 .grid-header {
-    color: lightgray;
-    font-family: "Advent Pro", "Trebuchet MS", sans-serif;
+    color: #c8c8c8;
+    font-family: "Poiret One", "Trebuchet MS", sans-serif;
     font-size: 3rem;
     text-align: center;
     font-weight: bold;
@@ -55,19 +55,20 @@ p {
 }
 .quotes {
     font-family: "Ubuntu", "Trebuchet MS", sans-serif;
-    font-size: 1.4em;
+    font-size: 1.5em;
+    font-weight: 250;
     line-height: 1.5;
     margin: 0;
 }
 .q-left {
     text-align: left;
     max-width: 50%;
-    margin: 0 42% 0.1em 8%;
+    margin: 0 45% 0.2em 5%;
 }
 .q-right {
     text-align: right;
     max-width: 50%;
-    margin: 0 8% 0.1em 42%;
+    margin: 0 5% 0.2em 45%;
 }
 .grid {
     display: grid;
@@ -76,11 +77,11 @@ p {
     align-items: center;
     justify-content: center;
     align-content: center;
-    margin-bottom: 2.5em;
+    margin: 0 0 2.5em 1.5em;
 }
 .grid > p {
     justify-self: left;
-    font-family: "Poiret One", "Trebuchet MS", sans-serif;
+    font-family: "Ubuntu", "Trebuchet MS", sans-serif;
     font-size: 1.75em;
     margin: 0;
 }
