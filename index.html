@@ -62,8 +62,18 @@
             </p>
         </div>
         <p class="info">
-            Portland, OR&ensp;\\&ensp;GMT-8&ensp;\\&ensp;2 May, 2007
+            Portland, OR&ensp;\\&ensp;GMT-8&ensp;\\&ensp;<span id="age"
+                >2 May, 2007</span
+            >
         </p>
+        <script>
+            document.getElementById("age").innerHTML = (
+                (Date.now() - 1178134920000) /
+                31536000000
+            )
+                .toPrecision(4)
+                .toString();
+        </script>
         <p class="grid-header">You may know me:</p>
         <div class="grid">
             <img src="/icons/discord.png" alt="Discord logo" />
@@ -108,5 +118,8 @@
                 or other names from local camps.
             </p>
         </div>
+        <a href="https://theworldorsomething.blogspot.com" class="blog"
+            >Read my blog!</a
+        >
     </body>
 </html>

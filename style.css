@@ -70,6 +70,13 @@ p {
     max-width: 50%;
     margin: 0 3% 0.5em 47%;
 }
+.blog {
+    color: #e8e8f0;
+    font-family: "Advent Pro", "Trebuchet MS", sans-serif;
+    font-weight: 500;
+    font-size: 2em;
+    text-align: center;
+}
 .grid {
     display: grid;
     grid-template-columns: 50px 1fr 50px 1fr;
