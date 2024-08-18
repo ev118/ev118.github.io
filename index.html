@@ -67,12 +67,12 @@
             >
         </p>
         <script>
-            document.getElementById("age").innerHTML = (
-                (Date.now() - 1178134920000) /
-                31536000000
-            )
-                .toPrecision(4)
-                .toString();
+            document.getElementById("age").innerHTML =
+                "age " +
+                ((Date.now() - 1178134920000) / 31536000000)
+                    .toPrecision(4)
+                    .toString() +
+                " years";
         </script>
         <p class="grid-header">You may know me:</p>
         <div class="grid">
@@ -118,8 +118,8 @@
                 or other names from local camps.
             </p>
         </div>
-        <a href="https://theworldorsomething.blogspot.com" class="blog"
-            >Read my blog!</a
-        >
+        <div class="blog">
+            <a href="https://theworldorsomething.blogspot.com">Read my blog!</a>
+        </div>
     </body>
 </html>
