@@ -1,17 +1,15 @@
 body {
     background-color: #101414;
 }
+
 h1 {
     color: ghostwhite;
-    font-family: "Poiret One", "Trebuchet MS", sans-serif;
+    font-family: "Playwrite ZA", cursive;
     font-size: 4rem;
     text-align: center;
-    margin: 0.5em auto 0;
+    margin: 0.5em auto 0.5em;
 }
-.orange {
-    color: #e08700;
-    font-family: "Playwrite ZA", cursive;
-}
+
 h2 {
     color: lightgray;
     font-family: "Advent Pro", "Trebuchet MS", sans-serif;
@@ -19,25 +17,25 @@ h2 {
     text-align: center;
     font-weight: normal;
     width: 90%;
-    margin: 0.25em auto 1.5em;
 }
+
 .pronouns {
     color: #4098e0;
     font-family: "Poiret One", "Trebuchet MS", sans-serif;
-    font-size: 2.9rem;
-    text-align: center;
+    font-size: 3.0rem;
     font-weight: normal;
     font-style: italic;
-    margin: 0 auto;
 }
-.info {
+
+.coords {
     color: #40ff00;
     font-family: "Advent Pro", "Trebuchet MS", sans-serif;
-    font-size: 2.5em;
+    font-size: 1.75em;
     text-align: center;
     font-weight: normal;
-    margin: 1.5em auto 0.5em;
+    margin: 0.5em auto 0.5em;
 }
+
 .grid-header {
     color: #c8c8c8;
     font-family: "Poiret One", "Trebuchet MS", sans-serif;
@@ -46,13 +44,16 @@ h2 {
     font-weight: bold;
     margin: 0 auto 0.75em;
 }
+
 #bold {
     color: #e08700;
     font-weight: 500;
 }
+
 p {
     color: #e8e8f0;
 }
+
 .quotes {
     font-family: "Ubuntu", "Trebuchet MS", sans-serif;
     font-size: 1.5em;
@@ -60,23 +61,26 @@ p {
     line-height: 1.5;
     margin: 0;
 }
+
 .q-left {
     text-align: left;
     max-width: 50%;
     margin: 0 47% 0.5em 3%;
 }
+
 .q-right {
     text-align: right;
     max-width: 50%;
     margin: 0 3% 0.5em 47%;
 }
+
 .blog {
-    font-family: "Ubuntu", "Trebuchet MS", sans-serif;
-    font-weight: 500;
-    font-size: 2.3em;
+    font-family: "Poiret One", "Trebuchet MS", sans-serif;
+    font-weight: bold;
+    font-size: 2.5em;
     text-align: center;
-    margin-bottom: 1em;
 }
+
 .grid {
     display: grid;
     grid-template-columns: 50px 1fr 50px 1fr;
@@ -86,18 +90,21 @@ p {
     align-content: center;
     margin: 0 0 1.2em 1.5em;
 }
-.grid > p {
+
+.grid>p {
     justify-self: left;
     font-family: "Ubuntu", "Trebuchet MS", sans-serif;
     font-size: 1.75em;
     font-weight: 300;
     margin: 0;
 }
-.grid > img,
-.grid > a {
+
+.grid>img,
+.grid>a {
     justify-self: right;
     margin: 0;
 }
+
 img {
     width: 60px;
     height: auto;
