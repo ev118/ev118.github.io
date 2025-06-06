@@ -5,18 +5,22 @@ body {
 h1 {
     color: ghostwhite;
     font-family: "Playwrite ZA", cursive;
-    font-size: 4rem;
+    font-size: 3.5rem;
     text-align: center;
     margin: 0.5em auto 0.5em;
 }
 
-h2 {
+/* h2 {
     color: lightgray;
     font-family: "Advent Pro", "Trebuchet MS", sans-serif;
     font-size: 2.75rem;
     text-align: center;
     font-weight: normal;
     width: 90%;
+} */
+
+p {
+    color: #e8e8f0;
 }
 
 .pronouns {
@@ -25,33 +29,6 @@ h2 {
     font-size: 3.0rem;
     font-weight: normal;
     font-style: italic;
-}
-
-.coords {
-    color: #40ff00;
-    font-family: "Advent Pro", "Trebuchet MS", sans-serif;
-    font-size: 1.75em;
-    text-align: center;
-    font-weight: normal;
-    margin: 0.5em auto 0.5em;
-}
-
-.grid-header {
-    color: #c8c8c8;
-    font-family: "Poiret One", "Trebuchet MS", sans-serif;
-    font-size: 3rem;
-    text-align: center;
-    font-weight: bold;
-    margin: 0 auto 0.75em;
-}
-
-#bold {
-    color: #e08700;
-    font-weight: 500;
-}
-
-p {
-    color: #e8e8f0;
 }
 
 .quotes {
@@ -74,11 +51,13 @@ p {
     margin: 0 3% 0.5em 47%;
 }
 
-.blog {
+.grid-header {
+    color: #c8c8c8;
     font-family: "Poiret One", "Trebuchet MS", sans-serif;
-    font-weight: bold;
-    font-size: 2.5em;
+    font-size: 3rem;
     text-align: center;
+    font-weight: bold;
+    margin: 0 auto 0.75em;
 }
 
 .grid {
@@ -99,13 +78,31 @@ p {
     margin: 0;
 }
 
-.grid>img,
 .grid>a {
     justify-self: right;
     margin: 0;
 }
 
-img {
+.grid>img {
     width: 60px;
     height: auto;
+    justify-self: right;
+    margin: 0;
+
+}
+
+.blog {
+    font-family: "Ubuntu", "Trebuchet MS", sans-serif;
+    font-size: 2.5em;
+    text-align: center;
+    margin: 0.5em auto;
+}
+
+#bold {
+    color: #e08700;
+    font-weight: 500;
+}
+
+#coords {
+    color: #40ff00;
 }
