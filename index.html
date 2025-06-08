@@ -3,8 +3,83 @@
 <head>
   <title>ev118</title>
   <link rel="stylesheet" href="style.css" type="text/css" />
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Advent%20Pro|Poiret%20One|Playwrite%20ZA" />
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu:300,500" />
+  <style>
+    h1 {
+      margin: 0.5em auto 0.75em;
+    }
+
+    h2 {
+      margin: 0.5em auto 0.75em;
+    }
+
+    .pronouns {
+      color: #4098e0;
+      font-family: "Poiret One", "Trebuchet MS", sans-serif;
+      font-size: 3.0rem;
+      font-weight: normal;
+      font-style: italic;
+    }
+
+    .quotes {
+      font-family: Ubuntu, "Trebuchet MS", sans-serif;
+      font-size: 1.5em;
+      font-weight: normal;
+      line-height: 1.5;
+      margin: 0;
+    }
+
+    .q-left {
+      text-align: left;
+      max-width: 50%;
+      margin: 0 47% 0.5em 3%;
+    }
+
+    .q-right {
+      text-align: right;
+      max-width: 50%;
+      margin: 0 3% 0.5em 47%;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: 50px 1fr 50px 1fr;
+      gap: 30px 15px;
+      align-items: center;
+      justify-content: center;
+      align-content: center;
+      margin: 0 0 1.2em 1.5em;
+    }
+
+    .grid>p {
+      justify-self: left;
+      font-family: Ubuntu, "Trebuchet MS", sans-serif;
+      font-size: 1.75em;
+      font-weight: normal;
+      margin: 0;
+    }
+
+    .grid>a>img,
+    .grid>img {
+      width: 50px;
+      height: auto;
+      justify-self: right;
+      margin: 0;
+    }
+
+    h3 {
+      margin: 0.5em auto;
+      font-weight: bold;
+    }
+
+    #bold {
+      color: #e08700;
+      font-weight: bold;
+    }
+
+    #coords {
+      color: #40ff00;
+    }
+  </style>
 </head>
 
 <body>
@@ -29,7 +104,7 @@
       its ability to climb a tree, it will live its whole life believing that it is stupid. &bull; If life is soup, I am
       a fork.</p>
   </div>
-  <p class="grid-header">You may know me:</p>
+  <h2>You may know me:</h2>
   <div class="grid">
     <img src="/icons/discord.png" alt="Discord logo" />
     <p>as <span id="bold">ophiuchus118</span> on Discord</p>
@@ -46,7 +121,7 @@
         id="coords">wink.scans.twig, near 45.5, -122.7</span>; soon at <span id="coords">elite.packing.ploys, near 41.3,
         -81.2</span></p>
   </div>
-  <p class="blog"><a href="/map.html" style="color: #e8e8f0;">See inside!</a></p>
+  <h3><a href="/map.html" style="color: #e8e8f0;">See inside!</a></h3>
 
 </body>
 
