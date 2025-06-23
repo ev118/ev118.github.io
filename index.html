@@ -4,107 +4,33 @@
 <head>
   <title>ev118</title>
   <link rel="stylesheet" href="style.css" type="text/css" />
-  <style>
-    h1 {
-      margin: 0.5em auto 0.75em;
-    }
-
-    h2 {
-      margin: 0.5em auto 0.75em;
-    }
-
-    h3 {
-      margin: 0.5em auto;
-    }
-
-    .pronouns {
-      color: #4098e0;
-      font-family: "Poiret One", "Trebuchet MS", sans-serif;
-      font-size: 3.0rem;
-      font-weight: normal;
-      font-style: italic;
-    }
-
-    .quotes {
-      font-family: "Ubuntu", "Trebuchet MS", sans-serif;
-      font-size: 1.5em;
-      font-weight: 300;
-      margin: 0;
-    }
-
-    .q-left {
-      text-align: left;
-      max-width: 50%;
-      margin: 0 47% 0.5em 3%;
-    }
-
-    .q-right {
-      text-align: right;
-      max-width: 50%;
-      margin: 0 3% 0.5em 47%;
-    }
-
-    .grid {
-      display: grid;
-      grid-template-columns: 50px 1fr 50px 1fr;
-      gap: 30px 15px;
-      align-items: center;
-      justify-content: center;
-      align-content: center;
-      margin: 0 0 1.2em 1.5em;
-    }
-
-    .grid>p {
-      justify-self: left;
-      font-family: "Ubuntu", "Trebuchet MS", sans-serif;
-      font-size: 1.75em;
-      font-weight: 300;
-      margin: 0;
-    }
-
-    .grid>a>img,
-    .grid>img {
-      width: 50px;
-      height: auto;
-      justify-self: right;
-      margin: 0;
-    }
-
-    #bold {
-      color: #e08700;
-      font-weight: 500;
-    }
-
-    #coords {
-      color: #40ff00;
-    }
-  </style>
 </head>
 
 <body>
-  <h1>Hello! The name&rsquo;s <span style="color:#e08700;">Elijah</span> <span class="pronouns">(he/they)</span>.</h1>
-  <div class="quotes">
-    <p class="q-left">Violence is the last refuge of the incompetent. &bull; Power concedes nothing without a demand. It
+  <h1 class="home">Hello! The name&rsquo;s <span style="color:#e08700;">Elijah</span> <span
+      id="pronouns">(he/they)</span>.</h1>
+  <div id="quotes">
+    <p id="q-left">Violence is the last refuge of the incompetent. &bull; Power concedes nothing without a demand. It
       never has and it never will. &bull; The meek&mdash;that is, those who carry a sword but do not use it&mdash;will
       inherit the world. &bull; <span style="color: #4098e0">It is not your duty to complete the work, but nor are you
         free to desist from it.</span><br /></p>
-    <p class="q-right">The opposite of love is not hate but indifference; the opposite of feeling can only be the
+    <p id="q-right">The opposite of love is not hate but indifference; the opposite of feeling can only be the
       absence of feeling. &bull; <span style="color: #f81030">Imitation is the highest form of flattery.</span> &bull;
       One of the greatest gifts you can give yourself is to forgive. &bull; Life is like riding a bicycle. To keep your
       balance, you must keep moving.<br /></p>
-    <p class="q-left">Life is a maze, and love is a riddle; life&rsquo;s a game made for everyone, and love is the
+    <p id="q-left">Life is a maze, and love is a riddle; life&rsquo;s a game made for everyone, and love is the
       prize. &bull; Darkness cannot drive out darkness; only light can do that. Hate cannot drive out hate; only love
       can do that. &bull; In a world where change is the only constant, embrace it. This, too, shall pass.<br /></p>
-    <p class="q-right"><span style="color: #40ff00">When we try to pick out anything by itself, we find it hitched to
+    <p id="q-right"><span style="color: #40ff00">When we try to pick out anything by itself, we find it hitched to
         everything else in the universe.</span> &bull; We are not figuratively, but literally, stardust. &bull; Not all
       those who wander are lost.<br /></p>
-    <p class="q-left"><span style="color: #e08700">To be yourself in a world that is constantly trying to make you
+    <p id="q-left"><span style="color: #e08700">To be yourself in a world that is constantly trying to make you
         something else is the greatest accomplishment.</span> &bull; Everybody is a genius. But, if you judge a fish by
       its ability to climb a tree, it will live its whole life believing that it is stupid. &bull; If life is soup, I am
       a fork.</p>
   </div>
-  <h2>You may know me:</h2>
-  <div class="grid">
+  <h2 class="home">You may know me:</h2>
+  <div id="grid">
     <img src="/icons/discord.png" alt="Discord logo" />
     <p>as <span id="bold">ophiuchus118</span> on Discord</p>
     <a href="https://instagram.com/evenn118"><img src="/icons/instagram.png" alt="Instagram logo" /></a>
@@ -120,7 +46,7 @@
         id="coords">wink.scans.twig, near 45.5, -122.7</span>; soon at <span id="coords">elite.packing.ploys, near 41.3,
         -81.2</span></p>
   </div>
-  <h3><a href="/map.html" style="color: #e8e8f0;">See inside!</a></h3>
+  <h3 class="home"><a href="/map.html" style="color: #e8e8f0;">See inside!</a></h3>
 
 </body>
 

@@ -3,37 +3,130 @@
 @import url(https://fonts.googleapis.com/css?family=Poiret%20One);
 
 body {
-    background-color: #101414;
+  background-color: #101414;
 }
 
 h1 {
-    color: ghostwhite;
-    font-family: "Playwrite ES", cursive;
-    font-size: 3.5rem;
-    line-height: 1.25;
-    text-align: center;
+  color: ghostwhite;
+  font-family: "Playwrite ES", cursive;
+  font-size: 3.5rem;
+  line-height: 1.25;
+  text-align: center;
+
+  .home {
+    margin: 0.5em auto 0.75em;
+  }
+
+  .about {
+    margin: 0.75em auto 0;
+  }
 }
 
 h2 {
-    color: #c8c8c8;
-    font-family: "Poiret One", "Trebuchet MS", sans-serif;
-    font-size: 3rem;
-    text-align: center;
-    font-weight: normal;
+  color: #c8c8c8;
+  font-family: "Poiret One", "Trebuchet MS", sans-serif;
+  font-size: 3rem;
+  text-align: center;
+  font-weight: normal;
+
+  .home {
+    margin: 0.5em auto 0.75em;
+  }
+
+  .about {
+    margin: 0 auto 0.75em;
+  }
 }
 
 h3 {
-    font-family: "Ubuntu", "Trebuchet MS", sans-serif;
-    font-size: 2.5em;
-    font-weight: 500;
-    text-align: center;
+  font-family: "Ubuntu", "Trebuchet MS", sans-serif;
+  font-size: 2.5em;
+  font-weight: 500;
+  text-align: center;
+
+  .home {
+    margin: 0.5em auto;
+  }
+
 }
 
 p,
 ul {
-    color: #e8e8f0;
-    font-family: "Ubuntu";
-    font-weight: 300;
-    font-size: 24px;
-    line-height: 1.35;
+  color: #e8e8f0;
+  font-family: "Ubuntu";
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 1.35;
+}
+
+.about {
+  p {
+    margin: 0 0.5em 2px;
+  }
+
+  ul {
+    margin: 0 0.5em 0.5em;
+  }
+}
+
+#pronouns {
+  color: #4098e0;
+  font-family: "Poiret One", "Trebuchet MS", sans-serif;
+  font-size: 3.0rem;
+  font-weight: normal;
+  font-style: italic;
+}
+
+#quotes {
+  font-family: "Ubuntu", "Trebuchet MS", sans-serif;
+  font-size: 1.5em;
+  font-weight: 300;
+  margin: 0;
+}
+
+#q-left {
+  text-align: left;
+  max-width: 50%;
+  margin: 0 47% 0.5em 3%;
+}
+
+#q-right {
+  text-align: right;
+  max-width: 50%;
+  margin: 0 3% 0.5em 47%;
+}
+
+#grid {
+  display: grid;
+  grid-template-columns: 50px 1fr 50px 1fr;
+  gap: 30px 15px;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  margin: 0 0 1.2em 1.5em;
+}
+
+#grid>p {
+  justify-self: left;
+  font-family: "Ubuntu", "Trebuchet MS", sans-serif;
+  font-size: 1.75em;
+  font-weight: 300;
+  margin: 0;
+}
+
+#grid>a>img,
+#grid>img {
+  width: 50px;
+  height: auto;
+  justify-self: right;
+  margin: 0;
+}
+
+#bold {
+  color: #e08700;
+  font-weight: 500;
+}
+
+#coords {
+  color: #40ff00;
 }
