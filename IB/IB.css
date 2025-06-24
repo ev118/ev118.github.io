@@ -1,0 +1,47 @@
+@import url(https://fonts.googleapis.com/css?family=Cambria);
+@import url(https://fonts.googleapis.com/css?family=Lato);
+
+body {
+  background-color: #e8e8f0;
+}
+
+h1 {
+  color: #101414;
+  font-family: "Lato", sans-serif;
+  font-weight: bold;
+  font-size: 3em;
+  text-align: center;
+}
+
+h2 {
+  color: #101414;
+  font-family: "Lato", sans-serif;
+  font-weight: bold;
+  font-size: 2em;
+  text-align: left;
+}
+
+h3 {
+  color: #101414;
+  font-family: "Lato", sans-serif;
+  font-weight: normal;
+  font-size: 2em;
+  text-align: center;
+}
+
+p {
+  color: #101414;
+  font-family: "Cambria", serif;
+  font-size: 1em;
+  text-align: left;
+}
+
+#caption {
+  font-style: italic;
+  text-align: center;
+}
+
+img {
+  text-align: center;
+  width: 50%;
+}
