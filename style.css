@@ -12,14 +12,14 @@ h1 {
   font-size: 3.5rem;
   line-height: 1.25;
   text-align: center;
+}
 
-  .home {
-    margin: 0.5em auto 0.75em;
-  }
+h1.home {
+  margin: 0.5em auto 0.75em;
+}
 
-  .about {
-    margin: 0.75em auto 0;
-  }
+h1.about {
+  margin: 0.75em auto 0;
 }
 
 h2 {
@@ -28,26 +28,26 @@ h2 {
   font-size: 3rem;
   text-align: center;
   font-weight: normal;
-
-  .home {
-    margin: 0.5em auto 0.75em;
-  }
-
-  .about {
-    margin: 0 auto 0.75em;
-  }
 }
+
+h2.home {
+  margin: 0.5em auto 0.75em;
+}
+
+h2.about {
+  margin: 0 auto 0.75em;
+}
+
 
 h3 {
   font-family: "Ubuntu", "Trebuchet MS", sans-serif;
   font-size: 2.5em;
   font-weight: 500;
   text-align: center;
+}
 
-  .home {
-    margin: 0.5em auto;
-  }
-
+h3.home {
+  margin: 0.5em auto;
 }
 
 p,
@@ -59,14 +59,12 @@ ul {
   line-height: 1.35;
 }
 
-.about {
-  p {
-    margin: 0 0.5em 2px;
-  }
+p.about {
+  margin: 0 0.5em 2px;
+}
 
-  ul {
-    margin: 0 0.5em 0.5em;
-  }
+ul.about {
+  margin: 0 0.5em 0.5em;
 }
 
 #pronouns {
