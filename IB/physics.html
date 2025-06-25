@@ -4,13 +4,16 @@
 <head>
   <title>IB Physics SL IA</title>
   <link rel="stylesheet" href="IB.css" type="text/css" />
+  <script src="https://fred-wang.github.io/TeXZilla/TeXZilla-min.js" type="text/javascript" />
 </head>
 
 <body>
   <h1 class="phys">Viscosity and flow rate in a large tube</h1>
+  <h3 class="phys">IB Physics SL</h3>
   <h3 class="phys">3 February 2024</h3>
 
-  <p>Viscosity is a measure of the resistance of a fluid to flow, or of the effect of applied stress on its motion.
+  <p id="noindent">Viscosity is a measure of the resistance of a fluid to flow, or of the effect of applied stress on
+    its motion.
     Dynamic or absolute viscosity is an intrinsic property of a substance, dependent on temperature: as a liquid gets
     colder, its viscosity increases; the opposite is true for gases, meaning a substance&rsquo;s minimum viscosity is at
     its boiling point. There is no general equation for viscosity in terms of other intrinsic properties, but there are
@@ -18,8 +21,8 @@
     mPa&centerdot;s. In some applications the preferred metric is kinematic viscosity, defined by &nu; = &mu;/&rho;, or
     absolute viscosity divided by density, and measured in m<sup>2</sup>/s, or stokes (St) where 1 St = 1
     cm<sup>2</sup>/s. In non-technical terms, a more viscous fluid is &ldquo;thicker,&rdquo; and therefore moves more
-    slowly, but I wanted to know the quantitative relationship: how does viscosity affect flow rate?</p>
-  <p>In an open container that is much wider than it is deep and has a constant depth and a downward slope, such as a
+    slowly, but I wanted to know the quantitative relationship: how does viscosity affect flow rate? <br> In an open
+    container that is much wider than it is deep and has a constant depth and a downward slope, such as a
     wide river, the flow of liquid through it can be modeled by layers of liquid with increasing speeds as they go up.
     With a derivation too long and complicated to repeat, the equation that represents the total flow rate is <em>Q</em>
     = <em>gwh</em><sup>3</sup>sin(&theta;)/3&nu;, where <em>g</em> is gravitational acceleration, <em>w</em> is the
@@ -94,7 +97,8 @@
     flow rate, and &nu; is kinematic viscosity, so we can write our equation as <em>Q</em> =
     <em>gwh</em><sup>3</sup>sin(&theta;)/3 &centerdot; (1/&nu;). Therefore, we should expect the graph to be inversely
     proportional with a coefficient of <em>gwh</em><sup>3</sup>sin(&theta;)/3. In order to confirm this, we begin by
-    graphing the curve of best fit for the data, shown in figure 3.</p>
+    graphing the curve of best fit for the data, shown in figure 3.
+  </p>
   <p id="caption">figure 3: graph of data with best-fit line</p>
   <img src="imgs/physics3.png" />
   <p>Though we would ordinarily expect an inverse relationship to have a curved graph, on a logarithmic graph it is just
@@ -102,32 +106,114 @@
     constant product of the two variables, is approximately 126&thinsp;000 mm<sup>5</sup>/s<sup>2</sup>. We now want to
     know what this number means; the first thing to do is calculate the angle &theta;.</p>
   <p>In fact, though, we do not need to calculate &theta; because the equation only has sin(&theta;), and we can find
-    this using right triangles. As shown in figure 4, the sine of the angle is “opposite over hypotenuse,” or the
+    this using right triangles. As shown in figure 4, the sine of the angle is &ldquo;opposite over hypotenuse,&rdquo;
+    or the
     difference in height between any two points on the tube divided by the length between them along the tube.</p>
   <p id="caption">figure 4: angle of elevation in a right triangle</p>
   <img src="imgs/physics4.png" />
   <p>From this we can discern three values for sin(&theta;), for the three data-collection sessions, using the data in
-    table 3. For the first, we use the two ends of the tube as our points, getting sin(&theta;) = <math>
-      <mfrac>
-        <mrow>22.8 &ndash; 10.0</mrow>
-        <mrow>59.7</mrow>
-      </mfrac> = <mfrac>12.8 59.7</mfrac>
-    </math> &approxeq; 0.214. For the other two, we have two values each, which we expect to be the same.</p>
+    table 3. For the first, we use the two ends of the tube as our points, getting <la-tex>\sin(\theta) =
+      \frac{22.8-10.0}{59.7} = \frac{12.8}{59.7} \approx 0.214</la-tex>. For the other two, we have two values each,
+    which we expect to be the same.</p>
   <math display="block">
-    <mi>#2:</mi> sin(&theta;) = <mfrac>
-      <mrow>22.2 &ndash; 7.5</mrow>
-      <mrow>60.6</mrow>
-    </mfrac> = <mfrac>17.7 60.6</mfrac> &approxeq; 0.292 and <mfrac>
-      <mrow>20.0 &ndash; 9.5</mrow>
-      <mrow>36.0</mrow>
-    </mfrac> = <mfrac>10.5 36.0</mfrac> &approxeq; 0.292
-    <mi>#3:</mi> sin(&theta;) = <mfrac>
-      <mrow>19.9 &ndash; 7.5</mrow>
-      <mrow>60.2</mrow>
-    </mfrac> = <mfrac>12.4 60.2</mfrac> &approxeq; 0.206 and <mfrac>
-      <mrow>18.1 &ndash; 9.1</mrow>
-      <mrow>38.3</mrow>
-    </mfrac> = <mfrac>9.0 38.3</mfrac> &approxeq; 0.235
+    <mrow>
+      <mi>#2: </mi>
+      <mi>sin</mi>
+      (<mi>&theta;</mi>)
+      <mo>=</mo>
+      <mfrac>
+        <mrow>
+          <mn>22.2</mn>
+          <mo>-</mo>
+          <mn>7.5</mn>
+        </mrow>
+        <mrow>
+          <mn>60.6</mn>
+        </mrow>
+      </mfrac>
+      <mo>=</mo>
+      <mfrac>
+        <mrow>
+          <mn>17.7</mn>
+        </mrow>
+        <mrow>
+          <mn>60.6</mn>
+        </mrow>
+      </mfrac>
+      <mo>&approx;</mo>
+      <mn>0.292</mn>
+      <mi>and</mi>
+      <mfrac>
+        <mrow>
+          <mn>20.0</mn>
+          <mo>-</mo>
+          <mn>9.5</mn>
+        </mrow>
+        <mrow>
+          <mn>36.0</mn>
+        </mrow>
+      </mfrac>
+      <mo>=</mo>
+      <mfrac>
+        <mrow>
+          <mn>10.5</mn>
+        </mrow>
+        <mrow>
+          <mn>36.0</mn>
+        </mrow>
+      </mfrac>
+      <mo>&approx;</mo>
+      <mn>0.292</mn>
+    </mrow>
+    <mrow>
+      <mi>#3: </mi>
+      <mi>sin</mi>
+      (<mi>&theta;</mi>)
+      <mo>=</mo>
+      <mfrac>
+        <mrow>
+          <mn>19.9</mn>
+          <mo>-</mo>
+          <mn>7.5</mn>
+        </mrow>
+        <mrow>
+          <mn>60.2</mn>
+        </mrow>
+      </mfrac>
+      <mo>=</mo>
+      <mfrac>
+        <mrow>
+          <mn>12.4</mn>
+        </mrow>
+        <mrow>
+          <mn>60.2</mn>
+        </mrow>
+      </mfrac>
+      <mo>&approx;</mo>
+      <mn>0.206</mn>
+      <mi>and</mi>
+      <mfrac>
+        <mrow>
+          <mn>18.1</mn>
+          <mo>-</mo>
+          <mn>9.1</mn>
+        </mrow>
+        <mrow>
+          <mn>38.3</mn>
+        </mrow>
+      </mfrac>
+      <mo>=</mo>
+      <mfrac>
+        <mrow>
+          <mn>9.0</mn>
+        </mrow>
+        <mrow>
+          <mn>38.3</mn>
+        </mrow>
+      </mfrac>
+      <mo>&approx;</mo>
+      <mn>0.235</mn>
+    </mrow>
   </math>
   <p>Since we want sin(&theta;) to be a constant, we will have to average these to find a single value; this approach is
     not perfect, but it will be close enough to show the pattern we want. The average of these five values is about
@@ -140,9 +226,11 @@
       <mfrac>126000 810</mfrac>
     </math> = 155. Because the liquid is flowing through a circular tube, the width is related to the height
     geometrically, dependent on the radius of the tube. We know, therefore, that <em>wh</em><sup>3</sup> = <math>2h^3^
-      <msqrt>2rh &ndash; h^2^</msqrt></math> = 155. Substituting in the radius of the tube, 40 mm, and using a
+      <msqrt>2rh &ndash; h^2^</msqrt>
+    </math> = 155. Substituting in the radius of the tube, 40 mm, and using a
     calculator, we find that <em>h</em> &approxeq; 1.86 mm and <em>w</em> = <math>2 &centerdot; <msqrt>2 &centerdot; 40
-        &centerdot; 1.86 &ndash; 1.86^2^</msqrt></math> &approxeq; 24.1 mm.</p>
+        &centerdot; 1.86 &ndash; 1.86^2^</msqrt></math> &approxeq; 24.1 mm.
+  </p>
 
   <h2 class="phys">Uncertainty and error</h2>
   <p>The tables above have marked uncertainties for each value, but those do not tell the whole story in some cases. The
@@ -159,7 +247,8 @@
     between 27&thinsp;200 and 225&thinsp;000 and fit within the error bars. (There are no error bars in the
     <em>x</em>-direction, corresponding to viscosity, because I took the reference values as perfectly certain. They may
     not be, but none of the sources I found listed uncertainties in their numbers, and I believe it is probably
-    insignificant compared to the uncertainty in my own data on the <em>y</em>-axis.)</p>
+    insignificant compared to the uncertainty in my own data on the <em>y</em>-axis.)
+  </p>
   <p id="caption">figure 5: minimum and maximum slope of the line of best fit</p>
   <img src="imgs/physics5.png" />
   <p>The solid green line is the same as in figure 3, and the two dashed blue lines have the minimum and maximum slopes
@@ -184,7 +273,8 @@
     values of <em>h</em> and <em>w</em> and propagating uncertainties along the way, we find that
     <em>wh</em><sup>3</sup> = 155 mm<sup>4</sup> &plusmn; 96%. Making some conservative assumptions about the workings
     of the calculator, we get the values as <em>w</em> = 24.1 mm &plusmn; 15%, or 24.1 mm &plusmn; 3.62 mm, and
-    <em>h</em> = 1.86 mm &plusmn; 27% = <strong>1.86 mm &plusmn; 0.502 mm</strong>.</p>
+    <em>h</em> = 1.86 mm &plusmn; 27% = <strong>1.86 mm &plusmn; 0.502 mm</strong>.
+  </p>
   <p>This value makes sense intuitively, to a certain extent. As the liquid flowed through the tube, it had a depth that
     was quite small relative to the tube (or anything else); around one or two millimeters seems close. For scale, this
     is about the size of a duckweed, the smallest flowering plant. I did not measure the height and width of the
