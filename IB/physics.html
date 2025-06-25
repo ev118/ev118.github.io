@@ -4,8 +4,6 @@
 <head>
   <title>IB Physics SL IA</title>
   <link rel="stylesheet" href="IB.css" type="text/css" />
-  <script type="text/javascript" src="http://math.etsu.edu/LaTeXMathML/LaTeXMathML.js"></script>
-  <link rel="stylesheet" type="text/css" href="http://math.etsu.edu/LaTeXMathML/LaTeXMathML.standardarticle.css" />
 </head>
 
 <body>
@@ -113,14 +111,40 @@
   <p id="caption">figure 4: angle of elevation in a right triangle</p>
   <img src="imgs/physics4.png" />
   <p>From this we can discern three values for sin(&theta;), for the three data-collection sessions, using the data in
-    table 3. For the first, we use the two ends of the tube as our points, getting \[\sin(\theta) = \frac{22.8 -
-    10.0}{59.7} = \frac{12.8}{59.7} \approx 0.214\]. For the other two, we have two values each, which we expect to be
-    the same.</p>
-  <math display="block">
-    <mrow>
-      <mi>#2: </mi>
+    table 3. For the first, we use the two ends of the tube as our points, getting <math>
       <mi>sin</mi>
-      (<mi>&theta;</mi>)
+      <mo>(</mo>
+      <mi>&theta;</mi>
+      <mo>)</mo>
+      <mo>=</mo>
+      <mfrac>
+        <mrow>
+          <mn>22.8</mn>
+          <mo>&ndash;</mo>
+          <mn>10.0</mn>
+        </mrow>
+        <mrow>
+          <mn>59.7</mn>
+        </mrow>
+      </mfrac>
+      <mo>=</mo>
+      <mfrac>
+        <mrow>
+          <mn>12.8</mn>
+        </mrow>
+        <mrow>
+          <mn>59.7</mn>
+        </mrow>
+      </mfrac>
+      <mo>&approx;</mo>
+      <mn>0.214</mn>
+    </math>. For the other two, we have two values each, which we expect to be the same.</p>
+  <p id="blockmath">#2:
+    <math>
+      <mi>sin</mi>
+      <mo>(</mo>
+      <mi>&theta;</mi>
+      <mo>)</mo>
       <mo>=</mo>
       <mfrac>
         <mrow>
@@ -143,7 +167,7 @@
       </mfrac>
       <mo>&approx;</mo>
       <mn>0.292</mn>
-      <mi>and</mi>
+    </math> and <math>
       <mfrac>
         <mrow>
           <mn>20.0</mn>
@@ -165,11 +189,12 @@
       </mfrac>
       <mo>&approx;</mo>
       <mn>0.292</mn>
-    </mrow>
-    <mrow>
-      <mi>#3: </mi>
+    </math><br>
+    #3: <math>
       <mi>sin</mi>
-      (<mi>&theta;</mi>)
+      <mo>(</mo>
+      <mi>&theta;</mi>
+      <mo>)</mo>
       <mo>=</mo>
       <mfrac>
         <mrow>
@@ -192,7 +217,7 @@
       </mfrac>
       <mo>&approx;</mo>
       <mn>0.206</mn>
-      <mi>and</mi>
+    </math> and <math>
       <mfrac>
         <mrow>
           <mn>18.1</mn>
@@ -214,23 +239,82 @@
       </mfrac>
       <mo>&approx;</mo>
       <mn>0.235</mn>
-    </mrow>
-  </math>
+    </math>
+  </p>
   <p>Since we want sin(&theta;) to be a constant, we will have to average these to find a single value; this approach is
     not perfect, but it will be close enough to show the pattern we want. The average of these five values is about
     0.248.</p>
-  <p>This makes our equation now <em>Q</em> = 0.248<em>gwh</em><sup>3</sup>/3&nu; = 0.0826<em>gwh</em><sup>3</sup>/&nu;.
+  <p>This makes our equation now <em>Q</em> = 0.248&thinsp;<em>gwh</em><sup>3</sup>/3&nu; =
+    0.0826&thinsp;<em>gwh</em><sup>3</sup>/&nu;.
     We can also substitute in the known value <em>g</em> = 9.81 m/s<sup>2</sup> = 9810 mm/s<sup>2</sup>, giving
     <em>Q</em> = 0.0826(9810)(<em>wh</em><sup>3</sup>)/&nu; = 810<em>wh</em><sup>3</sup>/&nu;. We use millimeters
     because &nu; is measured in cSt or mm<sup>2</sup>/s, which is also why <em>Q</em> was measured in mm<sup>3</sup>/s.
-    Using the slope value we found earlier, we thus determine that <em>wh</em><sup>3</sup> = <math>
-      <mfrac>126000 810</mfrac>
-    </math> = 155. Because the liquid is flowing through a circular tube, the width is related to the height
-    geometrically, dependent on the radius of the tube. We know, therefore, that <em>wh</em><sup>3</sup> = <math>2h^3^
-      <msqrt>2rh &ndash; h^2^</msqrt>
-    </math> = 155. Substituting in the radius of the tube, 40 mm, and using a
-    calculator, we find that <em>h</em> &approxeq; 1.86 mm and <em>w</em> = <math>2 &centerdot; <msqrt>2 &centerdot; 40
-        &centerdot; 1.86 &ndash; 1.86^2^</msqrt></math> &approxeq; 24.1 mm.
+    Using the slope value we found earlier, we thus determine that <math>
+      <mi>w</mi>
+      <msup>
+        <mi>h</mi>
+        <mn>3</mn>
+      </msup>
+      <mo>=</mo>
+      <mfrac>
+        <mrow>
+          <mn>126000</mn>
+        </mrow>
+        <mrow>
+          <mn>810</mn>
+        </mrow>
+      </mfrac>
+      <mo>=</mo>
+      <mn>155</mn>
+    </math>. Because the liquid is flowing through a circular tube, the width is related to the height
+    geometrically, dependent on the radius of the tube. We know, therefore, that <math>
+      <mi>w</mi>
+      <msup>
+        <mi>h</mi>
+        <mn>3</mn>
+      </msup>
+      <mo>=</mo>
+      <mn>2</mn>
+      <msup>
+        <mi>h</mi>
+        <mn>3</mn>
+      </msup>
+      <msqrt>
+        <mn>2</mn>
+        <mi>r</mi>
+        <mi>h</mi>
+        <mo>&ndash;</mo>
+        <msup>
+          <mi>h</mi>
+          <mn>2</mn>
+        </msup>
+      </msqrt>
+      <mo>=</mo>
+      <mn>155</mn>
+    </math>. Substituting in the radius of the tube, 40 mm, and using a calculator, we find that <math>
+      <mi>h</mi>
+      <mo>&approx;</mo>
+      <mn>1.86</mn>
+    </math> mm and <math>
+      <mi>w</mi>
+      <mo>=</mo>
+      <mn>2</mn>
+      <mo>&centerdot;</mo>
+      <msqrt>
+        <mn>2</mn>
+        <mo>&centerdot;</mo>
+        <mn>40</mn>
+        <mo>&centerdot;</mo>
+        <mn>1.86</mn>
+        <mo>&ndash;</mo>
+        <msup>
+          <mn>1.86</mn>
+          <mn>2</mn>
+        </msup>
+      </msqrt>
+      <mo>&approx;</mo>
+      <mn>24.1</mn>
+    </math> mm.
   </p>
 
   <h2 class="phys">Uncertainty and error</h2>
@@ -261,18 +345,64 @@
     uncertainties of &plusmn; 0.1 cm because they were determined using a ruler precise to the millimeter, measuring at
     two points. This means that each of the fractions used to find sin(&theta;) were of the form <math>
       <mfrac>
-        <mrow>(a &plusmn; 0.1) &ndash; (b &plusmn; 0.1)</mrow>
-        <mrow>c &plusmn; 0.1</mrow>
-      </mfrac> = <mfrac>
-        <mrow>(a &ndash; b) &plusmn; 0.2</mrow>
-        <mrow>c &plusmn; 0.1</mrow>
+        <mrow>
+          <mo>(</mo>
+          <mi>a</mi>
+          <mo>&plusmn;</mo>
+          <mn>0.1</mn>
+          <mo>)</mo>
+          <mo>&ndash;</mo>
+          <mo>(</mo>
+          <mi>b</mi>
+          <mo>&plusmn;</mo>
+          <mn>0.1</mn>
+          <mo>)</mo>
+        </mrow>
+        <mrow>
+          <mi>c</mi>
+          <mo>&plusmn;</mo>
+          <mn>0.1</mn>
+        </mrow>
+      </mfrac>
+      <mo>=</mo>
+      <mfrac>
+        <mrow>
+          <mo>(</mo>
+          <mi>a</mi>
+          <mo>&ndash;</mo>
+          <mi>b</mi>
+          <mo>)</mo>
+          <mo>&plusmn;</mo>
+          <mn>0.2</mn>
+        </mrow>
+        <mrow>
+          <mi>c</mi>
+          <mo>&plusmn;</mo>
+          <mn>0.1</mn>
+        </mrow>
       </mfrac>
     </math>, where <em>a</em> and <em>b</em> are the two heights and <em>c</em> is the diagonal distance between them.
     Plugging in values, converting to percentage uncertainties, and simplifying gives five raw uncertainties, of which
     the average is &plusmn; 0.00466. However, the semirange of the values is &plusmn; 0.043, which is larger, so we
-    conclude that sin(&theta;) = 0.248 &plusmn; 0.043. Going through the same calculations as we did earlier to find the
-    values of <em>h</em> and <em>w</em> and propagating uncertainties along the way, we find that
-    <em>wh</em><sup>3</sup> = 155 mm<sup>4</sup> &plusmn; 96%. Making some conservative assumptions about the workings
+    conclude that <math>
+      <mi>sin</mi>
+      <mo>(</mo>
+      <mi>&theta;</mi>
+      <mo>)</mo>
+      <mo>=</mo>
+      <mn>0.248</mn>
+      <mo>&plusmn;</mo>
+      <mn>0.043</mn>
+    </math>. Going through the same calculations as we did earlier to find the
+    values of <em>h</em> and <em>w</em> and propagating uncertainties along the way, we find that <math>
+      <mi>w</mi>
+      <msup>
+        <mi>h</mi>
+        <mn>3</mn>
+      </msup>
+      <mo>=</mo>
+      <mn>155</mn>
+    </math> mm<sup>4</sup> &plusmn; 96%. Making some conservative assumptions about the workings
     of the calculator, we get the values as <em>w</em> = 24.1 mm &plusmn; 15%, or 24.1 mm &plusmn; 3.62 mm, and
     <em>h</em> = 1.86 mm &plusmn; 27% = <strong>1.86 mm &plusmn; 0.502 mm</strong>.
   </p>
@@ -306,6 +436,7 @@
     have acted less in the interest of time and more in the interest of precision, but a balance must be struck. (And
     ultimately, the easiest way to reduce systematic error might have been to choose a different investigation from the
     beginning.)</p>
+
   <h2 class="phys">Conclusion</h2>
   <p>Physics is messy. I did not expect to use so many paper towels in my (futile) attempt to keep vegetable oil and
     breakfast syrup off the lab table. But that does not mean there are not things to be learned from it. Through this
@@ -320,5 +451,7 @@
     the &ldquo;answer&rdquo; is. Science is not a destination, but a journey, on which everyone embarks because we have
     an innate desire to understand ourselves.</p>
 </body>
+
+<!--link to doc: https://docs.google.com/document/d/1N7-XCvDyu0Xa7VRZqht8FQGLU2AdXOygUmRxCWG6OR4/edit-->
 
 </html>
