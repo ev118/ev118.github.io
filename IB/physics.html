@@ -60,7 +60,8 @@
     seeks to empirically confirm this relationship by creating many small rivers with varying viscosities.</p>
 
   <h2 class="phys">Procedure</h2>
-  <p>Set up a system that models the flow of liquid in a river with a tube. The example shown in figure 1 is a rough
+  <p id="noindent">Set up a system that models the flow of liquid in a river with a tube. The example shown in figure 1
+    is a rough
     sketch of my setup, but there are other ways to make this work.</p>
   <p id="caption">figure 1: diagram of setup</p>
   <img src="imgs/physics1.png" />
@@ -81,12 +82,76 @@
     and clean up any spilled liquid in the lab area.</p>
 
   <h2 class="phys">Data</h2>
-  <p>Table 1 shows the data collected over three data-collection sessions, time for the liquid to flow down the tube and
+  <p id="noindent">Table 1 shows the data collected over three data-collection sessions, time for the liquid to flow
+    down the tube and
     the volume of liquid used for each trial.</p>
   <p id="caption">table 1: raw data</p>
-  <div class="table" id="phys1">
-    FILL IN LATER
-  </div>
+  <table id="phys1">
+    <tr id="bold">
+      <th colspan="2" rowspan="2">substance</th>
+      <td colspan="5">time (s &plusmn; 0.01)</td>
+    </tr>
+    <tr id="bold" style="border-bottom-width: 4px;">
+      <td>A</td>
+      <td>B</td>
+      <td>C</td>
+      <td>D</td>
+      <td>E</td>
+    </tr>
+    <tr style="border-bottom-width: 4px;">
+      <th>water</th>
+      <td>3.95</td>
+      <td>2.80</td>
+      <td>2.55</td>
+      <td>3.40</td>
+      <td style="text-decoration: line-through;">2.34</td>
+    </tr>
+    <tr>
+      <th>ethanol</th>
+      <td>3.15</td>
+      <td>2.27</td>
+      <td>3.66</td>
+      <td>3.20</td>
+      <td>2.86</td>
+    </tr>
+    <tr>
+      <th>isopropyl alcohol</th>
+      <td>4.14</td>
+      <td>4.00</td>
+      <td>3.26</td>
+      <td>2.93</td>
+      <td>2.54</td>
+    </tr>
+    <tr style="border-bottom-width: 4px;">
+      <th>mineral oil</th>
+      <td>1.628</td>
+      <td>36.24</td>
+      <td>22.34</td>
+      <td>24.85</td>
+      <td>14.34</td>
+    </tr>
+    <tr>
+      <th>vegetable oil</th>
+      <td>29.88</td>
+      <td>23.44</td>
+      <td>28.61</td>
+      <td>27.64</td>
+      <td>25.11</td>
+    </tr>
+    <tr>
+      <th>syrup</th>
+      <td>142.62</td>
+      <td>101.47</td>
+      <td>117.02</td>
+      <td>104.03</td>
+      <td></td>
+    </tr>
+    <tr style="border-bottom-width: 6px;">
+      <th>molasses</th>
+      <td>1077</td>
+      <td colspan="4"></td>
+    </tr>
+  </table>
   <p id="noindent">There is substantial variation among the volume values for some of the substances, due to evaporation
     in the case of alcohols or sticking to the tube and other equipment in some cases. As I was recording the data I
     noticed that these patterns did not always align to the trends in the time data and did not conform to my prior
@@ -108,7 +173,8 @@
     angle of the tube. Additionally, the tube has an inner radius of 4.0 &plusmn; 0.1 cm.</p>
 
   <h2 class="phys">Analysis</h2>
-  <p>The equation that models this experiment uses flow rate, or volume per unit time, so our first step is to calculate
+  <p id="noindent">The equation that models this experiment uses flow rate, or volume per unit time, so our first step
+    is to calculate
     flow rate from the volume and time data in table 1. Uncertainty in these values will be calculated in the next
     section.</p>
   <p id="caption">table 4: flow rate by trial</p>
@@ -206,101 +272,102 @@
       <mo>&approx;</mo>
       <mn>0.214</mn>
     </math>. For the other two, we have two values each, which we expect to be the same.</p>
-  <p><span id="blockmath">#2:
-      <math>
-        <mi>sin(&theta;)</mi>
-        <mo>=</mo>
-        <mfrac>
-          <mrow>
-            <mn>22.2</mn>
-            <mo>&ndash;</mo>
-            <mn>7.5</mn>
-          </mrow>
-          <mrow>
-            <mn>60.6</mn>
-          </mrow>
-        </mfrac>
-        <mo>=</mo>
-        <mfrac>
-          <mrow>
-            <mn>17.7</mn>
-          </mrow>
-          <mrow>
-            <mn>60.6</mn>
-          </mrow>
-        </mfrac>
-        <mo>&approx;</mo>
-        <mn>0.292</mn>
-      </math> and <math>
-        <mfrac>
-          <mrow>
-            <mn>20.0</mn>
-            <mo>&ndash;</mo>
-            <mn>9.5</mn>
-          </mrow>
-          <mrow>
-            <mn>36.0</mn>
-          </mrow>
-        </mfrac>
-        <mo>=</mo>
-        <mfrac>
-          <mrow>
-            <mn>10.5</mn>
-          </mrow>
-          <mrow>
-            <mn>36.0</mn>
-          </mrow>
-        </mfrac>
-        <mo>&approx;</mo>
-        <mn>0.292</mn>
-      </math></span><br>
-    <span id="blockmath">#3: <math>
-        <mi>sin(&theta;)</mi>
-        <mo>=</mo>
-        <mfrac>
-          <mrow>
-            <mn>19.9</mn>
-            <mo>&ndash;</mo>
-            <mn>7.5</mn>
-          </mrow>
-          <mrow>
-            <mn>60.2</mn>
-          </mrow>
-        </mfrac>
-        <mo>=</mo>
-        <mfrac>
-          <mrow>
-            <mn>12.4</mn>
-          </mrow>
-          <mrow>
-            <mn>60.2</mn>
-          </mrow>
-        </mfrac>
-        <mo>&approx;</mo>
-        <mn>0.206</mn>
-      </math> and <math>
-        <mfrac>
-          <mrow>
-            <mn>18.1</mn>
-            <mo>&ndash;</mo>
-            <mn>9.1</mn>
-          </mrow>
-          <mrow>
-            <mn>38.3</mn>
-          </mrow>
-        </mfrac>
-        <mo>=</mo>
-        <mfrac>
-          <mrow>
-            <mn>9.0</mn>
-          </mrow>
-          <mrow>
-            <mn>38.3</mn>
-          </mrow>
-        </mfrac>
-        <mo>&approx;</mo>
-        <mn>0.235</mn>
-      </math></span>
+  <p id="blockmath">#2:
+    <math>
+      <mi>sin(&theta;)</mi>
+      <mo>=</mo>
+      <mfrac>
+        <mrow>
+          <mn>22.2</mn>
+          <mo>&ndash;</mo>
+          <mn>7.5</mn>
+        </mrow>
+        <mrow>
+          <mn>60.6</mn>
+        </mrow>
+      </mfrac>
+      <mo>=</mo>
+      <mfrac>
+        <mrow>
+          <mn>17.7</mn>
+        </mrow>
+        <mrow>
+          <mn>60.6</mn>
+        </mrow>
+      </mfrac>
+      <mo>&approx;</mo>
+      <mn>0.292</mn>
+    </math> and <math>
+      <mfrac>
+        <mrow>
+          <mn>20.0</mn>
+          <mo>&ndash;</mo>
+          <mn>9.5</mn>
+        </mrow>
+        <mrow>
+          <mn>36.0</mn>
+        </mrow>
+      </mfrac>
+      <mo>=</mo>
+      <mfrac>
+        <mrow>
+          <mn>10.5</mn>
+        </mrow>
+        <mrow>
+          <mn>36.0</mn>
+        </mrow>
+      </mfrac>
+      <mo>&approx;</mo>
+      <mn>0.292</mn>
+    </math>
+  </p><br>
+  <p id="blockmath">#3: <math>
+      <mi>sin(&theta;)</mi>
+      <mo>=</mo>
+      <mfrac>
+        <mrow>
+          <mn>19.9</mn>
+          <mo>&ndash;</mo>
+          <mn>7.5</mn>
+        </mrow>
+        <mrow>
+          <mn>60.2</mn>
+        </mrow>
+      </mfrac>
+      <mo>=</mo>
+      <mfrac>
+        <mrow>
+          <mn>12.4</mn>
+        </mrow>
+        <mrow>
+          <mn>60.2</mn>
+        </mrow>
+      </mfrac>
+      <mo>&approx;</mo>
+      <mn>0.206</mn>
+    </math> and <math>
+      <mfrac>
+        <mrow>
+          <mn>18.1</mn>
+          <mo>&ndash;</mo>
+          <mn>9.1</mn>
+        </mrow>
+        <mrow>
+          <mn>38.3</mn>
+        </mrow>
+      </mfrac>
+      <mo>=</mo>
+      <mfrac>
+        <mrow>
+          <mn>9.0</mn>
+        </mrow>
+        <mrow>
+          <mn>38.3</mn>
+        </mrow>
+      </mfrac>
+      <mo>&approx;</mo>
+      <mn>0.235</mn>
+    </math>
   </p>
   <p id="noindent">Since we want <math>
       <mi>sin(&theta;)</mi>
@@ -546,7 +613,8 @@
     beginning.)</p>
 
   <h2 class="phys">Conclusion</h2>
-  <p>Physics is messy. I did not expect to use so many paper towels in my (futile) attempt to keep vegetable oil and
+  <p id="noindent">Physics is messy. I did not expect to use so many paper towels in my (futile) attempt to keep
+    vegetable oil and
     breakfast syrup off the lab table. But that does not mean there are not things to be learned from it. Through this
     investigation, I learned what viscosity means in technical contexts and how it applies to liquid flow. I learned how
     to be precise in experimentation, even when working from a vague procedure or no procedure at all. I learned a bit
@@ -560,6 +628,6 @@
     an innate desire to understand ourselves.</p>
 </body>
 
-<!--link to doc: https://docs.google.com/document/d/1N7-XCvDyu0Xa7VRZqht8FQGLU2AdXOygUmRxCWG6OR4/edit-->
+link to doc: https://docs.google.com/document/d/1N7-XCvDyu0Xa7VRZqht8FQGLU2AdXOygUmRxCWG6OR4/edit
 
 </html>
