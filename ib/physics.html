@@ -10,13 +10,15 @@
   <h1 class="phys">Viscosity and flow rate in a large tube</h1>
   <h3 class="phys">IB Physics SL <br> 3 February 2024</h3>
 
-  <p id="noindent">Viscosity is a measure of the resistance of a fluid to flow, or of the effect of applied stress on
+  <p class="noindent">Viscosity is a measure of the resistance of a fluid to flow, or of the effect of applied stress on
     its motion. Dynamic or absolute viscosity is an intrinsic property of a substance, dependent on temperature: as a
     liquid gets colder, its viscosity increases; the opposite is true for gases, meaning a substance&rsquo;s minimum
-    viscosity is at its boiling point.<a class="fn">1</a> There is no general equation for viscosity in terms of other
+    viscosity is at its boiling point.<a class="fn" id="ref-1a" href="#fn-1">1</a> There is no general equation for
+    viscosity in terms of other
     intrinsic
     properties, but there are many ways to determine it experimentally, resulting in the units of Pa&centerdot;s, or
-    poise (P) where 1 cP = 1 mPa&centerdot;s.<a class="fn">2</a> In some applications the preferred metric is kinematic
+    poise (P) where 1 cP = 1 mPa&centerdot;s.<a class="fn" id="ref-2" href="#fn-2">2</a> In some applications the
+    preferred metric is kinematic
     viscosity, defined
     by <math>
       <mi>&nu;</mi>
@@ -25,7 +27,8 @@
       <mo>/</mo>
       <mi>&rho;</mi>
     </math>, or absolute viscosity divided by density, and measured in m<sup>2</sup>/s, or stokes (St) where 1 St = 1
-    cm<sup>2</sup>/s.<a class="fn">1</a> In non-technical terms, a more viscous fluid is &ldquo;thicker,&rdquo; and
+    cm<sup>2</sup>/s.<a class="fn" id="ref-1b" href="#fn-1">1</a> In non-technical terms, a more viscous fluid is
+    &ldquo;thicker,&rdquo; and
     therefore moves more
     slowly, but I wanted to know the quantitative relationship: how does viscosity affect flow rate?</p>
   <p>In an open container that is much wider than it is deep and has a constant depth
@@ -46,7 +49,7 @@
       <mi>&nu;</mi>
     </math>, where <em>g</em> is gravitational acceleration, <em>w</em> is the width, <em>h</em> is the constant depth,
     &theta; is the downward angle of the container, and <em>&nu;</em> is the kinematic viscosity of the fluid.<a
-      class="fn">3</a> (There is
+      class="fn" id="ref-3a" href="#fn-3">3</a> (There is
     another,
     more popular equation for flow rate in terms of viscosity, <math>
       <mi>Q</mi>
@@ -62,15 +65,17 @@
       <mn>8</mn>
       <mi>&mu;</mi>
       <mi>L</mi>
-    </math>, but it only applies when the motion of the fluid is caused by a difference in pressure.<a class="fn">3</a>)
+    </math>, but it only applies when the motion of the fluid is caused by a difference in pressure.<a class="fn"
+      id="ref-3a" href="#fn-3">3</a>)
     This investigation
     seeks to empirically confirm this relationship by creating many small rivers with varying viscosities.</p>
 
   <h2 class="phys">Procedure</h2>
-  <p id="noindent">Set up a system that models the flow of liquid in a river with a tube. The example shown in figure 1
+  <p class="noindent">Set up a system that models the flow of liquid in a river with a tube. The example shown in figure
+    1
     is a rough
     sketch of my setup, but there are other ways to make this work.</p>
-  <p id="caption">figure 1: diagram of setup</p>
+  <p class="caption">figure 1: diagram of setup</p>
   <img src="imgs/physics1.png" />
   <p>In this system, a tube or pipe, longer than it is wide, is suspended by supports (I used books) and secured to them
     so it will not move around (I used masking tape for this). At the bottom end of the tube is some container to
@@ -89,10 +94,10 @@
     and clean up any spilled liquid in the lab area.</p>
 
   <h2 class="phys">Data</h2>
-  <p id="noindent">Table 1 shows the data collected over three data-collection sessions, time for the liquid to flow
+  <p class="noindent">Table 1 shows the data collected over three data-collection sessions, time for the liquid to flow
     down the tube and
     the volume of liquid used for each trial.</p>
-  <p id="caption">table 1: raw data<a class="fn">a</a></p>
+  <p class="caption">table 1: raw data<a class="fn" id="ref-star" href="#fn-star">*</a></p>
   <table id="phys1">
     <tr id="bold">
       <th rowspan="2" style="border-bottom-width: 2px; vertical-align: bottom;">substance</th>
@@ -223,14 +228,15 @@
       <td colspan="4"></td>
     </tr>
   </table>
-  <p id="noindent">There is substantial variation among the volume values for some of the substances, due to evaporation
+  <p class="noindent">There is substantial variation among the volume values for some of the substances, due to
+    evaporation
     in the case of alcohols or sticking to the tube and other equipment in some cases. As I was recording the data I
     noticed that these patterns did not always align to the trends in the time data and did not conform to my prior
     expectations in some cases (e.g., syrup is stickier than mineral oil, but little was lost over the trials).</p>
   <p>In order to quantify the independent variable&mdash;different substances&mdash;I found reference values online for
     both absolute and kinematic viscosities for the seven substances I used, shown in table 2. Uncertainty is considered
     to be 0 for all of these because they are reference values.</p>
-  <p id="caption">table 2: viscosity values<a class="fn">4</a></p>
+  <p class="caption">table 2: viscosity values<a class="fn" id="ref-4" href="#fn-4">4</a></p>
   <table id="phys2">
     <tr id="bold">
       <th style="vertical-align: bottom;">substance</th>
@@ -276,7 +282,7 @@
   <p>Additionally, in order to calculate the angle at which the liquid is flowing, I measured the heights of four
     points
     on the tube and the distances between them at each data-collection session, as shown in table 3.</p>
-  <p id="caption">table 3: measured dimensions of setup</p>
+  <p class="caption">table 3: measured dimensions of setup</p>
   <table id="phys3">
     <tr>
       <th style="width: 60px;">session</th>
@@ -330,16 +336,17 @@
       <td colspan="2">38.3</th>
     </tr>
   </table>
-  <p id="noindent">I did not record some of this information for the first session, but I will still be able to find
+  <p class="noindent">I did not record some of this information for the first session, but I will still be able to find
     the
     angle of the tube. Additionally, the tube has an inner radius of 4.0 &plusmn; 0.1 cm.</p>
 
   <h2 class="phys">Analysis</h2>
-  <p id="noindent">The equation that models this experiment uses flow rate, or volume per unit time, so our first step
+  <p class="noindent">The equation that models this experiment uses flow rate, or volume per unit time, so our first
+    step
     is to calculate
     flow rate from the volume and time data in table 1. Uncertainty in these values will be calculated in the next
     section.</p>
-  <p id="caption">table 4: flow rate by trial</p>
+  <p class="caption">table 4: flow rate by trial</p>
   <table id="phys4">
     <tr id="bold">
       <th rowspan="2" style="vertical-align: bottom;">substance</th>
@@ -414,13 +421,13 @@
       <td>86.4</td>
     </tr>
   </table>
-  <p id="noindent">Graphing these average flow rates against the viscosity values in table 2 results in the graph in
+  <p class="noindent">Graphing these average flow rates against the viscosity values in table 2 results in the graph in
     figure 2, shown on a log scale so all the points are visible. The length of each error bar in the vertical
     direction
     is the semi-range of the values from which the average was taken.</p>
-  <p id="caption">figure 2: graph of raw data</p>
+  <p class="caption">figure 2: graph of raw data</p>
   <img src="imgs/physics2.png" />
-  <p id="noindent">The equation we expect this to reflect is <math>
+  <p class="noindent">The equation we expect this to reflect is <math>
       <mi>Q</mi>
       <mo>=</mo>
       <mi>g</mi>
@@ -464,9 +471,9 @@
       <mo>/</mo>
       <mn>3</mn>
     </math>. In order to confirm this, we begin by graphing the curve of best fit for the data, shown in figure 3.</p>
-  <p id="caption">figure 3: graph of data with best-fit line</p>
+  <p class="caption">figure 3: graph of data with best-fit line</p>
   <img src="imgs/physics3.png" />
-  <p id="noindent">Though we would ordinarily expect an inverse relationship to have a curved graph, on a logarithmic
+  <p class="noindent">Though we would ordinarily expect an inverse relationship to have a curved graph, on a logarithmic
     graph it is just a line with negative slope. According to the linear regression used to find this line, that
     coefficient, the constant product of the two variables, is approximately 126&thinsp;000
     mm<sup>5</sup>/s<sup>2</sup>. We now want to know what this number means; the first thing to do is calculate the
@@ -478,9 +485,9 @@
     over hypotenuse,&rdquo; or the difference in height between any two points on the tube divided by the length
     between
     them along the tube.</p>
-  <p id="caption">figure 4: angle of elevation in a right triangle</p>
+  <p class="caption">figure 4: angle of elevation in a right triangle</p>
   <img src="imgs/physics4.png" />
-  <p id="noindent">From this we can discern three values for <math>
+  <p class="noindent">From this we can discern three values for <math>
       <mi>sin(&theta;)</mi>
     </math>, for the three data-collection sessions, using the data in table 3. For the first, we use the two ends of
     the tube as our points, getting <math>
@@ -606,7 +613,7 @@
       <mn>0.235</mn>
     </math>
   </p>
-  <p id="noindent">Since we want <math>
+  <p class="noindent">Since we want <math>
       <mi>sin(&theta;)</mi>
     </math> to be a constant, we will have to average these to find a single value; this approach is not perfect, but
     it
@@ -731,7 +738,8 @@
   </p>
 
   <h2 class="phys">Uncertainty and error</h2>
-  <p id="noindent">The tables above have marked uncertainties for each value, but those do not tell the whole story in
+  <p class="noindent">The tables above have marked uncertainties for each value, but those do not tell the whole story
+    in
     some cases.
     The
     uncertainty in each time measurement in table 1 is &plusmn; 0.01 s because I obtained them using a digital
@@ -755,9 +763,10 @@
       <mi>y</mi>
     </math>-axis.)
   </p>
-  <p id="caption">figure 5: minimum and maximum slope of the line of best fit</p>
+  <p class="caption">figure 5: minimum and maximum slope of the line of best fit</p>
   <img src="imgs/physics5.png" />
-  <p id="noindent">The solid green line is the same as in figure 3, and the two dashed blue lines have the minimum and
+  <p class="noindent">The solid green line is the same as in figure 3, and the two dashed blue lines have the minimum
+    and
     maximum slopes according to the error bars shown. From this we conclude that the uncertainty in the slope is the
     greater of 225&thinsp;000 &ndash; 126&thinsp;000 = 99&thinsp;000 and 126&thinsp;000 &ndash; 27&thinsp;200 &approx;
     99&thinsp;000, so we say that the slope of the line is 126&thinsp;000 &plusmn; 99&thinsp;000
@@ -831,7 +840,8 @@
     that
     was quite small relative to the tube (or anything else); around one or two millimeters seems close. For scale,
     this
-    is about the size of a duckweed, the smallest flowering plant.<a class="fn">5</a> I did not measure the height and
+    is about the size of a duckweed, the smallest flowering plant.<a class="fn" id="ref-5" href="#fn-5">5</a> I did not
+    measure the height and
     width of the
     &ldquo;rivers&rdquo; as I was creating them, but the values I calculated, with uncertainty, match my qualitative
     expectations.</p>
@@ -873,7 +883,7 @@
     beginning.)</p>
 
   <h2 class="phys">Conclusion</h2>
-  <p id="noindent">Physics is messy. I did not expect to use so many paper towels in my (futile) attempt to keep
+  <p class="noindent">Physics is messy. I did not expect to use so many paper towels in my (futile) attempt to keep
     vegetable oil and
     breakfast syrup off the lab table. But that does not mean there are not things to be learned from it. Through this
     investigation, I learned what viscosity means in technical contexts and how it applies to liquid flow. I learned
@@ -894,24 +904,25 @@
     an innate desire to understand ourselves.</p>
 
   <h2 class="phys">Notes</h2>
-  <p id="fn-a">a. There was noticeable human error in the fifth trial for water, so it has been discounted. In the
-    interest
-    of time, I only conducted one trial for molasses (1077 s is almost 18 minutes). <a>&UpArrow;</a></p>
+  <p class="noindent" id="fn-star"><a href="#ref-star">*</a> There was noticeable human error in the fifth trial for
+    water, so it has been discounted. In the
+    interest of time, I only conducted one trial for molasses (1077 s is almost 18 minutes).</p>
   <br>
-  <p id="fn-1">1. "Viscosity" in <em>Encyclop&aelig;dia Britannica</em>, <a
-      href="https://britannica.com/science/viscosity">britannica.com/science/viscosity</a> &UpArrow;<a>a</a><a>b</a></p>
-  <p id="fn-2">2. "Viscosity" in the <em>Physics Hypertextbook</em>, <a
-      href="https://physics.info/viscosity">physics.info/viscosity</a> <a>&UpArrow;</a></p>
-  <p id="fn-3">3. Lecture by Michael Fowler at UVA on "Calculating Viscous Flow: Velocity Profiles in Rivers and Pipes,"
+  <p class="noindent" id="fn-1">1<a class="fn" href="#ref-1a">a</a>&thinsp;<a class="fn" href="#ref-1b">b</a>
+    "Viscosity" in <em>Encyclop&aelig;dia Britannica</em>, <a
+      href="https://britannica.com/science/viscosity">britannica.com/science/viscosity</a></p>
+  <p class="noindent" id="fn-2"><a href="#ref-2">2</a> "Viscosity" in the <em>Physics Hypertextbook</em>, <a
+      href="https://physics.info/viscosity">physics.info/viscosity</a></p>
+  <p class="noindent" id="fn-3">3<a href="#ref-3a">a</a>&thinsp;<a href="#ref-3b">b</a> Lecture by Michael Fowler at UVA
+    on "Calculating Viscous Flow: Velocity Profiles in Rivers and Pipes,"
     <a
       href="https://galileo.phys.virginia.edu/classes/152.mf1i.spring02/RiverViscosity.htm">galileo.phys.virginia.edu/classes/152.mf1i.spring02/RiverViscosity.htm</a>
-    &UpArrow;<a>a</a><a>b</a></p>
-  <p id="fn-5">5. From Scale of the Universe 2, <a href="https://htwins.net/scale2">htwins.net/scale2</a>
-    <a>&UpArrow;</a>
   </p>
-  <p id="fn-4">4. Sources for viscosity reference values (assuming a temperature of 20&deg;C, where water is taken to be
-    1.0 by default): <a>&UpArrow;</a></p>
-  <ul>
+  <p class="noindent" id="fn-5"><a href="#ref-5">5</a> From Scale of the Universe 2, <a
+      href="https://htwins.net/scale2">htwins.net/scale2</a></p>
+  <p class="noindent" id="fn-4"><a href="#ref-4">4</a> Sources for viscosity reference values (assuming a temperature of
+    20&deg;C, where water is taken to be 1.0 by default):</p>
+  <ul id="physnotes">
     <li><a
         href="https://www.engineeringtoolbox.com/ethanol-dynamic-kinematic-viscosity-temperature-pressure-d_2071.html">ethanol
         absolute</a></li>
