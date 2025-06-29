@@ -58,8 +58,15 @@ sup {
 
 img {
   display: block;
-  height: 400px;
   margin: 0.25em auto 0.75em;
+
+  &.square {
+    width: 360px;
+  }
+
+  &.long {
+    width: 540px;
+  }
 }
 
 table {
