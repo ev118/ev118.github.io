@@ -55,9 +55,9 @@ img {
 
 table {
   display: block;
-  border: 1px solid #101014;
-  border-collapse: collapse;
+  text-align: center;
   border-spacing: 8px;
+  margin: 0 auto;
 }
 
 tr {
@@ -68,8 +68,9 @@ td,
 th {
   font-family: "Lato", sans-serif;
   text-align: center;
-  vertical-align: bottom;
   font-weight: normal;
+  border: 1px solid #101014;
+  border-collapse: collapse;
 }
 
 p#caption {
@@ -93,18 +94,22 @@ tr#bold>th {
   font-weight: bold;
 }
 
-#phys1>th,
-#phys2>th,
-#phys4>th {
+#phys1>tr>th,
+#phys2>tr>th,
+#phys4>tr>th {
   text-align: left;
-  width: 144px;
+  width: 120px;
 }
 
-#phys1>td,
-#phys2>td {
+#phys1>tr>td {
   width: 60px;
 }
 
-#phys3>th {
+#phys2>tr>td {
+  width: 108px;
+}
+
+#phys3>tr>th {
   font-weight: bold;
+  vertical-align: bottom;
 }
