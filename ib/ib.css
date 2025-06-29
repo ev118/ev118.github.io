@@ -1,6 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=Cambria);
 @import url(https://fonts.googleapis.com/css?family=Lato);
-@import url(https://fonts.googleapis.com/css?family=Average);
 
 body {
   background-color: white;
@@ -57,6 +56,7 @@ table {
   display: block;
   text-align: center;
   border-spacing: 8px;
+  border-collapse: collapse;
   margin: 0 auto;
 }
 
@@ -70,7 +70,6 @@ th {
   text-align: center;
   font-weight: normal;
   border: 1px solid #101014;
-  border-collapse: collapse;
 }
 
 p#caption {
@@ -89,27 +88,42 @@ p#blockmath {
   margin: 0.25em auto;
 }
 
-tr#bold>td,
-tr#bold>th {
-  font-weight: bold;
+tr#bold {
+
+  &>th,
+  &>td {
+    font-weight: bold;
+  }
 }
 
-#phys1>tr>th,
-#phys2>tr>th,
-#phys4>tr>th {
-  text-align: left;
-  width: 120px;
+#phys1>tbody>tr {
+  &>th {
+    text-align: left;
+    width: 120px;
+  }
+
+  &>td {
+    width: 60px;
+  }
 }
 
-#phys1>tr>td {
-  width: 60px;
+#phys2>tbody>tr {
+  &>th {
+    text-align: left;
+    width: 120px;
+  }
+
+  &>td {
+    width: 108px;
+  }
 }
 
-#phys2>tr>td {
-  width: 108px;
-}
-
-#phys3>tr>th {
+#phys3>tbody>tr>th {
   font-weight: bold;
   vertical-align: bottom;
+}
+
+#phys4>tbody>tr>th {
+  text-align: left;
+  width: 120px;
 }
