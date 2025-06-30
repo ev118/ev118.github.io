@@ -52,7 +52,8 @@ a {
   color: #4098e0;
 }
 
-sup {
+sup,
+sub {
   font-size: 0.6em;
 }
 
