@@ -14,30 +14,50 @@
     Every aqueous solution of an acid or base is in equilibrium: units of acid dissociate into the conjugate base and
     hydrogen ions, while units of base join with hydrogen ions in the water to form the conjugate acid and hydroxide
     ions. The equilibrium constants for these reactions are called the acid and base dissociation constants, <math>
-      <mi>K</mi>
       <msub>
+        <mi>K</mi>
         <mi>a</mi>
       </msub>
       <mo>=</mo>
       <mfrac>
         <mrow>
-          <mi>[H<msup>+</msup>]</mi>
-          <mi>[A<msup>&ndash;</msup>]</mi>
+          <mi>[</mi>
+          <msup>
+            <mi mathvariant="normal">H</mi>
+            <mo>+</mo>
+          </msup>
+          <mi>]</mi>
+          <mi>[</mi>
+          <msup>
+            <mi mathvariant="normal">A</mi>
+            <mo>&ndash;</mo>
+          </msup>
+          <mi>]</mi>
         </mrow>
         <mrow>
           <mi>[HA]</mi>
         </mrow>
       </mfrac>
     </math> and <math>
-      <mi>K</mi>
       <msub>
+        <mi>K</mi>
         <mi>b</mi>
       </msub>
       <mo>=</mo>
       <mfrac>
         <mrow>
-          <mi>[BH<msup>+</msup>]</mi>
-          <mi>[OH<msup>&ndash;</msup>]</mi>
+          <mi>[</mi>
+          <msup>
+            <mi>BH</mi>
+            <mo>+</mo>
+          </msup>
+          <mi>]</mi>
+          <mi>[</mi>
+          <msup>
+            <mi>OH</mi>
+            <mo>&ndash;</mo>
+          </msup>
+          <mi>]</mi>
         </mrow>
         <mrow>
           <mi>[B]</mi>
@@ -45,35 +65,30 @@
       </mfrac>
     </math>.<a class="fn" id="ref-1a" href="#fn-1">[1]</a> Water does this on its own, acting as both an acid and a base
     simultaneously, and the equilibrium constant is known as the ion product of water <math>
-      <mi>K</mi>
       <msub>
+        <mi>K</mi>
         <mi>w</mi>
       </msub>
       <mo>=</mo>
-      <mi>[H<msup>+</msup>]</mi>
-      <mi>[OH<msup>&ndash;</msup>]</mi>
-    </math>. For pure water at 25&deg;C, each of these factors is about <math>
-      <mn>1</mn>
-      <mo>&times;</mo>
-      <mn>10</mn>
+      <mi>[</mi>
       <msup>
-        <mo>&ndash;</mo>
-        <mn>7</mn>
+        <mi mathvariant="normal">H</mi>
+        <mo>+</mo>
       </msup>
-    </math>, so <math>
-      <mi>K</mi>
+      <mi>]</mi>
+      <mi>[</mi>
+      <msup>
+        <mi>OH</mi>
+        <mo>&ndash;</mo>
+      </msup>
+      <mi>]</mi>
+    </math>. For pure water at 25&deg;C, each of these factors is about 1 &times; 10<sup>&ndash;7</sup>, so <math>
       <msub>
+        <mi>K</mi>
         <mi>w</mi>
       </msub>
       <mo>=</mo>
-      <mn>1</mn>
-      <mo>&times;</mo>
-      <mn>10</mn>
-      <msup>
-        <mo>&ndash;</mo>
-        <mn>14</mn>
-      </msup>
-    </math>.<a class="fn" id="ref-2a" href="#fn-2">[2]</a>
+    </math> 1 &times; 10<sup>&ndash;14</sup>.<a class="fn" id="ref-2a" href="#fn-2">[2]</a>
   </p>
   <p>
     A strong acid dissociates completely or very nearly completely, producing a lot of H&#8314; ions, while a weak acid
@@ -81,45 +96,50 @@
     base creates many OH&#8315; ions while a weak base creates relatively few. The pH scale arranges all this in a
     single spectrum, with the weak ends converging to neutrality. It is defined as <math>
       <mo>&ndash;</mo>
-      <mi>log</mi>
       <msub>
+        <mi>log</mi>
         <mn>10</mn>
       </msub>
-      <mi>[H<msup>+</msup>]</mi>
+      <mi>[</mi>
+      <msup>
+        <mi mathvariant="normal">H</mi>
+        <mo>+</mo>
+      </msup>
+      <mi>]</mi>
     </math>, so pure water, which is neutral, has a pH of 7, while lower numbers are stronger acids and higher numbers
     are stronger bases.<a class="fn" id="ref-2b" href="#fn-2">[2]</a> Similar systems were derived from this for <math>
       <mi mathvariant="normal">p</mi>
-      <mi>K</mi>
       <msub>
+        <mi>K</mi>
         <mi>a</mi>
       </msub>
       <mo>=</mo>
       <mo>&ndash;</mo>
-      <mi>log</mi>
       <msub>
+        <mi>log</mi>
         <mn>10</mn>
       </msub>
       <mi>(</mi>
-      <mi>K</mi>
       <msub>
+        <mi>K</mi>
         <mi>a</mi>
       </msub>
       <mi>)</mi>
     </math> and <math>
       <mi mathvariant="normal">p</mi>
-      <mi>K</mi>
       <msub>
+        <mi>K</mi>
         <mi>b</mi>
       </msub>
       <mo>=</mo>
       <mo>&ndash;</mo>
-      <mi>log</mi>
       <msub>
+        <mi>log</mi>
         <mn>10</mn>
       </msub>
       <mi>(</mi>
-      <mi>K</mi>
       <msub>
+        <mi>K</mi>
         <mi>b</mi>
       </msub>
       <mi>)</mi>
@@ -134,20 +154,519 @@
       conductivity, and how does this differ among monoprotic and diprotic acid and base solutions?</strong>
   </p>
   <p>
-    In theory, due to the relationship of concentrations given by the equations for <math>
-      <mi>K</mi>
-      <msub>
-        <mi>a</mi>
-      </msub>
-    </math> and <math>
-      <mi>K</mi>
-      <msub>
-        <mi>b</mi>
-      </msub>
-    </math>, it should be possible to precisely determine the concentration of a solution that will produce a given pH.
-    I used literature data and quadratic regression to find the values in Table 1. The top part of the
-    Na<sub>2</sub>CO<sub>3</sub> column is missing because the data I used implied that a sodium carbonate solution
+    In theory, due to the relationship of concentrations given by the equations for <em>K<sub>a</sub></em> and
+    <em>K<sub>b</sub></em>, it should be possible to precisely determine the concentration of a solution that will
+    produce a given pH. I used literature data and quadratic regression to find the values in table 1. The top part of
+    the Na<sub>2</sub>CO<sub>3</sub> column is missing because the data I used implied that a sodium carbonate solution
     cannot have a pH above about 11.5.
+  </p>
+  <p class="caption">table 1: pH to concentration conversions (in mol/L)</p>
+  <table id="chem1">
+    <colgroup>
+      <col span="2">
+      <col span="1" style="border-right-width: 2px;">
+    </colgroup>
+    <tr>
+      <th style="width: 60px;">pH</th>
+      <th style="width: 80px;">HCl</th>
+      <th style="width: 80px;">H<sub>2</sub>SO<sub>4</sub></th>
+      <th style="width: 60px;">pH</th>
+      <th style="width: 80px;">NaOH</th>
+      <th style="width: 80px;">Na<sub>2</sub>CO<sub>3</sub></th>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>1.21 &times; 10<sup>&ndash;1</sup></td>
+      <td>1.03 &times; 10<sup>&ndash;1</sup></td>
+      <td>13</td>
+      <td>1.36 &times; 10<sup>&ndash;1</sup></td>
+      <td>--</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>1.10 &times; 10<sup>&ndash;2</sup></td>
+      <td>7.09 &times; 10<sup>&ndash;3</sup></td>
+      <td>12</td>
+      <td>1.13 &times; 10<sup>&ndash;2</sup></td>
+      <td>--</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>1.02 &times; 10<sup>&ndash;3</sup></td>
+      <td>5.25 &times; 10<sup>&ndash;4</sup></td>
+      <td>11</td>
+      <td>1.05 &times; 10<sup>&ndash;3</sup></td>
+      <td>1.21 &times; 10<sup>&ndash;2</sup></td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>9.77 &times; 10<sup>&ndash;5</sup></td>
+      <td>4.14 &times; 10<sup>&ndash;5</sup></td>
+      <td>10</td>
+      <td>1.07 &times; 10<sup>&ndash;4</sup></td>
+      <td>1.36 &times; 10<sup>&ndash;4</sup></td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>9.55 &times; 10<sup>&ndash;6</sup></td>
+      <td>3.47 &times; 10<sup>&ndash;6</sup></td>
+      <td>9</td>
+      <td>1.19 &times; 10<sup>&ndash;5</sup></td>
+      <td>6.88 &times; 10<sup>&ndash;6</sup></td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>9.55 &times; 10<sup>&ndash;7</sup></td>
+      <td>3.07 &times; 10<sup>&ndash;7</sup></td>
+      <td>8</td>
+      <td>1.42 &times; 10<sup>&ndash;6</sup></td>
+      <td>6.24 &times; 10<sup>&ndash;7</sup></td>
+    </tr>
+  </table>
+
+  <h2>Variables</h2>
+  <p class="noindent">
+    The independent variable is pH, as defined in table 1, with a monoprotic and diprotic acid and base each being
+    considered individually. The dependent variable is conductivity, as measured by a conductivity probe in &mu;S/cm.
+    Factors kept constant include the temperature and pressure of the system, the identity of the substance representing
+    each class, and the point at which conductivity is measured.
+  </p>
+
+  <h2>Procedure</h2>
+  <p class="noindent">
+    <strong>Materials:</strong> <br> distilled water <br> HCl<sub>(aq)</sub> solution, 1.0 M <br> NaOH<sub>(s)</sub>
+    crystals <br> H<sub>2</sub>SO<sub>4(aq)</sub> solution, 1.0 M <br> Na<sub>2</sub>CO<sub>3(s)</sub> powder <br>
+    graduated cylinder, 100 mL (uncertainty &plusmn; 0.5 mL) <br> graduated pipette, 10 mL (uncertainty &plusmn; 0.05
+    mL) <br> digital mass balance (uncertainty &plusmn; 0.01 g) <br> conductivity probe (set to 3sf precision) <br> 8
+    beakers, 150 mL (or similar size) <br> metal scoop <br> foil dish <br> glass stir rod
+  </p>
+  <ol>
+    <li>
+      Safety: this experiment involves strong caustics, which can be very dangerous if contacted directly. Wear
+      appropriate protective gear at all times and be careful with caustic substances.
+    </li>
+    <li>
+      Prepare eight 150 mL beakers and label two for each of hydrochloric acid, sodium hydroxide, sulfuric acid, and
+      sodium carbonate.
+    </li>
+    <li>
+      Measure 1.00 g NaOH and 2.65 g Na<sub>2</sub>CO<sub>3</sub> in foil dishes using the digital balance. Dissolve
+      each of these in 25.0 mL of distilled water, in the respective beakers, using a stir rod, to create 1.00 M
+      solutions.
+    </li>
+    <li>
+      Add some distilled water to a graduated cylinder and, using a clean conductivity probe, identify the conductivity
+      of the water. Record this as the value for pH 7 for all four solutions.
+    </li>
+    <li>
+      Use the values in table 1 above and an online calculator to determine the amount of distilled water to add to 5.0
+      mL of 1.0 M HCl to create a pH of 1. Add this amount of water to one of the corresponding beakers using the
+      graduated cylinder, then add the hydrochloric acid with a pipette, stirring as needed. (Make sure to add the water
+      first to avoid potential splattering of acid solution.) Measure the conductivity of the solution and record it
+      under pH 1.
+    </li>
+    <li>
+      Use the table and the same calculator to determine the amount of water to add to 5.0 mL of the pH 1 solution to
+      create a pH of 2. Add this much water to the other HCl beaker, using the corresponding cylinder, then add the
+      diluted hydrochloric acid with a pipette, stirring as needed. Measure the conductivity of the solution and record
+      it under pH 2.
+    </li>
+    <li>
+      Empty the beaker with the more concentrated solution. Repeat step 6 four more times, continuing down the table to
+      pH 6, each time using the now-empty beaker to make a more dilute solution.
+    </li>
+    <li>
+      Repeat steps 5, 6, and 7 with 1.0 M H<sub>2</sub>SO<sub>4</sub> solution in the corresponding beakers. Repeat them
+      again for each of the two basic solutions, in their respective beakers, starting with 5.0 mL of the 1.0 M
+      solutions made in step 3 and going from pH 13 to pH 8. Rinse the pipette and stir rod between different solutions
+      to avoid cross-contamination.
+    </li>
+    <li>
+      Rinse the conductivity probe with distilled water for storage, following manufacturer&rsquo;s instructions. Empty
+      and rinse the beakers, graduated cylinder, and pipette, being careful not to spill or touch the caustics. Return
+      the chemicals to storage.
+    </li>
+  </ol>
+
+  <h2>Analysis</h2>
+  <p class="noindent">Table 2 shows the data collected in the experiment.</p>
+  <p class="caption">table 2: conductivity data (in &mu;S/cm &plusmn; 1%)</p>
+  <table id="chem2">
+    <colgroup>
+      <col span="2">
+      <col span="1" style="border-right-width: 2px;">
+    </colgroup>
+    <tr>
+      <th style="width: 60px;">pH</th>
+      <th style="width: 80px;">HCl</th>
+      <th style="width: 80px;">H<sub>2</sub>SO<sub>4</sub></th>
+      <th style="width: 60px;">pH</th>
+      <th style="width: 80px;">NaOH</th>
+      <th style="width: 80px;">Na<sub>2</sub>CO<sub>3</sub></th>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>2.34 &times; 10<sup>4</sup></td>
+      <td>2.41 &times; 10<sup>4</sup></td>
+      <td>13</td>
+      <td>1.25 &times; 10<sup>4</sup></td>
+      <td>--</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>4.59 &times; 10<sup>3</sup></td>
+      <td>5.31 &times; 10<sup>3</sup></td>
+      <td>12</td>
+      <td>5.09 &times; 10<sup>3</sup></td>
+      <td>--</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>5.32 &times; 10<sup>2</sup></td>
+      <td>5.34 &times; 10<sup>2</sup></td>
+      <td>11</td>
+      <td>7.79 &times; 10<sup>2</sup></td>
+      <td>2.25 &times; 10<sup>3</sup></td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>9.70 &times; 10<sup>1</sup></td>
+      <td>1.17 &times; 10<sup>2</sup></td>
+      <td>10</td>
+      <td>1.47 &times; 10<sup>2</sup></td>
+      <td>5.80 &times; 10<sup>2</sup></td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>1.45 &times; 10<sup>1</sup></td>
+      <td>1.73 &times; 10<sup>1</sup></td>
+      <td>9</td>
+      <td>2.14 &times; 10<sup>1</sup></td>
+      <td>3.75 &times; 10<sup>2</sup></td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>8.88 &times; 10<sup>0</sup></td>
+      <td>6.77 &times; 10<sup>0</sup></td>
+      <td>8</td>
+      <td>1.08 &times; 10<sup>1</sup></td>
+      <td>1.49 &times; 10<sup>1</sup></td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>5.55 &times; 10<sup>0</sup></td>
+      <td>5.55 &times; 10<sup>0</sup></td>
+      <td>7</td>
+      <td>5.55 &times; 10<sup>0</sup></td>
+      <td>5.55 &times; 10<sup>0</sup></td>
+    </tr>
+  </table>
+  <p class="noindent">
+    Because the pH of the solutions was determined by mathematical calculation, the uncertainty is different for each
+    value and solution. Table 3 shows the uncertainty in the pH for each of the twenty-two trials.
+  </p>
+  <p class="caption">table 3: pH uncertainties</p>
+  <table id="chem3">
+    <colgroup>
+      <col span="2">
+      <col span="1" style="border-right-width: 2px;">
+    </colgroup>
+    <tr>
+      <th style="width: 60px;">pH</th>
+      <th style="width: 80px;">HCl</th>
+      <th style="width: 80px;">H<sub>2</sub>SO<sub>4</sub></th>
+      <th style="width: 60px;">pH</th>
+      <th style="width: 80px;">NaOH</th>
+      <th style="width: 80px;">Na<sub>2</sub>CO<sub>3</sub></th>
+    </tr>
+    <tr>
+      <td>1.0</td>
+      <td>&plusmn;0.018</td>
+      <td>&plusmn;0.017</td>
+      <td>13.0</td>
+      <td>&plusmn;0.016</td>
+      <td>--</td>
+    </tr>
+    <tr>
+      <td>2.0</td>
+      <td>&plusmn;0.071</td>
+      <td>&plusmn;0.069</td>
+      <td>12.0</td>
+      <td>&plusmn;0.039</td>
+      <td>--</td>
+    </tr>
+    <tr>
+      <td>3.0</td>
+      <td>&plusmn;0.16</td>
+      <td>&plusmn;0.16</td>
+      <td>11.0</td>
+      <td>&plusmn;0.069</td>
+      <td>&plusmn;0.014</td>
+    </tr>
+    <tr>
+      <td>4.0</td>
+      <td>&plusmn;0.29</td>
+      <td>&plusmn;0.30</td>
+      <td>10.0</td>
+      <td>&plusmn;0.11</td>
+      <td>&plusmn;0.055</td>
+    </tr>
+    <tr>
+      <td>5.0</td>
+      <td>&plusmn;0.47</td>
+      <td>&plusmn;0.49</td>
+      <td>9.0</td>
+      <td>&plusmn;0.16</td>
+      <td>&plusmn;0.12</td>
+    </tr>
+    <tr>
+      <td>6.0</td>
+      <td>&plusmn;0.69</td>
+      <td>&plusmn;0.74</td>
+      <td>8.0</td>
+      <td>&plusmn;0.25</td>
+      <td>&plusmn;0.22</td>
+    </tr>
+  </table>
+  <p class="noindent">
+    These values are found by rather complicated means. For example, the pH 1 solution of H<sub>2</sub>SO<sub>4</sub> is
+    created by adding 5.0 mL of 1.0 M H<sub>2</sub>SO<sub>4</sub> to about 44 mL water. The pipette is precise to 0.1
+    mL, so the uncertainty in the 5 mL measurement is &plusmn; 0.05 mL or &plusmn; 1%; the graduated cylinder is precise
+    to 1 mL, so the uncertainty in the 44 mL measurement is &plusmn; 0.5 mL or about &plusmn; 1.1%. The formula to
+    calculate the new concentration involves only multiplication and division (and also includes the concentration of
+    the H<sub>2</sub>SO<sub>4</sub> solution, which is assumed to have no uncertainty), so we can add the percent
+    uncertainties to conclude that the concentration of the new solution has an uncertainty of &plusmn; 2.1%. The
+    &plusmn; 0.017 in table 3 is then created through a quadratic equation involving logarithms&mdash;the formula that
+    relates concentration to pH. The other values, carrying on down the column, arise the same way, but the
+    concentration of the previous solution is now relevant, so the uncertainty compounds (for simplicity, I have assumed
+    that the addition each time is 2%, though in fact it fluctuates slightly). The same process applies to the other
+    three columns, leading to the table above.
+  </p>
+  <p>
+    Figure 1 shows the data in graphical form&mdash;orange for HCl, green for H<sub>2</sub>SO<sub>4</sub>, purple for
+    NaOH, and black for Na<sub>2</sub>CO<sub>3</sub>. Conductivity is projected logarithmically in order to display the
+    data logically, but pH already accounts for its exponential nature. Note that the point at (7, 5.55) is shared by
+    all four series. Figure 2 shows the best-fit curves for these data sets as determined by Desmos&rsquo;s logarithmic
+    regression; on a linear-logarithmic plot, the exponential functions appear to have linear graphs.
+  </p>
+  <p class="caption">figure 1: conductivity vs. pH for four solutions</p>
+  <img class="square" src="imgs/chem1.png" />
+  <p class="caption">figure 2: graph of data with best-fit lines</p>
+  <img class="square" src="imgs/chem2.png" />
+  <p>
+    Each of these curves is described by an equation of the form <math>
+      <mi>&sigma;</mi>
+      <mo>=</mo>
+      <mi>a</mi>
+      <msup>
+        <mi>b</mi>
+        <mi>h</mi>
+      </msup>
+    </math>, where <em>&sigma;</em> is conductivity in &mu;S/cm, <em>h</em> is pH, and <em>a</em> and <em>b</em> are
+    constants. Though this is possible for all four substances, in order to compare the equations to each other, it is
+    helpful to modify those for the bases by replacing <em>h</em> with <math>
+      <mi>(</mi>
+      <mn>14</mn>
+      <mo>&ndash;</mo>
+      <mi>h</mi>
+      <mi>)</mi>
+    </math>. The results of this are shown in table 4.
+  </p>
+  <p class="caption">table 4: regression equations for best-fit curves</p>
+  <table id="chem4">
+    <colgroup>
+      <col span="1" style="text-align: right; border-right: none;">
+      <col span="1" style="text-align: left;">
+      <col span="1" style="text-align: right; border-right: none;">
+      <col span="1" style="text-align: left;">
+    </colgroup>
+    <tr>
+      <td>HCl</td>
+      <td><em>&sigma;</em> = 58&thinsp;700 &times; 0.231<sup><em>h</em></sup></td>
+      <td>NaOH</td>
+      <td><em>&sigma;</em> = 50&thinsp;700 &times; 0.248<sup>(14&ndash;<em>h</em>)</sup></td>
+    </tr>
+    <tr>
+      <td>H<sub>2</sub>SO<sub>4</sub></td>
+      <td><em>&sigma;</em> = 69&thinsp;800 &times; 0.224<sup><em>h</em></sup></td>
+      <td>Na<sub>2</sub>CO<sub>3</sub></td>
+      <td><em>&sigma;</em> = 211&thinsp;000 &times; 0.209<sup>(14&ndash;<em>h</em>)</sup></td>
+    </tr>
+  </table>
+  <p class="noindent">
+    The question arises: what do these constants mean? Based on the nature of an exponential function, <em>a</em> is the
+    value of <em>&sigma;</em> at the 0 point, which is 0 for the acids but 14 for the bases, and so must be in &mu;S/cm;
+    <em>b</em> is the “slope,” the ratio by which <em>&sigma;</em> changes for every step h takes toward neutral 7, and
+    is dimensionless. A min-max gradient analysis finds the uncertainties in this slope by measuring how far it could
+    change while staying within the uncertainty boxes, producing the values in table 5.
+  </p>
+  <p class="caption">table 5: uncertainties for regression values</p>
+  <table id="chem5">
+    <colgroup>
+      <col span="1" style="text-align: right; border-right: none;">
+      <col span="1" style="text-align: left;">
+      <col span="1" style="text-align: right; border-right: none;">
+      <col span="1" style="text-align: left;">
+    </colgroup>
+    <tr>
+      <td>HCl</td>
+      <td><em>b</em> = 0.23 &plusmn; 0.04</td>
+      <td>NaOH</td>
+      <td><em>b</em> = 0.25 &plusmn; 0.01</td>
+    </tr>
+    <tr>
+      <td>H<sub>2</sub>SO<sub>4</sub></td>
+      <td><em>b</em> = 0.22 &plusmn; 0.04</td>
+      <td>Na<sub>2</sub>CO<sub>3</sub></td>
+      <td><em>b</em> = 0.21 &plusmn; 0.03</td>
+    </tr>
+  </table>
+  <p class="noindent">
+    In order to compare these numbers to literature results, the equation above must be rearranged from <math>
+      <mi>&sigma;</mi>
+      <mo>=</mo>
+      <mi>a</mi>
+      <msup>
+        <mi>b</mi>
+        <mi>h</mi>
+      </msup>
+    </math> to <math>
+      <mi>&sigma;</mi>
+      <mo>=</mo>
+      <mi>a</mi>
+      <msup>
+        <mi>H</mi>
+        <mi>c</mi>
+      </msup>
+    </math>, where <em>H</em> is the concentration of H&#8314; ions and <math>
+      <mi>c</mi>
+      <mo>=</mo>
+      <mo>&ndash;</mo>
+      <msub>
+        <mi>log</mi>
+        <mn>10</mn>
+      </msub>
+      <mi>(</mi>
+      <mi>b</mi>
+      <mi>)</mi>
+    </math>. For the bases, the (14&ndash;<em>h</em>) in the exponent means that there is an additional coefficient of
+    <em>b</em><sup>14</sup> in this new equation, and <em>c</em> is a positive logarithm. The resulting equations are
+    shown in table 6.
+  </p>
+  <p class="caption">table 6: equations with concentration as base of exponent</p>
+  <table id="chem6">
+    <colgroup>
+      <col span="1" style="text-align: right; border-right: none;">
+      <col span="1" style="text-align: left;">
+      <col span="1" style="text-align: right; border-right: none;">
+      <col span="1" style="text-align: left;">
+    </colgroup>
+    <tr>
+      <td>HCl</td>
+      <td><em>&sigma;</em> = 58&thinsp;700 &times; <em>H</em><sup>(0.64 &plusmn; 0.08)</sup></td>
+      <td>NaOH</td>
+      <td><em>&sigma;</em> = 50&thinsp;700 &times; <em>H</em><sup>(&ndash;0.60 &plusmn; 0.02)</sup>
+        &times; (0.25 &plusmn; 0.01)<sup>14</sup></td>
+    </tr>
+    <tr>
+      <td>H<sub>2</sub>SO<sub>4</sub></td>
+      <td><em>&sigma;</em> = 69&thinsp;800 &times; <em>H</em><sup>(0.66 &plusmn; 0.09)</sup></td>
+      <td>Na<sub>2</sub>CO<sub>3</sub></td>
+      <td><em>&sigma;</em> = 211&thinsp;000 &times; <em>H</em><sup>(&ndash;0.68 &plusmn; 0.07)</sup>
+        &times; (0.21 &plusmn; 0.03)<sup>14</sup></td>
+    </tr>
+  </table>
+  <p class="noindent">
+    There is now a number to compare to external sources: according to one source, the conductivity of a solution is
+    proportional to the square root of the concentration of ions, which would make the exponent 0.5. This means that the
+    percent error in the experiment is between 20% and 36% for the different substances. Many sources, however, simply
+    indicate that the exponent should be positive for acids and negative for bases, which is what the experiment found.
+  </p>
+
+  <h2>Evaluation</h2>
+  <p class="noindent">
+    There is a straightforward answer to the research question: less neutral pH&mdash;further from 7&mdash;corresponds
+    to greater conductivity, on an exponential scale. However, this does not account for any differences between acids
+    and bases or between different sorts of these. The exponents on [H&#8314;] in table 6 imply that some species have a
+    stronger correlation between pH and conductivity than others, with sodium hydroxide having the least and sodium
+    carbonate having the most, but the uncertainty in these values means that no significant conclusions can be drawn in
+    any direction.
+  </p>
+  <p>
+    In theory, though, a distinction should exist: <em>ChemPRIME</em> provides that Na<sub>2</sub>CO<sub>3</sub> should
+    be slightly more conductive than NaOH, and HCl much more conductive than either base. (It does not give a value for
+    H<sub>2</sub>SO<sub>4</sub>, but educated extrapolation would place it comparable to NaOH.) Therefore, there must
+    have been something in the experiment that caused all the substances to appear indistinguishably similar. One aspect
+    of this is random error, arising from limited precision with all measuring tools, such as the graduated cylinder and
+    the conductivity probe; this shows up as uncertainty in data, which gets carried forward to all calculated values.
+    The most effective way to reduce this would have been to run more trials and do steps 4, 5, and 6 of the procedure
+    two or three times instead of just once. Then, data would be collected as average values, which will likely be more
+    accurate and have more predictable uncertainty (rather than the complicated calculations for pH that I had to do).
+    Random error could also be reduced with more precise equipment for certain measurements&mdash;for example, measuring
+    quantities of distilled water to within 0.1 mL, instead of to 1 mL, as the graduated cylinder allows, and then just
+    guessing at more precise amounts&mdash;although this could be limited by the precision of other equipment, such as
+    the conductivity probe, of which my lab only has one kind.
+  </p>
+  <p>
+    Another possible source of the discrepancy is systematic error&mdash;forces that cause the results to be skewed in a
+    particular direction overall. It would seem that this is present, given that the four percent errors are all in the
+    same direction. One of these, for example, could be that, because I did not rinse the conductivity probe after every
+    reading, it may have been contaminated with solution more concentrated than the one I was trying to measure at any
+    given point. This would mean that the majority of my data points are slightly higher than they should have been, and
+    the final exponents are also elevated. Systematic error could also have been induced by the entry of substances
+    caked onto the beakers or in the tap water I used to rinse them out into the solutions I was measuring. This would
+    almost certainly have introduced more ions into the solutions, meaning higher measured conductivity and thus higher
+    values for the exponents in table 6. If both of these factors were corrected for, it might put those values within
+    the range of uncertainty for the literature value. I could also have reduced these effects, potentially, by
+    recognizing them before or during the experiment and acting accordingly&mdash;in these examples, by rinsing the
+    conductivity probe between all trials, cleaning out the beakers carefully before starting, and using distilled water
+    to rinse the beakers instead of tap water.
+  </p>
+  <p>
+    Another major weakness of this investigation arises from the way I used pH. The values in table 1 were calculated
+    based on only three sample points for each solution, which inevitably had some flaws: it is, in fact, possible to
+    obtain a solution of sodium carbonate above pH 12, but the &ldquo;literature values&rdquo; implied the opposite. The
+    complicated relationship between concentration of an acid or base and the pH of the solution meant that I struggled
+    to determine it algebraically, not relying on extrapolation from a small sample size, but this led to my definition
+    of pH being a measurement that is not exactly the actual pH. A simple way to improve this experiment might have been
+    to utilize the pH probes that my lab has, which would eliminate these issues with pH values. I initially thought it
+    would be easier to run the experiment if I could have a number to aim for without guessing-and-checking in the
+    moment, but I do not think it made for a better investigation, though I cannot be sure exactly how much this
+    impacted my results. Attempting to test four different substances in one experiment rather than just one may have
+    also had a detrimental effect on this investigation, but I believe its largest impact was on time and not quality.
+  </p>
+  <p>
+    For all the above shortcomings in this experiment, it appears to have been mostly successful on the whole. Despite
+    some surprising data and quite large uncertainties for some values, the final numbers came quite close to their
+    expected values, especially given the range of information that I was able to find as &ldquo;literature
+    values.&rdquo; (I also do not believe that percent error does justice for exponents as opposed to dimensional
+    quantities.) This investigation could be extended with similar research into other acids and bases and where they
+    fit into the puzzle to attempt to more fully answer the initial question, as well as triprotic acids and bases in
+    order to extend the pattern that is discovered. The effect of temperature on both pH and conductivity could also be
+    explored to explain yet more aspects of this paradigm.
+  </p>
+
+  <h2>Conclusion</h2>
+  <p class="noindent">
+    Chemistry is a complex discipline. In seeking to explain all matter at a fundamental level, it constructs many
+    principles for the workings of its systems, which have substantial overlap as they can describe the same systems in
+    different ways. The pH scale is one way of thinking about the strength of a caustic solution, simplifying
+    exponential growth to a linear scale that we can more easily comprehend. Considering the equilibrium reaction(s)
+    occurring in such a solution provides another perspective on it, rooted more in the variety of species involved than
+    the significance of one specifically. Conductivity is a property that can also describe such a system, approaching
+    it from a viewpoint more linked to physics than the others are. With all of these ideas together, I can form a
+    clearer picture of the true nature of the system and analyze it as I have in this paper.
+  </p>
+  <p>
+    Indeed, it is this multiplicity of paradigms that makes chemistry useful, and also that makes it difficult.
+    Chemistry classes often divide the field into separate buckets&mdash;stoichiometry, redox, acids/bases, kinetics,
+    and so on&mdash;because it is easier for students to learn one thing at a time, but inevitably parts of these show
+    up in others in order to paint a reasonably complete picture of chemistry as a whole. Describing the discipline only
+    by thinking about these divisions misses the nuances; its true nature can only be captured by always keeping the big
+    picture in mind. This applies beyond chemistry as any pursuit can be viewed from many angles and at many levels.
+    Missing the forest for the trees always means that something is going unnoticed, but it is easy to forget&mdash;or
+    not to know&mdash;how big the forest really is. Only by taking a step back are we able to see all the good things in
+    life.
   </p>
 </body>
 
