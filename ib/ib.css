@@ -48,6 +48,12 @@ li {
   text-indent: 0;
 }
 
+ol>li::before {
+  content: "";
+  width: 8px;
+  display: inline-block;
+}
+
 a {
   color: #4098e0;
 }
@@ -167,4 +173,12 @@ tr#bold {
 #phys4>tbody>tr>th {
   text-align: left;
   width: 120px;
+}
+
+#chem1,
+#chem2,
+#chem3 {
+  &>tbody>tr>th {
+    font-weight: bold;
+  }
 }
