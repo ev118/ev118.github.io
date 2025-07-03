@@ -48,12 +48,6 @@ li {
   text-indent: 0;
 }
 
-ol>li::before {
-  content: "";
-  width: 8px;
-  display: inline-block;
-}
-
 a {
   color: #4098e0;
 }
@@ -135,6 +129,10 @@ ul#physnotes {
   margin: 0.1em;
 }
 
+ol#chemprod {
+  margin: 0;
+}
+
 tr#bold {
 
   &>th,
@@ -180,5 +178,29 @@ tr#bold {
 #chem3 {
   &>tbody>tr>th {
     font-weight: bold;
+
+    &:nth-child(6n-3) {
+      border-right-width: 2px;
+    }
+  }
+
+  &>tbody>tr>td:nth-child(6n-3) {
+    border-right-width: 2px;
+  }
+}
+
+#chem4,
+#chem5,
+#chem6 {
+  &>tbody>tr>td {
+    &:nth-child(odd) {
+      text-align: right;
+      border-right: none;
+    }
+
+    &:nth-child(even) {
+      text-align: left;
+      border-left: none;
+    }
   }
 }
