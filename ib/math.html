@@ -1,0 +1,825 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>IB Math HL IA</title>
+  <link rel="stylesheet" href="ib.css" type="text/css" />
+</head>
+
+<body>
+  <h1>An inquiry into Inquiry</h1>
+  <h3>IB Math Analysis & Approaches HL <br> 22 March 2023</h3>
+
+  <p class="noindent">
+    For the 2022&ndash;23 school year, my high school added a brand-new course, never taught before in any school, that
+    would be required for sophomores. It would be a semester-long course, with the remaining semester being filled by a
+    second semester of Health. They called it Sophomore Inquiry, or 10<sup>th</sup> Grade Inquiry, given that the
+    semester-long complement to Health 1 is called 9<sup>th</sup> Grade Inquiry. Until the beginning of the year, only
+    the two teachers who would be teaching it knew exactly what it entailed.
+  </p>
+  <p>
+    The reaction to this was less than positive, especially by the incoming sophomore class. Most of us had been
+    expecting to enjoy an extra semester of elective space and were disappointed when that was filled by a course that
+    seemed to be the continuation of a not-very-interesting one from the previous year. Nonetheless, we were all
+    gradually astounded by the uselessness of the course that the school&rsquo;s administration had decided we needed to
+    take. It seemed no more than a slightly-more-advanced English class with a specific focus on the &ldquo;inquiry
+    process,&rdquo; with the only two graded assignments being an annotated bibliography, due mid-way through, and a
+    research paper of substantial length, due at the end of the semester.
+  </p>
+  <p>
+    In order to prove this point, I surveyed 40 of the 200 or so students who took the course during the first semester
+    (I had hoped to get more submissions, but the teachers&rsquo; choice of language impeded that), and analyzed the
+    data I received. I didn&rsquo;t know what I would find, and the results surprised me, but they support my claim that
+    the class does not achieve what it attempts to.
+  </p>
+  <p>
+    A note on quantification: the information I received from survey respondents was mostly in the form of text. It
+    asked questions like, &ldquo;In your English class this year, how much have you studied argumentative essay
+    writing?&rdquo; and allowed the respondent to choose from &ldquo;a lot,&rdquo; &ldquo;some,&rdquo; &ldquo;a
+    little,&rdquo; or &ldquo;none.&rdquo; In order to properly utilize this data, I converted those responses to 3, 2,
+    1, and 0, respectively, and substituted in a value of 1.5 (the &lsquo;average&rsquo; point) if no answer was given.
+    Some questions asked to rate something from 1 to 10, in which case I could directly use the response as the data;
+    others asked for comments, which are harder to quantify and have been left out of the data analysis.
+  </p>
+
+  <h2>Success in a single variable</h2>
+  <p class="noindent">
+    Three times, survey respondents were asked to measure their success in a given class—in freshman English (English
+    1-2), in sophomore English (English 3-4), and in Sophomore Inquiry. They were also asked to rate their
+    &ldquo;general ability in English,&rdquo; before answering any other questions to minimize personal bias. All of
+    these were on a scale from 1 to 10.
+  </p>
+  <p>
+    I first plotted each of the success responses against English ability. I expected to find a noticeable, if not
+    terribly significant, correlation. Instead, they seemed utterly random (using freshman English as an example; they
+    all looked similar):
+  </p>
+  <p class="caption">figure 1: respondents&rsquo; success in freshman English vs. general ability in English</p>
+  <img class="square" src="imgs/math1.png" />
+  <p class="noindent">
+    The students clearly hold both their current and former selves in high regard (or, at least, all but one do), but no
+    obvious correlation appears between these two sets of data. The way to check this is to perform a linear regression,
+    also known as least-squares regression.
+  </p>
+  <p>
+    We begin with an assumption. Assume that the line of best fit, which we are trying to find, is defined by <math>
+      <mi>f</mi>
+      <mi>(</mi>
+      <mi>x</mi>
+      <mi>)</mi>
+      <mo>=</mo>
+      <mi>a</mi>
+      <mi>(</mi>
+      <mi>x</mi>
+      <mi>&ndash;</mi>
+      <msub>
+        <mi>x</mi>
+        <mn>0</mn>
+      </msub>
+      <mi>)</mi>
+      <mo>+</mo>
+      <msub>
+        <mi>y</mi>
+        <mn>0</mn>
+      </msub>
+    </math>, where (<math>
+      <msub>
+        <mi>x</mi>
+        <mn>0</mn>
+      </msub>
+    </math>, <math>
+      <msub>
+        <mi>y</mi>
+        <mn>0</mn>
+      </msub>
+    </math>) is the mean point. This works because the mean point of the data set must always lie on the line of best
+    fit. Then for any point in the data set (<math>
+      <msub>
+        <mi>x</mi>
+        <mi>i</mi>
+      </msub>
+    </math>, <math>
+      <msub>
+        <mi>y</mi>
+        <mi>i</mi>
+      </msub>
+    </math>), the error in the line of best fit is the vertical distance between the line and the point, or <math>
+      <mi>f</mi>
+      <mi>(</mi>
+      <msub>
+        <mi>x</mi>
+        <mi>i</mi>
+      </msub>
+      <mi>)</mi>
+      <mo>&ndash;</mo>
+      <msub>
+        <mi>y</mi>
+        <mi>i</mi>
+      </msub>
+      <mo>=</mo>
+      <mi>a</mi>
+      <mi>(</mi>
+      <mi>x</mi>
+      <mi>&ndash;</mi>
+      <msub>
+        <mi>x</mi>
+        <mn>0</mn>
+      </msub>
+      <mi>)</mi>
+      <mo>+</mo>
+      <msub>
+        <mi>y</mi>
+        <mn>0</mn>
+      </msub>
+      <mo>&ndash;</mo>
+      <msub>
+        <mi>y</mi>
+        <mi>i</mi>
+      </msub>
+    </math>. Our goal then is to find the value of <em>a</em> that minimizes not the total error, but the sum of the
+    squares of the errors. I have assumed here that the point lies below the line and <math>
+      <mi>f</mi>
+      <mi>(</mi>
+      <msub>
+        <mi>x</mi>
+        <mi>i</mi>
+      </msub>
+      <mi>)</mi>
+      <mo>&gt;</mo>
+      <msub>
+        <mi>y</mi>
+        <mi>i</mi>
+      </msub>
+    </math>, in order to make the error positive, but this ends up being unimportant because the error is squared. In
+    order to find the minimum total squared error, now, we have to do some calculus.
+  </p>
+  <p>
+    The First Derivative Test is a principle that says that when the derivative of a function is equal to 0, the
+    function must have a local extremum (maximum or minimum) at that point. Therefore, assuming there is a single best
+    best-fit line, we simply differentiate the expression for the sum of the squared errors to find the correct
+    equation. The value we want to minimize is <math>
+      <mi>e</mi>
+      <mi>(</mi>
+      <mi>a</mi>
+      <mi>)</mi>
+      <mo>=</mo>
+      <munder>
+        <mo>&Sigma;</mo>
+        <mi>i</mi>
+      </munder>
+      <mi>(</mi>
+      <mi>a</mi>
+      <mi>(</mi>
+      <msub>
+        <mi>x</mi>
+        <mi>i</mi>
+      </msub>
+      <mi>&ndash;</mi>
+      <msub>
+        <mi>x</mi>
+        <mn>0</mn>
+      </msub>
+      <mi>)</mi>
+      <mo>&ndash;</mo>
+      <msub>
+        <mi>y</mi>
+        <mi>i</mi>
+      </msub>
+      <mo>+</mo>
+      <msub>
+        <mi>y</mi>
+        <mn>0</mn>
+      </msub>
+      <msup>
+        <mi>)</mi>
+        <mn>2</mn>
+      </msup>
+    </math>, whose derivative, using the Chain Rule, is <math>
+      <mi>e</mi>
+      <mo>&prime;</mo>
+      <mi>(</mi>
+      <mi>a</mi>
+      <mi>)</mi>
+      <mo>=</mo>
+      <munder>
+        <mo>&Sigma;</mo>
+        <mi>i</mi>
+      </munder>
+      <mn>2</mn>
+      <mi>(</mi>
+      <msub>
+        <mi>x</mi>
+        <mi>i</mi>
+      </msub>
+      <mi>&ndash;</mi>
+      <msub>
+        <mi>x</mi>
+        <mn>0</mn>
+      </msub>
+      <mi>)</mi>
+      <mi>(</mi>
+      <mi>a</mi>
+      <mi>(</mi>
+      <msub>
+        <mi>x</mi>
+        <mi>i</mi>
+      </msub>
+      <mi>&ndash;</mi>
+      <msub>
+        <mi>x</mi>
+        <mn>0</mn>
+      </msub>
+      <mi>)</mi>
+      <mo>&ndash;</mo>
+      <msub>
+        <mi>y</mi>
+        <mi>i</mi>
+      </msub>
+      <mo>+</mo>
+      <msub>
+        <mi>y</mi>
+        <mn>0</mn>
+      </msub>
+      <mi>)</mi>
+    </math>. We set this equal to 0, then solve for <em>a</em>: <math>
+      <mi>e</mi>
+      <mo>&prime;</mo>
+      <mi>(</mi>
+      <mi>a</mi>
+      <mi>)</mi>
+      <mo>=</mo>
+      <mn>0</mn>
+      <mo>=</mo>
+      <munder>
+        <mo>&Sigma;</mo>
+        <mi>i</mi>
+      </munder>
+      <mn>2</mn>
+      <mi>(</mi>
+      <msub>
+        <mi>x</mi>
+        <mi>i</mi>
+      </msub>
+      <mi>&ndash;</mi>
+      <msub>
+        <mi>x</mi>
+        <mn>0</mn>
+      </msub>
+      <mi>)</mi>
+      <mi>(</mi>
+      <mi>a</mi>
+      <mi>(</mi>
+      <msub>
+        <mi>x</mi>
+        <mi>i</mi>
+      </msub>
+      <mi>&ndash;</mi>
+      <msub>
+        <mi>x</mi>
+        <mn>0</mn>
+      </msub>
+      <mi>)</mi>
+      <mo>&ndash;</mo>
+      <msub>
+        <mi>y</mi>
+        <mi>i</mi>
+      </msub>
+      <mo>+</mo>
+      <msub>
+        <mi>y</mi>
+        <mn>0</mn>
+      </msub>
+      <mi>)</mi>
+      <mo>=</mo>
+    </math> a giant mess. I could solve this by plugging in every value of <math>
+      <msub>
+        <mi>x</mi>
+        <mi>i</mi>
+      </msub>
+    </math> and <math>
+      <msub>
+        <mi>y</mi>
+        <mi>i</mi>
+      </msub>
+    </math>, as well as <math>
+      <msub>
+        <mi>x</mi>
+        <mn>0</mn>
+      </msub>
+    </math> and <math>
+      <msub>
+        <mi>x</mi>
+        <mn>0</mn>
+      </msub>
+    </math>, but that would take way too long. Thankfully, there is a shortcut.
+  </p>
+  <p>
+    Because this problem has been solved many times before, there are known equations to find the line of best fit in
+    this scenario, though they are rather complicated. They also require first revising our function. Instead of
+    expressing it in point-slope form, as <math>
+      <mi>f</mi>
+      <mi>(</mi>
+      <mi>x</mi>
+      <mi>)</mi>
+      <mo>=</mo>
+      <mi>a</mi>
+      <mi>(</mi>
+      <mi>x</mi>
+      <mi>&ndash;</mi>
+      <msub>
+        <mi>x</mi>
+        <mn>0</mn>
+      </msub>
+      <mi>)</mi>
+      <mo>+</mo>
+      <msub>
+        <mi>y</mi>
+        <mn>0</mn>
+      </msub>
+    </math>, we can call it <math>
+      <mi>f</mi>
+      <mi>(</mi>
+      <mi>x</mi>
+      <mi>)</mi>
+      <mo>=</mo>
+      <mi>a</mi>
+      <mi>x</mi>
+      <mo>+</mo>
+      <mi>b</mi>
+    </math> (notice that these are equivalent, where <math>
+      <mi>b</mi>
+      <mo>=</mo>
+      <msub>
+        <mi>y</mi>
+        <mn>0</mn>
+      </msub>
+      <mo>&ndash;</mo>
+      <mi>a</mi>
+      <msub>
+        <mi>x</mi>
+        <mn>0</mn>
+      </msub>
+    </math>). We can then calculate the parameters using the equations <math>
+      <mi>a</mi>
+      <mo>=</mo>
+      <mfrac>
+        <mrow>
+          <mi>n</mi>
+          <mi>&Sigma;</mi>
+          <msub>
+            <mi>x</mi>
+            <mi>i</mi>
+          </msub>
+          <msub>
+            <mi>y</mi>
+            <mi>i</mi>
+          </msub>
+          <mo>&ndash;</mo>
+          <mi>(</mi>
+          <mi>&Sigma;</mi>
+          <msub>
+            <mi>x</mi>
+            <mi>i</mi>
+          </msub>
+          <mi>)</mi>
+          <mi>(</mi>
+          <mi>&Sigma;</mi>
+          <msub>
+            <mi>y</mi>
+            <mi>i</mi>
+          </msub>
+          <mi>)</mi>
+        </mrow>
+        <mrow>
+          <mi>n</mi>
+          <mi>&Sigma;</mi>
+          <msubsup>
+            <mi>x</mi>
+            <mi>i</mi>
+            <mn>2</mn>
+          </msubsup>
+          <mo>&ndash;</mo>
+          <mi>(</mi>
+          <mi>&Sigma;</mi>
+          <msub>
+            <mi>x</mi>
+            <mi>i</mi>
+          </msub>
+          <msup>
+            <mi>)</mi>
+            <mn>2</mn>
+          </msup>
+        </mrow>
+      </mfrac>
+    </math> and <math>
+      <mn>b</mn>
+      <mo>=</mo>
+      <mfrac>
+        <mrow>
+          <mi>&Sigma;</mi>
+          <msub>
+            <mi>y</mi>
+            <mi>i</mi>
+          </msub>
+          <mo>&ndash;</mo>
+          <mi>a</mi>
+          <mi>&Sigma;</mi>
+          <msub>
+            <mi>x</mi>
+            <mi>i</mi>
+          </msub>
+        </mrow>
+        <mrow>
+          <mi>n</mi>
+        </mrow>
+      </mfrac>
+    </math>, where <em>n</em> is the number of data points. For my 41-point data set, <math>
+      <munder>
+        <mi>&Sigma;</mi>
+        <mi>i</mi>
+      </munder>
+      <msub>
+        <mi>x</mi>
+        <mi>i</mi>
+      </msub>
+      <msub>
+        <mi>y</mi>
+        <mi>i</mi>
+      </msub>
+      <mo>=</mo>
+      <mn>2927</mn>
+    </math>, <math>
+      <munder>
+        <mi>&Sigma;</mi>
+        <mi>i</mi>
+      </munder>
+      <msub>
+        <mi>x</mi>
+        <mi>i</mi>
+      </msub>
+      <mo>=</mo>
+      <mn>339</mn>
+    </math>, <math>
+      <munder>
+        <mi>&Sigma;</mi>
+        <mi>i</mi>
+      </munder>
+      <msub>
+        <mi>y</mi>
+        <mi>i</mi>
+      </msub>
+      <mo>=</mo>
+      <mn>352</mn>
+    </math>, <math>
+      <munder>
+        <mi>&Sigma;</mi>
+        <mi>i</mi>
+      </munder>
+      <msubsup>
+        <mi>x</mi>
+        <mi>i</mi>
+        <mn>2</mn>
+      </msubsup>
+      <mo>=</mo>
+      <mn>2891</mn>
+    </math>, and <math>
+      <munder>
+        <mi>&Sigma;</mi>
+        <mi>i</mi>
+      </munder>
+      <mi>(</mi>
+      <msub>
+        <mi>x</mi>
+        <mi>i</mi>
+      </msub>
+      <msup>
+        <mi>)</mi>
+        <mn>2</mn>
+      </msup>
+      <mo>=</mo>
+      <msup>
+        <mn>339</mn>
+        <mn>2</mn>
+      </msup>
+      <mo>=</mo>
+      <mn>114921</mn>
+    </math>. Therefore <math>
+      <mi>a</mi>
+      <mo>=</mo>
+      <mfrac>
+        <mrow>
+          <mn>41</mn>
+          <mo>&centerdot;</mo>
+          <mn>2927</mn>
+          <mo>&ndash;</mo>
+          <mn>339</mn>
+          <mo>&centerdot;</mo>
+          <mn>352</mn>
+        </mrow>
+        <mrow>
+          <mn>41</mn>
+          <mo>&centerdot;</mo>
+          <mn>2891</mn>
+          <mo>&ndash;</mo>
+          <mn>114&thinsp;921</mn>
+        </mrow>
+      </mfrac>
+      <mo>=</mo>
+      <mfrac>
+        <mrow>
+          <mn>120&thinsp;007</mn>
+          <mo>&ndash;</mo>
+          <mn>119&thinsp;328</mn>
+        </mrow>
+        <mrow>
+          <mn>118&thinsp;531</mn>
+          <mo>&ndash;</mo>
+          <mn>114&thinsp;921</mn>
+        </mrow>
+      </mfrac>
+      <mo>=</mo>
+      <mfrac>
+        <mn>679</mn>
+        <mn>3610</mn>
+      </mfrac>
+      <mo>&approx;</mo>
+      <mn mathvariant="bold">0.188</mn>
+    </math> and <math>
+      <mi>b</mi>
+      <mo>=</mo>
+      <mfrac>
+        <mrow>
+          <mn>352</mn>
+          <mo>&ndash;</mo>
+          <mn>0.188</mn>
+          <mo>&centerdot;</mo>
+          <mn>339</mn>
+        </mrow>
+        <mrow>
+          <mn>41</mn>
+        </mrow>
+      </mfrac>
+      <mo>&approx;</mo>
+      <mfrac>
+        <mn>288.238</mn>
+        <mn>41</mn>
+      </mfrac>
+      <mo>&approx;</mo>
+      <mn mathvariant="bold">7.0302</mn>
+    </math>. Our line of best fit can be expressed, therefore, as <math>
+      <mi>y</mi>
+      <mo>=</mo>
+      <mn>0.188</mn>
+      <mi>x</mi>
+      <mo>+</mo>
+      <mn>7.0303</mn>
+    </math>.
+  </p>
+  <p>
+    We can use similar properties to find the correlation coefficient, which is a measure of how closely the line fits
+    the data. This value is given by the nasty-looking equation <math>
+      <mi>r</mi>
+      <mo>=</mo>
+      <mfrac>
+        <mrow>
+          <mi>n</mi>
+          <mi>&Sigma;</mi>
+          <msub>
+            <mi>x</mi>
+            <mi>i</mi>
+          </msub>
+          <msub>
+            <mi>y</mi>
+            <mi>i</mi>
+          </msub>
+          <mo>&ndash;</mo>
+          <mi>(</mi>
+          <mi>&Sigma;</mi>
+          <msub>
+            <mi>x</mi>
+            <mi>i</mi>
+          </msub>
+          <mi>)</mi>
+          <mi>(</mi>
+          <mi>&Sigma;</mi>
+          <msub>
+            <mi>y</mi>
+            <mi>i</mi>
+          </msub>
+          <mi>)</mi>
+        </mrow>
+        <msqrt>
+          <mi>(</mi>
+          <mi>n</mi>
+          <mi>&Sigma;</mi>
+          <msubsup>
+            <mi>x</mi>
+            <mi>i</mi>
+            <mn>2</mn>
+          </msubsup>
+          <mo>&ndash;</mo>
+          <mi>(</mi>
+          <mi>&Sigma;</mi>
+          <msub>
+            <mi>x</mi>
+            <mi>i</mi>
+          </msub>
+          <msup>
+            <mi>)</mi>
+            <mn>2</mn>
+          </msup>
+          <mi>)</mi>
+          <mi>(</mi>
+          <mi>n</mi>
+          <mi>&Sigma;</mi>
+          <msubsup>
+            <mi>y</mi>
+            <mi>i</mi>
+            <mn>2</mn>
+          </msubsup>
+          <mo>&ndash;</mo>
+          <mi>(</mi>
+          <mi>&Sigma;</mi>
+          <msub>
+            <mi>y</mi>
+            <mi>i</mi>
+          </msub>
+          <msup>
+            <mi>)</mi>
+            <mn>2</mn>
+          </msup>
+          <mi>)</mi>
+        </msqrt>
+      </mfrac>
+    </math>. The nice thing about this equation is that we have already calculated most of the relevant values, and the
+    remainder are relatively simple: <math>
+      <munder>
+        <mi>&Sigma;</mi>
+        <mi>i</mi>
+      </munder>
+      <msubsup>
+        <mi>y</mi>
+        <mi>i</mi>
+        <mn>2</mn>
+      </msubsup>
+      <mo>=</mo>
+      <mn>3144</mn>
+    </math> and <math>
+      <munder>
+        <mi>&Sigma;</mi>
+        <mi>i</mi>
+      </munder>
+      <mi>(</mi>
+      <msub>
+        <mi>y</mi>
+        <mi>i</mi>
+      </msub>
+      <msup>
+        <mi>)</mi>
+        <mn>2</mn>
+      </msup>
+      <mo>=</mo>
+      <msup>
+        <mn>352</mn>
+        <mn>2</mn>
+      </msup>
+      <mo>=</mo>
+      <mn>123904</mn>
+    </math>. This gives <math>
+      <mi>r</mi>
+      <mo>=</mo>
+      <mfrac>
+        <mrow>
+          <mn>41</mn>
+          <mo>&centerdot;</mo>
+          <mn>2927</mn>
+          <mo>&ndash;</mo>
+          <mn>339</mn>
+          <mo>&centerdot;</mo>
+          <mn>352</mn>
+        </mrow>
+        <msqrt>
+          <mi>(</mi>
+          <mn>41</mn>
+          <mo>&centerdot;</mo>
+          <mn>2891</mn>
+          <mo>&ndash;</mo>
+          <mn>114&thinsp;921</mn>
+          <mi>)</mi>
+          <mi>(</mi>
+          <mn>41</mn>
+          <mo>&centerdot;</mo>
+          <mn>3144</mn>
+          <mo>&ndash;</mo>
+          <mn>123&thinsp;904</mn>
+          <mi>)</mi>
+        </msqrt>
+      </mfrac>
+      <mo>=</mo>
+      <mfrac>
+        <mn>679</mn>
+        <msqrt>
+          <mi>(</mi>
+          <mn>3610</mn>
+          <mi>)</mi>
+          <mi>(</mi>
+          <mn>5000</mn>
+          <mi>)</mi>
+        </msqrt>
+      </mfrac>
+      <mo>&approx;</mo>
+      <mn mathvariant="bold">0.15892</mn>
+    </math>. It so happens that the more useful quantity is <em>r</em><sup>2</sup>, which better represents the
+    data&rsquo;s spread, giving us <math>
+      <msup>
+        <mi>r</mi>
+        <mn>2</mn>
+      </msup>
+      <mo>=</mo>
+      <msup>
+        <mn>0.15892</mn>
+        <mn>2</mn>
+      </msup>
+      <mo>&approx;</mo>
+      <mn mathvariant="bold">0.02554</mn>
+    </math>, also known as &ldquo;too small to be statistically significant.&rdquo; The result we find is exactly what
+    we predicted simply by looking at the data: there is no meaningful correlation between these two sets of data.
+  </p>
+  <p>
+    Before I&rsquo;ve even started on those calculations, a calculator could tell me all of those numbers, and plot the
+    line of best fit over the data:
+  </p>
+  <p class="caption">figure 2: graph of data and best-fit line with parameters</p>
+  <div>
+    <img class="square" src="imgs/math2a.png" />
+    <img class="long" src="imgs/math2b.png" />
+  </div>
+  <p class="noindent">
+    And, without needlessly running two more rounds of dull calculations, I can have it reach the same conclusion for
+    two more sets of data:
+  </p>
+  <p class="caption">
+    figure 3: graph of success in sophomore English vs. general ability in English with best-fit line and parameters
+  </p>
+  <div>
+    <img class="square" src="imgs/math3a.png" />
+    <img class="long" src="imgs/math3b.png" />
+  </div>
+  <p class="caption">
+    figure 4: graph of success in Sophomore Inquiry vs. general ability in English with best-fit line and parameters
+  </p>
+  <div>
+    <img class="square" src="imgs/math4a.png" />
+    <img class="long" src="imgs/math4b.png" />
+  </div>
+  <p class="noindent">
+    The graph in figure 3, for 10th grade English, looks like it vaguely follows the line, but with <math>
+      <msup>
+        <mi>r</mi>
+        <mn>2</mn>
+      </msup>
+      <mo>=</mo>
+      <mn>0.1752</mn>
+    </math> it&rsquo;s still well below the threshold to make any real claims about the correlation.
+  </p>
+  <p>
+    Another question now arises&mdash;even though none of these sets for success correlate with the data for general
+    ability in English, could they be correlated to each other? The answer&hellip; is still no. The same process we just
+    followed tells us that (without printing more images from Desmos) the <em>r</em><sup>2</sup> values for success in
+    either other class against sophomore English fall below 0.1, though for Sophomore Inquiry against freshman English
+    it creeps up to 0.22. I tried comparing those to yet another set, the responses to the question &ldquo;How much have
+    past English studies, specifically freshman English, helped you succeed in Sophomore Inquiry?&rdquo; and found that
+    the highest <em>r</em><sup>2</sup> was just under 0.1 (note that the <math>
+      <mi>y</mi>
+    </math>-axis here is measured from 0 to 3 instead of 1 to 10):
+  </p>
+  <p class="caption">
+    figure 5: graph of past studies&rsquo; influence on success vs. general ability in English, with best-fit line and
+    parameters
+  </p>
+  <div>
+    <img class="square" src="imgs/math5a.png" />
+    <img class="long" src="imgs/math5b.png" />
+  </div>
+  <p>
+    In short, none of these metrics define one another. They are clearly related in the real world, and it may be
+    logical to expect that some connection would be shown in the data, but there is no statistically significant
+    relationship in the result. But that doesn&rsquo;t make sense. How is it that students who are better at English (or
+    at least believe themselves to be better at English, which is close enough for our purposes) don&rsquo;t always, or
+    even most of the time, do better in English class? The reason is that English classes in particular, and other
+    classes to a certain extent, do a bad job of measuring a student&rsquo;s abilities and potential, as shown by
+    various studies and anecdotal evidence. A student succeeds only if their abilities conform to the teacher&rsquo;s
+    specific expectations, which are rarely broad enough to include everyone. Sophomore Inquiry is a glaring example of
+    this: although the average survey respondent said that past studies had &ldquo;some&rdquo; effect on their success
+    in Sophomore Inquiry, they rated this success a whole point lower than their success in freshman English and about
+    three-fourths of a point less than their ability in English. This does not necessarily mean that the students
+    performed no better than if they had never taken an English class before, but it does show that Sophomore Inquiry
+    allows students less room for success than other classes.
+  </p>
+
+  <h2>Desired outcomes</h2>
+</body>
+
+<!-- link to doc: https://docs.google.com/document/d/1GG8GaSG4I-LYV-TvzXzCtXwofrbvAbQDT_y42FUMsus/ -->
+
+</html>
