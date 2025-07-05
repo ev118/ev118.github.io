@@ -92,6 +92,20 @@ th {
   padding: 4px;
 }
 
+div.doubleimg {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: end;
+  margin: 0.25em auto 0.75em;
+  gap: 16px;
+
+  &>img {
+    margin: 0;
+    width: 360px;
+  }
+}
+
 p.caption {
   font-style: italic;
   text-align: center;
