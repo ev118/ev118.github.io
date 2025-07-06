@@ -94,8 +94,7 @@
           <mn>0</mn>
         </msub>
       </math></span>) is the mean point. This works because the mean point of the data set must always lie on the line
-    of best
-    fit. Then for any point in the data set (<span class="math"><math>
+    of best fit. Then for any point in the data set (<span class="math"><math>
         <msub>
           <mi>x</mi>
           <mi>i</mi>
@@ -140,8 +139,7 @@
           <mi>i</mi>
         </msub>
       </math></span>. Our goal then is to find the value of <em>a</em> that minimizes not the total error, but the sum
-    of the
-    squares of the errors. I have assumed here that the point lies below the line and <span class="math"><math>
+    of the squares of the errors. I have assumed here that the point lies below the line and <span class="math"><math>
         <mi>f</mi>
         <mi>(</mi>
         <msub>
@@ -155,14 +153,13 @@
           <mi>i</mi>
         </msub>
       </math></span>, in order to make the error positive, but this ends up being unimportant because the error is
-    squared. In
-    order to find the minimum total squared error, now, we have to do some calculus.
+    squared. In order to find the minimum total squared error, now, we have to do some calculus.
   </p>
   <p>
     The First Derivative Test is a principle that says that when the derivative of a function is equal to 0, the
     function must have a local extremum (maximum or minimum) at that point. Therefore, assuming there is a single best
     best-fit line, we simply differentiate the expression for the sum of the squared errors to find the correct
-    equation. The value we want to minimize is <span class="math"><math>
+    equation. The value we want to minimize is <span class="bigmath"><math>
         <mi>e</mi>
         <mi>(</mi>
         <mi>a</mi>
@@ -199,7 +196,7 @@
           <mi>)</mi>
           <mn>2</mn>
         </msup>
-      </math></span>, whose derivative, using the Chain Rule, is <span class="math"><math>
+      </math></span>, whose derivative, using the Chain Rule, is <span class="bigmath"><math>
         <mi>e</mi>
         <mo>&prime;</mo>
         <mi>(</mi>
@@ -246,7 +243,7 @@
           <mn>0</mn>
         </msub>
         <mi>)</mi>
-      </math></span>. We set this equal to 0, then solve for <em>a</em>: <span class="math"><math>
+      </math></span>. We set this equal to 0, then solve for <em>a</em>: <span class="bigmath"><math>
         <mi>e</mi>
         <mo>&prime;</mo>
         <mi>(</mi>
@@ -364,7 +361,7 @@
           <mi>x</mi>
           <mn>0</mn>
         </msub>
-      </math></span>). We can then calculate the parameters using the equations <span class="math"><math>
+      </math></span>). We can then calculate the parameters using the equations <span class="bigmath"><math>
         <mi>a</mi>
         <mo>=</mo>
         <mfrac>
@@ -439,8 +436,7 @@
           </mrow>
         </mfrac>
       </math></span>, where <em>n</em> is the number of data points.<a class="fn" id="ref-1a" href="#fn-1">[1]</a> For
-    my
-    41-point data set, <span class="math"><math>
+    my 41-point data set, <span class="bigmath"><math>
         <munder>
           <mi>&sum;</mi>
           <mi>i</mi>
@@ -510,7 +506,7 @@
         </msup>
         <mo>=</mo>
         <mn>114921</mn>
-      </math></span>. Therefore <span class="math"><math>
+      </math></span>. Therefore <span class="bigmath"><math>
         <mi>a</mi>
         <mo>=</mo>
         <mfrac>
@@ -571,8 +567,8 @@
           <mn>41</mn>
         </mfrac>
         <mo>&approx;</mo>
-      </math> <strong>7.0302</strong></span>. Our line of best fit can be expressed, therefore, as <span
-      class="math"><math>
+      </math> <strong>7.0302</strong></span>. Our line of best fit can be expressed, therefore, as <span class="math">
+      <math>
         <mi>y</mi>
         <mo>=</mo>
         <mn>0.188</mn>
@@ -583,7 +579,7 @@
   </p>
   <p>
     We can use similar properties to find the correlation coefficient, which is a measure of how closely the line fits
-    the data. This value is given by the nasty-looking equation <span class="math"><math>
+    the data. This value is given by the nasty-looking equation <span class="bigmath"><math>
         <mi>r</mi>
         <mo>=</mo>
         <mfrac>
@@ -660,8 +656,8 @@
           </msqrt>
         </mfrac>
       </math>.<a class="fn" id="ref-1b" href="#fn-1">[1]</a></span> The nice thing about this equation is that we have
-    already
-    calculated most of the relevant values, and the remainder are relatively simple: <span class="math"><math>
+    already calculated most of the relevant values, and the remainder are relatively simple: <span class="bigmath">
+      <math>
         <munder>
           <mi>&sum;</mi>
           <mi>i</mi>
@@ -694,7 +690,7 @@
         </msup>
         <mo>=</mo>
         <mn>123904</mn>
-      </math></span>. This gives <span class="math"><math>
+      </math></span>. This gives <span class="bigmath"><math>
         <mi>r</mi>
         <mo>=</mo>
         <mfrac>
@@ -742,8 +738,7 @@
         </mfrac>
         <mo>&approx;</mo>
       </math> <strong>0.15892</strong></span>. It so happens that the more useful quantity is <em>r</em><sup>2</sup>,
-    which
-    better represents the data&rsquo;s spread, giving us <span class="math"><math>
+    which better represents the data&rsquo;s spread, giving us <span class="math"><math>
         <msup>
           <mi>r</mi>
           <mn>2</mn>
@@ -755,9 +750,8 @@
         </msup>
         <mo>&approx;</mo>
       </math> <strong>0.02554</strong></span>, also known as &ldquo;too small to be statistically significant.&rdquo;
-    The result
-    we find is exactly what we predicted simply by looking at the data: there is no meaningful correlation between these
-    two sets of data.
+    The result we find is exactly what we predicted simply by looking at the data: there is no meaningful correlation
+    between these two sets of data.
   </p>
   <p>
     Before I&rsquo;ve even started on those calculations, a calculator could tell me all of those numbers, and plot the
@@ -787,15 +781,14 @@
     <img src="imgs/math4b.png" />
   </div>
   <p class="noindent">
-    The graph in figure 3, for 10th grade English, looks like it vaguely follows the line, but with <span
-      class="math"><math>
-        <msup>
-          <mi>r</mi>
-          <mn>2</mn>
-        </msup>
-        <mo>=</mo>
-        <mn>0.1752</mn>
-      </math></span> it&rsquo;s still well below the threshold to make any real claims about the correlation.
+    The graph in figure 3, for 10th grade English, looks like it vaguely follows the line, but with <math>
+      <msup>
+        <mi>r</mi>
+        <mn>2</mn>
+      </msup>
+      <mo>=</mo>
+      <mn>0.1752</mn>
+    </math> it&rsquo;s still well below the threshold to make any real claims about the correlation.
   </p>
   <p>
     Another question now arises&mdash;even though none of these sets for success correlate with the data for general
@@ -849,7 +842,7 @@
   </p>
   <p>
     One measure of this is a simple average, or arithmetic mean, computed as the sum of a set divided by the number of
-    elements in it, or <span class="math"><math>
+    elements in it, or <span class="bigmath"><math>
         <munderover>
           <mi>&sum;</mi>
           <mrow>
@@ -867,8 +860,7 @@
           <mi>n</mi>
         </mfrac>
       </math></span> in formal notation. When asked how much each of those four things was a part of Sophomore Inquiry,
-    the
-    average respondent gave an answer between &ldquo;a little&rdquo; and &ldquo;some&rdquo; for all four. On my
+    the average respondent gave an answer between &ldquo;a little&rdquo; and &ldquo;some&rdquo; for all four. On my
     quantitative scale (where those two responses became 1 and 2 respectively), the average response to &ldquo;How much
     have you learned about &lsquo;information overload?&rsquo;&rdquo; was under 1.1; for &lsquo;truth decay&rsquo; it
     was 1.80, for &lsquo;information intended to deceive&rsquo; 1.76, and for IB preparedness only 1.56. I expected that
@@ -894,7 +886,7 @@
   </p>
   <p>
     Without writing out all the equations again, I can compute the sum of each set, the sum of the products for each
-    data point, and the sum of the squares of each set, and conclude that <span class="math"><math>
+    data point, and the sum of the squares of each set, and conclude that <span class="bigmath"><math>
         <mi>a</mi>
         <mo>=</mo>
         <mfrac>
@@ -1180,8 +1172,8 @@
           <mi>z</mi>
           <mi>i</mi>
         </msub>
-      </math></span>. We want to find the sum of the squared error for all points, which we can write as <span
-      class="math"><math>
+      </math></span>. We want to find the sum of the squared error for all points, which we can write as
+    <span class="bigmath"><math>
         <munder>
           <mi>&sum;</mi>
           <mi>i</mi>
@@ -1252,7 +1244,7 @@
   </p>
   <p>
     We first need to find the average point. We know that each of the coordinates of this point is the average of the
-    corresponding set, so we find that <span class="math"><math>
+    corresponding set, so we find that <span class="bigmath"><math>
         <msub>
           <mi>x</mi>
           <mi>m</mi>
@@ -1319,231 +1311,231 @@
         <mo>=</mo>
         <mn>2.8</mn>
       </math></span>. Then, we write out each term of the sum above. Our five points are {(1, 0, &ndash;1), (2, 4, 5),
-    (3, 2, 5),
-    (4, &ndash;3, 3), (5, 5, 2)}, so if we call the total we are looking for <em>E</em>, we get <span
-      class="math"><math>
+    (3, 2, 5), (4, &ndash;3, 3), (5, 5, 2)}, so if we call the total we are looking for <em>E</em>, we get
+    <span class="bigmath"><math>
         <mi>E</mi>
         <mo>=</mo>
         <munder>
           <mi>&sum;</mi>
           <mi>i</mi>
         </munder>
-        <mi>(</mi>
-        <mi>a</mi>
-        <msub>
-          <mi>x</mi>
-          <mi>i</mi>
-        </msub>
-        <mo>+</mo>
-        <mi>b</mi>
-        <msub>
-          <mi>y</mi>
-          <mi>i</mi>
-        </msub>
-        <mi>(</mi>
-        <msub>
-          <mi>z</mi>
-          <mi>m</mi>
-        </msub>
-      </math><math>
-        <mo>&ndash;</mo>
-        <mi>a</mi>
-        <msub>
-          <mi>x</mi>
-          <mi>m</mi>
-        </msub>
-        <mo>&ndash;</mo>
-        <mi>b</mi>
-        <msub>
-          <mi>y</mi>
-          <mi>m</mi>
-        </msub>
+      </math></span><math>
+      <mi>(</mi>
+      <mi>a</mi>
+      <msub>
+        <mi>x</mi>
+        <mi>i</mi>
+      </msub>
+      <mo>+</mo>
+      <mi>b</mi>
+      <msub>
+        <mi>y</mi>
+        <mi>i</mi>
+      </msub>
+      <mi>(</mi>
+      <msub>
+        <mi>z</mi>
+        <mi>m</mi>
+      </msub>
+    </math><math>
+      <mo>&ndash;</mo>
+      <mi>a</mi>
+      <msub>
+        <mi>x</mi>
+        <mi>m</mi>
+      </msub>
+      <mo>&ndash;</mo>
+      <mi>b</mi>
+      <msub>
+        <mi>y</mi>
+        <mi>m</mi>
+      </msub>
+      <mi>)</mi>
+      <mo>&ndash;</mo>
+      <msub>
+        <mi>z</mi>
+        <mi>i</mi>
+      </msub>
+      <msup>
         <mi>)</mi>
-        <mo>&ndash;</mo>
-        <msub>
-          <mi>z</mi>
-          <mi>i</mi>
-        </msub>
-        <msup>
-          <mi>)</mi>
-          <mn>2</mn>
-        </msup>
-        <mo>=</mo>
-      </math><math>
-        <mi>(</mi>
-        <mn>1</mn>
-        <mi>a</mi>
-        <mo>+</mo>
-        <mn>0</mn>
-        <mi>b</mi>
-        <mo>+</mo>
-        <mn>2.8</mn>
-        <mo>&ndash;</mo>
-        <mn>3</mn>
-        <mi>a</mi>
-        <mo>&ndash;</mo>
-        <mn>1.6</mn>
-        <mi>b</mi>
-        <mo>+</mo>
-        <mn>1</mn>
-        <msup>
-          <mi>)</mi>
-          <mn>2</mn>
-        </msup>
-        <mo>+</mo>
-        <mi>(</mi>
         <mn>2</mn>
-        <mi>a</mi>
-        <mo>+</mo>
-        <mn>4</mn>
-        <mi>b</mi>
-        <mo>+</mo>
-        <mn>2.8</mn>
-        <mo>&ndash;</mo>
-        <mn>3</mn>
-        <mi>a</mi>
-        <mo>&ndash;</mo>
-        <mn>1.6</mn>
-        <mi>b</mi>
-        <mo>&ndash;</mo>
-        <mn>5</mn>
-        <msup>
-          <mi>)</mi>
-          <mn>2</mn>
-        </msup>
-      </math><math>
-        <mo>+</mo>
-        <mi>(</mi>
-        <mn>3</mn>
-        <mi>a</mi>
-        <mo>+</mo>
+      </msup>
+      <mo>=</mo>
+    </math><math>
+      <mi>(</mi>
+      <mn>1</mn>
+      <mi>a</mi>
+      <mo>+</mo>
+      <mn>0</mn>
+      <mi>b</mi>
+      <mo>+</mo>
+      <mn>2.8</mn>
+      <mo>&ndash;</mo>
+      <mn>3</mn>
+      <mi>a</mi>
+      <mo>&ndash;</mo>
+      <mn>1.6</mn>
+      <mi>b</mi>
+      <mo>+</mo>
+      <mn>1</mn>
+      <msup>
+        <mi>)</mi>
         <mn>2</mn>
-        <mi>b</mi>
-        <mo>+</mo>
-        <mn>2.8</mn>
-        <mo>&ndash;</mo>
-        <mn>3</mn>
-        <mi>a</mi>
-        <mo>&ndash;</mo>
-        <mn>1.6</mn>
-        <mi>b</mi>
-        <mo>&ndash;</mo>
-        <mn>5</mn>
-        <msup>
-          <mi>)</mi>
-          <mn>2</mn>
-        </msup>
-        <mo>+</mo>
-        <mi>(</mi>
-        <mn>4</mn>
-        <mi>a</mi>
-        <mo>&ndash;</mo>
-        <mn>3</mn>
-        <mi>b</mi>
-        <mo>+</mo>
-      </math><math>
-        <mn>2.8</mn>
-        <mo>&ndash;</mo>
-        <mn>3</mn>
-        <mi>a</mi>
-        <mo>&ndash;</mo>
-        <mn>1.6</mn>
-        <mi>b</mi>
-        <mo>&ndash;</mo>
-        <mn>3</mn>
-        <msup>
-          <mi>)</mi>
-          <mn>2</mn>
-        </msup>
-        <mo>+</mo>
-        <mi>(</mi>
-        <mn>5</mn>
-        <mi>a</mi>
-        <mo>+</mo>
-        <mn>5</mn>
-        <mi>b</mi>
-        <mo>+</mo>
-        <mn>2.8</mn>
-        <mo>&ndash;</mo>
-        <mn>3</mn>
-        <mi>a</mi>
-        <mo>&ndash;</mo>
-        <mn>1.6</mn>
-        <mi>b</mi>
-        <mo>&ndash;</mo>
+      </msup>
+      <mo>+</mo>
+      <mi>(</mi>
+      <mn>2</mn>
+      <mi>a</mi>
+      <mo>+</mo>
+      <mn>4</mn>
+      <mi>b</mi>
+      <mo>+</mo>
+      <mn>2.8</mn>
+      <mo>&ndash;</mo>
+      <mn>3</mn>
+      <mi>a</mi>
+      <mo>&ndash;</mo>
+      <mn>1.6</mn>
+      <mi>b</mi>
+      <mo>&ndash;</mo>
+      <mn>5</mn>
+      <msup>
+        <mi>)</mi>
         <mn>2</mn>
-        <msup>
-          <mi>)</mi>
-          <mn>2</mn>
-        </msup>
-        <mo>=</mo>
-        <mi>(</mi>
-        <mn>&ndash;2</mn>
-        <mi>a</mi>
-        <mo>&ndash;</mo>
-        <mn>1.6</mn>
-        <mi>b</mi>
-        <mo>+</mo>
-        <mn>3.8</mn>
-        <msup>
-          <mi>)</mi>
-          <mn>2</mn>
-        </msup>
-        <mo>+</mo>
-      </math><math>
-        <mi>(</mi>
-        <mn>&ndash;1</mn>
-        <mi>a</mi>
-        <mo>+</mo>
-        <mn>2.4</mn>
-        <mi>b</mi>
-        <mo>&ndash;</mo>
-        <mn>2.2</mn>
-        <msup>
-          <mi>)</mi>
-          <mn>2</mn>
-        </msup>
-        <mo>+</mo>
-        <mi>(</mi>
-        <mn>0</mn>
-        <mi>a</mi>
-        <mo>+</mo>
-        <mn>0.4</mn>
-        <mi>b</mi>
-        <mo>&ndash;</mo>
-        <mn>2.2</mn>
-        <msup>
-          <mi>)</mi>
-          <mn>2</mn>
-        </msup>
-        <mo>+</mo>
-        <mi>(</mi>
-        <mn>1</mn>
-        <mi>a</mi>
-        <mo>&ndash;</mo>
-        <mn>4.6</mn>
-        <mi>b</mi>
-        <mo>&ndash;</mo>
-        <mn>0.2</mn>
-        <msup>
-          <mi>)</mi>
-          <mn>2</mn>
-        </msup>
-      </math><math>
-        <mo>+</mo>
-        <mi>(</mi>
+      </msup>
+    </math><math>
+      <mo>+</mo>
+      <mi>(</mi>
+      <mn>3</mn>
+      <mi>a</mi>
+      <mo>+</mo>
+      <mn>2</mn>
+      <mi>b</mi>
+      <mo>+</mo>
+      <mn>2.8</mn>
+      <mo>&ndash;</mo>
+      <mn>3</mn>
+      <mi>a</mi>
+      <mo>&ndash;</mo>
+      <mn>1.6</mn>
+      <mi>b</mi>
+      <mo>&ndash;</mo>
+      <mn>5</mn>
+      <msup>
+        <mi>)</mi>
         <mn>2</mn>
-        <mi>a</mi>
-        <mo>+</mo>
-        <mn>3.4</mn>
-        <mi>b</mi>
-        <mo>+</mo>
-        <mn>0.8</mn>
-        <msup>
-          <mi>)</mi>
-          <mn>2</mn>
-        </msup>
-      </math></span>. Squaring all these trinomials is rather messy, but it simplifies to <span class="math"><math>
+      </msup>
+      <mo>+</mo>
+      <mi>(</mi>
+      <mn>4</mn>
+      <mi>a</mi>
+      <mo>&ndash;</mo>
+      <mn>3</mn>
+      <mi>b</mi>
+      <mo>+</mo>
+    </math><math>
+      <mn>2.8</mn>
+      <mo>&ndash;</mo>
+      <mn>3</mn>
+      <mi>a</mi>
+      <mo>&ndash;</mo>
+      <mn>1.6</mn>
+      <mi>b</mi>
+      <mo>&ndash;</mo>
+      <mn>3</mn>
+      <msup>
+        <mi>)</mi>
+        <mn>2</mn>
+      </msup>
+      <mo>+</mo>
+      <mi>(</mi>
+      <mn>5</mn>
+      <mi>a</mi>
+      <mo>+</mo>
+      <mn>5</mn>
+      <mi>b</mi>
+      <mo>+</mo>
+      <mn>2.8</mn>
+      <mo>&ndash;</mo>
+      <mn>3</mn>
+      <mi>a</mi>
+      <mo>&ndash;</mo>
+      <mn>1.6</mn>
+      <mi>b</mi>
+      <mo>&ndash;</mo>
+      <mn>2</mn>
+      <msup>
+        <mi>)</mi>
+        <mn>2</mn>
+      </msup>
+      <mo>=</mo>
+      <mi>(</mi>
+      <mn>&ndash;2</mn>
+      <mi>a</mi>
+      <mo>&ndash;</mo>
+      <mn>1.6</mn>
+      <mi>b</mi>
+      <mo>+</mo>
+      <mn>3.8</mn>
+      <msup>
+        <mi>)</mi>
+        <mn>2</mn>
+      </msup>
+      <mo>+</mo>
+    </math><math>
+      <mi>(</mi>
+      <mn>&ndash;1</mn>
+      <mi>a</mi>
+      <mo>+</mo>
+      <mn>2.4</mn>
+      <mi>b</mi>
+      <mo>&ndash;</mo>
+      <mn>2.2</mn>
+      <msup>
+        <mi>)</mi>
+        <mn>2</mn>
+      </msup>
+      <mo>+</mo>
+      <mi>(</mi>
+      <mn>0</mn>
+      <mi>a</mi>
+      <mo>+</mo>
+      <mn>0.4</mn>
+      <mi>b</mi>
+      <mo>&ndash;</mo>
+      <mn>2.2</mn>
+      <msup>
+        <mi>)</mi>
+        <mn>2</mn>
+      </msup>
+      <mo>+</mo>
+      <mi>(</mi>
+      <mn>1</mn>
+      <mi>a</mi>
+      <mo>&ndash;</mo>
+      <mn>4.6</mn>
+      <mi>b</mi>
+      <mo>&ndash;</mo>
+      <mn>0.2</mn>
+      <msup>
+        <mi>)</mi>
+        <mn>2</mn>
+      </msup>
+    </math><math>
+      <mo>+</mo>
+      <mi>(</mi>
+      <mn>2</mn>
+      <mi>a</mi>
+      <mo>+</mo>
+      <mn>3.4</mn>
+      <mi>b</mi>
+      <mo>+</mo>
+      <mn>0.8</mn>
+      <msup>
+        <mi>)</mi>
+        <mn>2</mn>
+      </msup>
+    </math></span>. Squaring all these trinomials is rather messy, but it simplifies to <span class="math"><math>
         <mi>E</mi>
         <mo>=</mo>
         <mn>10</mn>
@@ -1570,8 +1562,7 @@
         <mo>+</mo>
         <mn>24.8</mn>
       </math></span>. I stopped before going even this far in the first section, and I think it is now clear why: it may
-    not be
-    difficult math, but doing the same thing forty-one times takes a lot of time (not to mention a fair amount of
+    not be difficult math, but doing the same thing forty-one times takes a lot of time (not to mention a fair amount of
     paper). With only five points, it is a bit quicker, but we also have some difficult math to do&mdash;multivariable
     calculus.
   </p>
@@ -1608,7 +1599,7 @@
         </msup>
       </math></span>, the partial derivative with respect to <math>
       <mi>x</mi>
-    </math> is <span class="math"><math>
+    </math> is <span class="bigmath"><math>
         <mfrac>
           <mrow>
             <mi>&part;</mi>
@@ -1641,7 +1632,7 @@
         <mn>2</mn>
       </math></span> and the partial derivative with respect to <math>
       <mi>y</mi>
-    </math> is <span class="math"><math>
+    </math> is <span class="bigmath"><math>
         <mfrac>
           <mrow>
             <mi>&part;</mi>
@@ -1674,10 +1665,9 @@
         <mn>&ndash;6</mn>
         <mi>y</mi>
       </math></span>. (The character &part; is sometimes pronounced as &ldquo;partial&rdquo; but has no standard
-    pronunciation,
-    and it is used to distinguish the partial derivative from the normal derivative. Confusingly, it is also sometimes
-    pronounced like the letter D.<a class="fn" id="ref-8" href="#fn-8">[8]</a>) The gradient of <em>f</em>, then, is
-    simply the vector with these two components: <span class="math"><math>
+    pronunciation, and it is used to distinguish the partial derivative from the normal derivative. Confusingly, it is
+    also sometimes pronounced like the letter D.<a class="fn" id="ref-8" href="#fn-8">[8]</a>) The gradient of
+    <em>f</em>, then, is simply the vector with these two components: <span class="math"><math>
         <mi>&nabla;</mi>
         <mi>f</mi>
         <mo>=</mo>
@@ -1688,8 +1678,7 @@
         <mi>y</mi>
         <mi>&rang;</mi>
       </math></span> or 2<strong>i</strong> + 6<em>y</em><strong>j</strong>. This means that, at any given point, the
-    fastest
-    increase of the function is 2 in the <math>
+    fastest increase of the function is 2 in the <math>
       <mi>z</mi>
     </math> direction for every step in the <math>
       <mi>x</mi>
@@ -1734,8 +1723,7 @@
         <mo>+</mo>
         <mn>24.8</mn>
       </math></span>. We do this by calculating the partial derivatives of this function with respect to each of
-    <em>a</em> and
-    <em>b</em> and setting both equal to 0: <span class="math"><math>
+    <em>a</em> and <em>b</em> and setting both equal to 0: <span class="bigmath"><math>
         <mfrac>
           <mrow>
             <mi>&part;</mi>
@@ -1876,14 +1864,14 @@
         <mn>0.3449</mn>
         <mi>(</mi>
         <mi>x</mi>
-        <mi>&ndash;</mi>
+        <mo>&ndash;</mo>
         <mn>3</mn>
         <mi>)</mi>
         <mo>+</mo>
         <mn>0.1836</mn>
         <mi>(</mi>
         <mi>y</mi>
-        <mi>&ndash;</mi>
+        <mo>&ndash;</mo>
         <mn>1.6</mn>
         <mi>)</mi>
         <mo>+</mo>
@@ -1912,7 +1900,7 @@
     <em>R</em><sup>2</sup>, which is a sort of extension of the <em>r</em><sup>2</sup> value, the square of the
     correlation coefficient, from earlier. We can calculate this value with only two pieces of information about our
     data.<a class="fn" id="ref-9" href="#fn-9">[9]</a> One of them we already have because it is how we got the values
-    for our best-fit plane&mdash;the sum of the squared errors, <span class="math"><math>
+    for our best-fit plane&mdash;the sum of the squared errors, <span class="bigmath"><math>
         <munder>
           <mi>&sum;</mi>
           <mi>i</mi>
@@ -1959,9 +1947,8 @@
         <mo>+</mo>
         <mn>24.8</mn>
       </math></span>, which, plugging in the results we got, comes to 21.8412. The other is called the total sum of
-    squares;
-    instead of comparing the actual value at a point to the predicted value, it compares the actual value to the mean
-    value. In formal notation, we would write <span class="math"><math>
+    squares; instead of comparing the actual value at a point to the predicted value, it compares the actual value to
+    the mean value. In formal notation, we would write <span class="bigmath"><math>
         <munder>
           <mi>&sum;</mi>
           <mi>i</mi>
@@ -2083,7 +2070,7 @@
         <mn>0.64</mn>
         <mo>=</mo>
         <mn>24.8</mn>
-      </math></span>. The coefficient of determination is then <span class="math"><math>
+      </math></span>. The coefficient of determination is then <span class="bigmath"><math>
         <msup>
           <mi>R</mi>
           <mn>2</mn>

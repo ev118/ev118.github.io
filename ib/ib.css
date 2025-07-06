@@ -107,6 +107,10 @@ div.doubleimg {
 }
 
 span.math {
+  line-height: 2.0;
+}
+
+span.bigmath {
   line-height: 2.5;
 }
 
