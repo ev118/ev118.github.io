@@ -92,10 +92,6 @@ th {
   padding: 4px;
 }
 
-math {
-  line-height: 2.5;
-}
-
 div.doubleimg {
   display: flex;
   flex-flow: row wrap;
@@ -108,6 +104,10 @@ div.doubleimg {
     margin: 0;
     width: 360px;
   }
+}
+
+span.math {
+  line-height: 2.5;
 }
 
 p.caption {
@@ -128,8 +128,7 @@ p#blockmath {
   margin: 0.5em auto;
 }
 
-a.fn,
-span.fn {
+a.fn {
   text-decoration: none;
   font-style: normal;
 
