@@ -132,7 +132,8 @@ p#blockmath {
   margin: 0.5em auto;
 }
 
-a.fn {
+a.fn,
+span.fn {
   text-decoration: none;
   font-style: normal;
 
