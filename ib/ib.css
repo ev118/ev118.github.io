@@ -92,6 +92,10 @@ th {
   padding: 4px;
 }
 
+hr {
+  margin: 1em auto 0.5em;
+}
+
 div.doubleimg {
   display: flex;
   flex-flow: row wrap;
@@ -103,6 +107,16 @@ div.doubleimg {
   &>img {
     margin: 0;
     width: 360px;
+  }
+}
+
+span.fn {
+  vertical-align: super;
+  font-size: x-small;
+  font-style: normal;
+
+  &>a {
+    text-decoration: none;
   }
 }
 
@@ -132,8 +146,7 @@ p#blockmath {
   margin: 0.5em auto;
 }
 
-a.fn,
-span.fn {
+a.fn {
   text-decoration: none;
   font-style: normal;
 
