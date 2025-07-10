@@ -68,6 +68,10 @@ img {
   &.long {
     width: 540px;
   }
+
+  &.tall {
+    width: 240px;
+  }
 }
 
 table {
@@ -138,6 +142,11 @@ p.caption {
 
 p.noindent {
   text-indent: 0;
+}
+
+p.block {
+  text-indent: 0;
+  margin-left: 50px;
 }
 
 p#blockmath {
