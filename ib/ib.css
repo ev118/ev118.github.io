@@ -61,16 +61,13 @@ img {
   display: block;
   margin: 0.25em auto 0.75em;
 
-  &.square {
+  &.square,
+  &.tall {
     width: 360px;
   }
 
   &.long {
     width: 540px;
-  }
-
-  &.tall {
-    width: 240px;
   }
 }
 
@@ -155,6 +152,11 @@ p#blockmath {
   margin: 0.5em auto;
 }
 
+p#rq {
+  font-family: "Lato", sans-serif;
+  text-indent: 0;
+}
+
 a.fn {
   text-decoration: none;
   font-style: normal;
@@ -176,6 +178,10 @@ ul#physnotes {
 
 ol#chemprod {
   margin: 0;
+}
+
+ol#eenotes {
+  margin: 0.1em;
 }
 
 tr#bold {
