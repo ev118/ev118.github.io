@@ -12,14 +12,14 @@ h1 {
   font-size: 3.5rem;
   line-height: 1.25;
   text-align: center;
-}
 
-h1.home {
-  margin: 0.5em auto 0.75em;
-}
+  &.home {
+    margin: 0.5em auto 0.75em;
+  }
 
-h1.about {
-  margin: 0.75em auto 0;
+  &.about {
+    margin: 0.75em auto 0;
+  }
 }
 
 h2 {
@@ -28,26 +28,30 @@ h2 {
   font-size: 3rem;
   text-align: center;
   font-weight: normal;
-}
 
-h2.home {
-  margin: 0.5em auto 0.75em;
-}
+  &.home {
+    margin: 0.5em auto 0.75em;
+  }
 
-h2.about {
-  margin: 0 auto 0.75em;
+  &.about {
+    margin: 0 auto 0.75em;
+  }
 }
-
 
 h3 {
   font-family: "Ubuntu", "Trebuchet MS", sans-serif;
   font-size: 2.5em;
   font-weight: 500;
   text-align: center;
-}
 
-h3.home {
-  margin: 0.5em auto;
+  &.home {
+    margin: 0.5em auto;
+  }
+
+  &.map {
+    text-align: left;
+    margin: 0.5em auto 0.25em;
+  }
 }
 
 p,
@@ -67,34 +71,23 @@ ul.about {
   margin: 0 0.5em 0.5em;
 }
 
-#pronouns {
-  color: #4098e0;
+p.map-info {
+  color: #c8c8c8;
   font-family: "Poiret One", "Trebuchet MS", sans-serif;
-  font-size: 3.0rem;
-  font-weight: normal;
-  font-style: italic;
 }
 
-#quotes {
+p.map-link>a {
+  color: #e8e8f0;
+}
+
+div#quotes {
   font-family: "Ubuntu", "Trebuchet MS", sans-serif;
   font-size: 1.5em;
   font-weight: 300;
   margin: 0;
 }
 
-#q-left {
-  text-align: left;
-  max-width: 50%;
-  margin: 0 47% 0.5em 3%;
-}
-
-#q-right {
-  text-align: right;
-  max-width: 50%;
-  margin: 0 3% 0.5em 47%;
-}
-
-#grid {
+div#grid {
   display: grid;
   grid-template-columns: 50px 1fr 50px 1fr;
   gap: 30px 15px;
@@ -102,29 +95,65 @@ ul.about {
   justify-content: center;
   align-content: center;
   margin: 0 0 1.2em 1.5em;
+
+  &>p {
+    justify-self: left;
+    font-family: "Ubuntu", "Trebuchet MS", sans-serif;
+    font-size: 1.75em;
+    font-weight: 300;
+    margin: 0;
+  }
+
+  &>a>img,
+  &>img {
+    width: 50px;
+    height: auto;
+    justify-self: right;
+    margin: 0;
+  }
 }
 
-#grid>p {
-  justify-self: left;
-  font-family: "Ubuntu", "Trebuchet MS", sans-serif;
-  font-size: 1.75em;
-  font-weight: 300;
-  margin: 0;
+span#pronouns {
+  color: #4098e0;
+  font-family: "Poiret One", "Trebuchet MS", sans-serif;
+  font-size: 3.0rem;
+  font-weight: normal;
+  font-style: italic;
 }
 
-#grid>a>img,
-#grid>img {
-  width: 50px;
-  height: auto;
-  justify-self: right;
-  margin: 0;
+span#coords {
+  color: #40ff00;
+}
+
+p#q-left {
+  text-align: left;
+  max-width: 50%;
+  margin: 0 47% 0.5em 3%;
+}
+
+p#q-right {
+  text-align: right;
+  max-width: 50%;
+  margin: 0 3% 0.5em 47%;
+}
+
+p#map-return {
+  margin: 1em auto 0.5em;
+
+  &>a {
+    color: #e8e8f0;
+  }
+}
+
+p#map-about {
+  margin: 0.5em auto 1em;
+
+  &>a {
+    color: #e8e8f0;
+  }
 }
 
 #bold {
   color: #e08700;
   font-weight: 500;
-}
-
-#coords {
-  color: #40ff00;
 }
