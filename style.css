@@ -39,6 +39,7 @@ h2 {
 }
 
 h3 {
+  color: #e8e8f0;
   font-family: "Ubuntu", "Trebuchet MS", sans-serif;
   font-size: 2.5em;
   font-weight: 500;
@@ -50,7 +51,7 @@ h3 {
 
   &.map {
     text-align: left;
-    margin: 0.5em auto 0.25em;
+    margin: 0.5em auto 0;
   }
 }
 
@@ -74,10 +75,15 @@ ul.about {
 p.map-info {
   color: #c8c8c8;
   font-family: "Poiret One", "Trebuchet MS", sans-serif;
+  margin: 0 auto 0.5em;
 }
 
-p.map-link>a {
-  color: #e8e8f0;
+p.map-link {
+  margin: 0.25em auto;
+
+  &>a {
+    color: #e8e8f0;
+  }
 }
 
 div#quotes {
