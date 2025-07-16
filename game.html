@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>da rulez</title>
+  <link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+  <h1 class="game">title goes here</h1>
+  <h3 class="game">The only rule I can tell you is that I can&rsquo;t tell you any other rules.</h3>
+
+  <h2 class="game">Setup</h2>
+  <p class="game">
+    <span class="rule" id="materials">Materials.</span> The game requires a single deck of fifty-two standard playing
+    cards and a table (or other surface) to play on.
+  </p>
+  <p class="game">
+    <span class="rule" id="players">Players.</span> The game requires at least two players and is difficult with more
+    than six with only one deck, but by combining multiple decks it can accommodate a (theoretically) unlimited number.
+    Exactly one player is the dealer.
+  </p>
+  <p class="game">
+    <span class="rule" id="deal">Deal.</span> The dealer deals a hand of five cards to each player and puts the
+    remaining cards face-down in a draw pile in the center of the table.
+  </p>
+
+  <h2 class="game">Play</h2>
+  <p class="game">
+    <span class="rule" id="start">Start.</span> The dealer starts the game by flipping over the top card of the draw
+    pile to form a face-up play pile and saying, &ldquo;The game of ma&#x028a; has now started.&rdquo; (For the purposes
+    of all further rules, the game starts on the word &ldquo;ma&#x028a;.&rdquo;) Play starts to the left of the dealer
+    and proceeds clockwise around the table.
+  </p>
+  <p class="game">
+    <span class="rule" id="turn">Turn.</span> On a player&rsquo;s turn, they may draw a card from the top of the draw
+    pile, and then they may play a card onto the play pile.
+  </p>
+  <p class="game">
+    <span class="rule" id="penalties">Penalties.</span> The dealer assesses a penalty for a violation of a rule by
+    giving the violating player the top card of the draw pile and naming the penalty.
+  </p class="game">
+  <ol class="game" type="a">
+    <li id="penalties-a">
+      A penalty consisting of a failure to perform a specific action or of performing it incorrectly does not need to be
+      rectified; multiple penalties cannot be assessed for one such failure.
+    </li>
+    <li id="penalties-b">
+      The dealer must allow a player a reasonable amount of time to perform an action before penalizing them for its
+      failure.
+    </li>
+    <li id="penalties-c">
+      An action by a player that is clearly prompted by the dealer moving to assess the penalty for failing to do it is
+      ignored and the penalty assessed as if the action had not occurred.
+    </li>
+    <li id="penalties-d">
+      A penalty regarding play rules or an action caused by a play may not be assessed once another turn has been played
+      after the illegal behavior unless there was not a reasonable amount of time to assess the penalty.
+    </li>
+  </ol>
+  <p class="game">
+    <span class="rule" id="pauses">Pauses.</span> The game may be paused by any player by saying, &ldquo;Point of
+    order.&rdquo; If this player is not the dealer, the dealer must say, &ldquo;Sustained,&rdquo; to pause the game, or
+    &ldquo;Overruled,&rdquo; to continue the game without pausing (this power to prevent a pause should be used
+    sparingly). While the game is paused, turns are not played, but penalties may be assessed. The game resumes
+    following a pause when the dealer says, &ldquo;Meeting adjourned.&rdquo;
+  </p>
+  <p class="game">
+    <span class="rule" id="shuffling">Shuffling.</span> If the draw pile runs out of cards, the dealer (or another
+    player) replaces the play pile with only its top card, shuffles the rest, and places them facedown to create the new
+    draw pile. The game may be paused for this to occur, but it is not necessary.
+  </p>
+  <p class="game">
+    <span class="rule" id="end">End.</span> The game ends when a player has no cards remaining in their hand and has
+    earned no penalties; that player wins. At this point, the winning player or the dealer says, &ldquo;The game of
+    ma&#x028a; has now ended.&rdquo;
+  </p>
+
+  <h2 class="game">Base rules</h2>
+  <p class="game">
+    <span class="rule" id="playcards">Playing cards.</span> A card can be played onto the play pile that is the same
+    suit or the same value as the one below it. A violation of this rule is assessed &ldquo;improper play&rdquo; (the
+    illegally-played card remains on the play pile).
+  </p>
+  <p class="game">
+    <span class="rule" id="last">Last card.</span> when the number of cards in a player&rsquo;s hand becomes one, they
+    must say &ldquo;ma&#x028a;.&rdquo; A violation of this rule is assessed &ldquo;failure to say
+    &lsquo;ma&#x028a;.&rsquo;&rdquo;
+  </p>
+  <p class="game">
+    <span class="rule" id="talking">Talking.</span> players may not speak except as required by the rules (for game
+    actions, giving penalties, etc.) or while the game is paused. The dealer has discretion of when it is unreasonable
+    to enforce this penalty (e.g., for talking to someone outside the game). A violation of this rule is assessed
+    &ldquo;talking.&rdquo;
+  </p>
+  <p class="game">
+    <span class="rule" id="out">Out of turn.</span> A player may not play onto the play pile or draw from the draw pile
+    when it is another player&rsquo;s turn. A violation of this rule is assessed &ldquo;not your turn.&rdquo; Any
+    illegally-played cards are returned to the hand of the player who played them, and illegally-drawn cards are
+    retained in the player&rsquo;s hand.
+  </p>
+  <p class="game">
+    <span class="rule" id="delay">Delay of game.</span> A player must play within a reasonable amount of time
+    (approximately five seconds, depending on the situation) after it becomes their turn or after the previous
+    assessment of this penalty. A violation of this rule is assessed &ldquo;delay of game&rdquo; or &ldquo;your turn,
+    go.&rdquo;
+  </p>
+  <p class="game">
+    <span class="rule" id="pointing">Pointing.</span> A player may not indicate in any obvious manner to the player
+    whose turn it is that it is their turn. This rule may be suspended by the dealer as long as it does not impact the
+    game (e.g., if no rules in play change the turn order at any point). A violation of this rule is assessed
+    &ldquo;pointing&rdquo; or &ldquo;gesturing.&rdquo;
+  </p>
+  <p class="game">
+    <span class="rule" id="discussion">Discussion of rules.</span> Players may not discuss or explain the rules of the
+    game except <a class="rule" href="#deal">Deal</a>, <a class="rule" href="#turn">Turn</a>,
+    <a class="rule" href="#end">End</a>, and this rule. This rule applies before the game begins and between
+    games&mdash;which may result in extra cards being dealt to a player in the <a class="rule" href="#deal">
+      Deal
+    </a>&mdash;and while the game is paused. Rules may be referenced, if needed, by the penalty assessed or the
+    <span class="rule">names</span> at the beginning of the paragraphs here, but anything that would reveal a detail of
+    the rule to an unaware player is a violation of this rule. A violation of this rule is assessed &ldquo;discussion of
+    the rules.&rdquo;
+  </p>
+  <p class="game">
+    <span class="rule" id="corrections">Corrections.</span> A player who is not the dealer may assess a penalty,
+    believing that the dealer failed to assess it. If there was no violation or it was different than as assessed, the
+    card is given instead to the original assessor as the penalty &ldquo;bad call.&rdquo; A dispute over this may lead
+    to an assessment of &ldquo;good call,&rdquo; giving the card to the violator, or of &ldquo;no call,&rdquo; returning
+    the card to the top of the draw pile. (If there was a violation but the original assessor failed to name the
+    penalty, the dealer names the penalty represented by the card that was given.) Regardless of the outcome of any
+    correction call, it is the dealer&rsquo;s responsibility to ensure that all actual penalties are correctly assessed.
+  </p>
+  <p class="game">
+    <span class="rule" id="discretion">Discretion.</span> The dealer always reserves the right to address unforeseen,
+    game-breaking behavior in an appropriate manner. This may include assessing penalties not explicitly defined to
+    signal that a given behavior is not part of the game or removing a player who clearly is not taking the game
+    seriously. By the same token, the dealer reserves the right not to assess a penalty when a behavior that technically
+    warrants one clearly does not fall under the intent of the relevant rule; however, it is imperative that the dealer
+    enforce the rules as given so players are able to learn them.
+  </p>
+
+  <h2 class="game">Standard rules</h2>
+  <p class="game">
+    <span class="rule" id="touching">Touching cards.</span> A player who is not the dealer may not touch their cards
+    prior to the start of the game (as given in <a class="rule" href="#start">Start</a>) or while the game is paused
+    (given a reasonable amount of time after the pause is called). This rule is notably not covered by
+    <a class="rule" href="#penalties-a">Penalties (a)</a>; a player who violates this rule must also correct the
+    behavior to avoid being penalized again. A violation of this rule is assessed &ldquo;touching your cards.&rdquo;
+  </p>
+  <p class="game">
+    <span class="rule" id="extension">Play extension.</span> In addition to the legal plays given by the
+    <a class="rule" href="#playcards">Playing cards</a> rule, a card can be played that is the same color as the one
+    below it and one higher or one lower in value.
+  </p>
+  <p class="game">
+    <span class="rule" id="knocking1">Knocking.</span> When a player plays a Hearts card, they must knock twice on the
+    table. Failure to do so is assessed &ldquo;failure to knock twice,&rdquo; and knocking at any other time or knocking
+    the wrong number of times is assessed &ldquo;improper knocking.&rdquo;
+  </p>
+  <p class="game">
+    <span class="rule" id="ailments">Ailments.</span> When a player plays a face card (J, Q, K), they must say,
+    &ldquo;All hail the {name} of {suit},&rdquo; where {name} is &ldquo;jack,&rdquo; &ldquo;queen,&rdquo; or
+    &ldquo;king&rdquo; for J, Q, and K, respectively, and {suit} is &ldquo;knaves,&rdquo; &ldquo;diamonds,&rdquo;
+    &ldquo;clovers,&rdquo; or &ldquo;hearts&rdquo; for Spades, Diamonds, Clubs, and Hearts, respectively, according to
+    the identity of the card played. A player who says &ldquo;13 points&rdquo; in place of &ldquo;All hail the queen of
+    knaves&rdquo; is not in violation of this rule. Any violation of this rule upon playing a face card is assessed
+    &ldquo;improper ailment of the {name} of {suit},&rdquo; with the same substitutions as above for the card that was
+    played, and saying this at any other time is assessed &ldquo;talking&rdquo; under the
+    <a class="rule" href="#talking">Talking</a> rule.
+  </p>
+  <p class="game">
+    <span class="rule" id="subway">Subway.</span> When a player plays a card that is the same value as the card two
+    cards below it in the play pile, they must say, &ldquo;Subway.&rdquo; Failure to do so at the appropriate time is
+    assessed &ldquo;failure to say subway,&rdquo; and saying this at any other time is assessed &ldquo;talking&rdquo;
+    under the <a class="rule" href="#talking">Talking</a> rule.
+  </p>
+
+  <h2 class="game">Additional rules</h2>
+  <p class="game">
+    <span class="rule" id="order">Turn order.</span> When a 10 is played, the next player&rsquo;s turn is skipped, and
+    play continues with the following player. When an A is played, the direction of play reverses, and play continues
+    with the player who was just skipped, if such a player exists, and the player who just played otherwise. If a 10 is
+    flipped as the starting card at the <a class="rule" href="#start">Start</a>, play instead starts two players to the
+    left of the dealer; if the starting card is an A, play starts to the right of the dealer and continues
+    counter-clockwise. Penalties are not assessed for this rule, but it often leads to penalties under
+    <a class="rule" href="#out">Out of turn</a> and <a class="rule" href="#delay">Delay of game</a>.
+  </p>
+  <p class="game">
+    <span class="rule" id="knocking2">Knocking (part 2).</span> When a player plays a card that is a different suit from
+    the one below it, they must knock once. Failure to do so is assessed &ldquo;failure to knock once,&rdquo; and
+    knocking at any other time or knocking the wrong number of times is assessed &ldquo;improper knocking.&rdquo; (When
+    this rule and the above <a class="rule" href="#knocking1">Knocking</a> rule are in play, a player may be required to
+    knock zero, one, two, or three times on a turn. The assessment of &ldquo;improper knocking&rdquo; must account for
+    both rules when determining &ldquo;the wrong number of times&rdquo; to knock. Note also that it is possible for a
+    player to be penalized for both &ldquo;failure to knock once&rdquo; and &ldquo;failure to knock twice&rdquo; in the
+    same turn.)
+  </p>
+  <p class="game">
+    <span class="rule" id="bandaid">Band-Aid.</span> A player may not hold the cards in their hand such that other
+    players can see them. This rule is not covered by <a class="rule" href="#penalties-a">Penalties (a)</a>, so a player
+    must rectify the violation to avoid being penalized multiple times. It also generally disregards
+    <a class="rule" href="#corrections">Corrections</a>; any player may assess this penalty against any other player, in
+    light of the fact that the dealer will not be able to identify all possible violations, and the dealer should not
+    challenge such assessments until and unless it is clear that they are being made in bad faith or are disrupting the
+    game. A violation of this rule is assessed &ldquo;Band-Aid.&rdquo;
+  </p>
+  <p class="game">
+    <span class="rule" id="christmas">Merry Christmas.</span> When a player draws a card as part of their turn, the next
+    player in the turn order must say, &ldquo;Merry Christmas.&rdquo; (When this rule and the
+    <a class="rule" href="#order">Turn order</a> rule are in play, any turn order change as a result of that rule is
+    ignored for the purpose of this rule.) Failure to do so is assessed &ldquo;failure to say Merry Christmas,&rdquo;
+    and saying this at any other time is assessed &ldquo;talking&rdquo; under the
+    <a class="rule" href="#talking">Talking</a> rule.
+  </p>
+
+  <h2 class="game">Variations</h2>
+  <p class="game">
+    The standard version of the game includes all the base rules and standard rules, with the additional rules being
+    added over time to make the game more interesting. Other rule sets may be used; they must include all the base rules
+    and then may incorporate any combination of other rules, including ones not defined here. The original rule set for
+    this game uses the <a class="rule" href="#extension">Play extension</a>,
+    <a class="rule" href="#knocking">Knocking</a>, <a class="rule" href="#ailments">Ailments</a>,
+    <a class="rule" href="#subway">Subway</a>, and <a class="rule" href="#bandaid">Band-Aid</a> rules, with the
+    following modifications:
+  </p>
+  <ol class="game" type="a">
+    <li>No exception is made in the <a class="rule" href="#discussion">Discussion of rules</a> rule.</li>
+    <li>
+      Instead of the procedure in <a class="rule" href="#pauses">Pauses</a>, the game is paused with the game is paused
+      with &ldquo;The game of ma&#x028a; is now paused,&rdquo; and resumed with &ldquo;The game of ma&#x028a; has now
+      started,&rdquo; said by any player.
+    </li>
+    <li>
+      The &ldquo;13 points&rdquo; variation in the <a class="rule" href="#ailments">Ailments</a> rule is not allowed.
+    </li>
+    <li>
+      Instead of the procedure in <a class="rule" href="#corrections">Corrections</a>, a player who notices a missed
+      penalty from the dealer, once another turn has been played due to <a class="rule" href="#penalties-d">
+        Penalties (d)
+      </a>, assesses the dealer &ldquo;failure to say&rdquo; followed by the penalty that should have been assessed.
+      (This does mean that the original illegal behavior goes unpenalized.) There is no established procedure for
+      countering an incorrect penalty given this way, so disputes could be settled by pausing the game and discussing
+      (keeping in mind the <a class="rule" href="#discussion">Discussion of rules</a> rule).
+    </li>
+  </ol>
+  <br>
+  <p class="game">
+    The standard game is, in essence, a puzzle, testing new players to learn the game without being told the rules. To
+    make the game more game-like for experienced players, extend the exception in the
+    <a class="rule" href="#discussion">Discussion of rules</a> rule to all the base rules and the setup and play
+    instructions. Then, after each game, the winner of the game becomes the dealer for the next game and creates a rule
+    that is in play from that point forward or modifies or removes an existing rule (usually they must tell another
+    player what the new rule or rule change is to prevent cheating). In this variation, the standard and additional
+    rules may be added over time or used as inspiration to come up with other rules, or they may be ignored entirely.
+  </p>
+</body>
+
+</html>

@@ -1,6 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=Ubuntu);
 @import url(https://fonts.googleapis.com/css?family=Playwrite%20ES);
 @import url(https://fonts.googleapis.com/css?family=Poiret%20One);
+@import url(https://fonts.googleapis.com/css?family=Average);
 
 body {
   background-color: #101414;
@@ -12,13 +13,14 @@ h1 {
   font-size: 3.5rem;
   line-height: 1.25;
   text-align: center;
+  margin: 0.5em auto;
 
   &.home {
-    margin: 0.5em auto 0.75em;
+    margin-bottom: 0.75em;
   }
 
   &.about {
-    margin: 0.75em auto 0;
+    margin-bottom: 0;
   }
 }
 
@@ -35,6 +37,13 @@ h2 {
 
   &.about {
     margin: 0 auto 0.75em;
+  }
+
+  &.game {
+    font-family: "Ubuntu", "Trebuchet MS", sans-serif;
+    font-size: 2em;
+    text-align: left;
+    margin: 0.75em 8px 0.25em;
   }
 }
 
@@ -53,37 +62,61 @@ h3 {
     text-align: left;
     margin: 0.5em auto 0;
   }
+
+  &.game {
+    font-family: "Poiret One";
+    font-size: 1.75em;
+    text-align: center;
+    margin: 0 auto;
+    font-style: italic;
+  }
 }
 
 p,
-ul {
+li {
   color: #e8e8f0;
-  font-family: "Ubuntu";
+  font-family: "Ubuntu", "Trebuchet MS", sans-serif;
   font-weight: 300;
   font-size: 24px;
-  line-height: 1.35;
+  line-height: 1.375;
+  margin: 0 8px;
 }
 
 p.about {
-  margin: 0 0.5em 2px;
+  margin-bottom: 2px;
 }
 
 ul.about {
-  margin: 0 0.5em 0.5em;
+  margin-bottom: 0.5em;
 }
 
 p.map-info {
   color: #c8c8c8;
   font-family: "Poiret One", "Trebuchet MS", sans-serif;
-  margin: 0 auto 0.5em;
+  margin-bottom: 0.5em;
 }
 
-p.map-link {
-  margin: 0.25em auto;
+p.game,
+ol.game>li {
+  font-family: "Average", serif;
+  font-size: 18px;
+}
 
-  &>a {
+div.map-links {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  row-gap: 8px;
+  justify-items: start;
+
+  &>p>a {
     color: #e8e8f0;
   }
+}
+
+span.rule,
+a.rule {
+  color: #c8c8c8;
+  font-weight: bold;
 }
 
 div#quotes {
