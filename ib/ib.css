@@ -149,6 +149,11 @@ p.block {
   margin-left: 50px;
 }
 
+p.return {
+  font-family: "Lato", sans-serif;
+  margin-top: 1em;
+}
+
 p#blockmath {
   text-align: center;
   text-indent: 0;

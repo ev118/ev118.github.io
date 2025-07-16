@@ -45,6 +45,10 @@ h2 {
     margin: 0 auto 0.75em;
   }
 
+  &.list {
+    margin-top: 1em;
+  }
+
   &.game {
     font-family: "Ubuntu", "Trebuchet MS", sans-serif;
     font-size: 2em;
@@ -64,7 +68,7 @@ h3 {
     margin: 0.5em auto;
   }
 
-  &.map {
+  &.list {
     text-align: left;
     margin: 0.5em auto 0;
   }
@@ -97,7 +101,7 @@ ul.about {
   margin-bottom: 0.5em;
 }
 
-p.map-info {
+p.list-info {
   color: #c8c8c8;
   font-family: "Poiret One", "Trebuchet MS", sans-serif;
   margin-bottom: 0.5em;
@@ -109,7 +113,7 @@ ol.game>li {
   font-size: 18px;
 }
 
-div.map-links {
+div.list-links {
   display: grid;
   grid-template-columns: repeat(3, auto);
   row-gap: 8px;
@@ -183,7 +187,7 @@ p#q-right {
   margin: 0 8px 0.5em 50%;
 }
 
-p#map-return {
+p#list-return {
   margin: 1em auto 0.5em;
 
   &>a {
@@ -191,12 +195,17 @@ p#map-return {
   }
 }
 
-p#map-about {
+p#list-about {
   margin: 0.5em auto 1em;
 
   &>a {
     color: #e8e8f0;
   }
+}
+
+p#game-question {
+  font-family: "Average", serif;
+  text-align: center;
 }
 
 #bold {

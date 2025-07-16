@@ -3,10 +3,38 @@
 
 <head>
   <title>da rulez</title>
-  <link rel="stylesheet" href="style.css" type="text/css" />
+  <link rel="stylesheet" href="../style.css" type="text/css" />
+  <script>
+    var rules = new String();
+    var check = '<h3 class="game">I am the one who knocks</h3>\n<p id="game-question">In order to live up to this to' +
+      ' the fullest extent, I play what card on A&spades;?</p>\n<div class="game">\n' +
+      '<img src="Qspades.jpg" onclick="spades()" />\n<img src="Qdiamonds.jpg" onclick="diamonds()" />\n' +
+      '<img src="Qclubs.jpg" onclick="clubs()" />\n<img src="Qhearts.png" onclick="hearts()" />\n</div>';
+
+    function loadCheck() {
+      rules = document.body.innerHTML;
+      document.body.innerHTML = check;
+    }
+
+    function spades() {
+      document.body.innerHTML = "";
+    }
+
+    function diamonds() {
+      document.body.innerHTML = "";
+    }
+
+    function clubs() {
+      document.body.innerHTML = "";
+    }
+
+    function hearts() {
+      document.body.innerHTML = rules;
+    }
+  </script>
 </head>
 
-<body>
+<body onload="loadCheck()">
   <h1 class="game">ma&#x028a;: a game</h1>
   <h3 class="game">The only rule I can tell you is that I can&rsquo;t tell you any other rules.</h3>
 
@@ -154,7 +182,7 @@
     below it and one higher or one lower in value.
   </p>
   <p class="game">
-    <span class="rule" id="knocking1">Knocking.</span> When a player plays a Hearts card, they must knock twice on the
+    <span class="rule" id="knocking1">Knocking.</span> When a player plays a &hearts; card, they must knock twice on the
     table. Failure to do so is assessed &ldquo;failure to knock twice,&rdquo; and knocking at any other time or knocking
     the wrong number of times is assessed &ldquo;improper knocking.&rdquo;
   </p>
@@ -162,9 +190,9 @@
     <span class="rule" id="ailments">Ailments.</span> When a player plays a face card (J, Q, K), they must say,
     &ldquo;All hail the {name} of {suit},&rdquo; where {name} is &ldquo;jack,&rdquo; &ldquo;queen,&rdquo; or
     &ldquo;king&rdquo; for J, Q, and K, respectively, and {suit} is &ldquo;knaves,&rdquo; &ldquo;diamonds,&rdquo;
-    &ldquo;clovers,&rdquo; or &ldquo;hearts&rdquo; for Spades, Diamonds, Clubs, and Hearts, respectively, according to
-    the identity of the card played. A player who says &ldquo;13 points&rdquo; in place of &ldquo;All hail the queen of
-    knaves&rdquo; is not in violation of this rule. Any violation of this rule upon playing a face card is assessed
+    &ldquo;clovers,&rdquo; or &ldquo;hearts&rdquo; for &spades;, &diams;, &clubs;, and &hearts;, respectively, according
+    to the identity of the card played. A player who says &ldquo;13 points&rdquo; in place of &ldquo;All hail the queen
+    of knaves&rdquo; is not in violation of this rule. Any violation of this rule upon playing a face card is assessed
     &ldquo;improper ailment of the {name} of {suit},&rdquo; with the same substitutions as above for the card that was
     played, and saying this at any other time is assessed &ldquo;talking&rdquo; under the
     <a class="rule" href="#talking">Talking</a> rule.
