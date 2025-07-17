@@ -6,9 +6,9 @@
   <link rel="stylesheet" href="special.css" type="text/css" />
   <script>
     var rules = "";
-    var check = '<p id="game-prompt">I am the one who knocks</h2>\n<p id="game-question">Walter White thus plays what' +
-      ' card on the Ace of Spades?</p>\n<div class="game">\n<img src="Qspades.jpg" onclick="closeTab()" />\n' +
-      '<img src="Qdiamonds.jpg" onclick="closeTab()" />\n<img src="Qclubs.jpg" onclick="closeTab()" />\n' +
+    var check = '<p id="game-prompt">I AM THE ONE WHO KNOCKS</h2>\n<p id="game-question">Walter White thus plays what' +
+      ' card on the Ace of Spades?</p>\n<div class="game">\n<img src="Qspades.jpg" onclick="deletePage()" />\n' +
+      '<img src="Qdiamonds.jpg" onclick="deletePage()" />\n<img src="Qclubs.jpg" onclick="deletePage()" />\n' +
       '<img src="Qhearts.jpg" onclick="loadRules()" />\n</div>';
 
     function loadCheck() {
@@ -16,9 +16,8 @@
       document.body.innerHTML = check;
     }
 
-    function closeTab() {
+    function deletePage() {
       document.body.innerHTML = "";
-      window.close();
     }
 
     function loadRules() {
