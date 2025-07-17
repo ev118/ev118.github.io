@@ -1,7 +1,6 @@
 @import url(https://fonts.googleapis.com/css?family=Ubuntu);
 @import url(https://fonts.googleapis.com/css?family=Playwrite%20ES);
 @import url(https://fonts.googleapis.com/css?family=Poiret%20One);
-@import url(https://fonts.googleapis.com/css?family=Average);
 
 body {
   background-color: #101414;
@@ -22,12 +21,6 @@ h1 {
   &.about {
     margin-bottom: 0;
   }
-
-  &.game {
-    font-family: "Average", serif;
-    font-weight: normal;
-    margin-bottom: 0.25em;
-  }
 }
 
 h2 {
@@ -46,14 +39,8 @@ h2 {
   }
 
   &.list {
+    font-size: 2.5em;
     margin-top: 1em;
-  }
-
-  &.game {
-    font-family: "Ubuntu", "Trebuchet MS", sans-serif;
-    font-size: 2em;
-    text-align: left;
-    margin: 0.75em 8px 0.25em;
   }
 }
 
@@ -70,21 +57,12 @@ h3 {
 
   &.list {
     text-align: left;
-    margin: 0.5em auto 0;
-  }
-
-  &.game {
-    color: #c8c8c8;
-    font-family: "Playwrite ES", cursive;
-    font-size: 1.75em;
-    text-align: center;
-    margin: 0 auto;
+    margin: 0.5em 8px 0;
   }
 }
 
 p,
-ul,
-ol {
+ul {
   color: #e8e8f0;
   font-family: "Ubuntu", "Trebuchet MS", sans-serif;
   font-weight: 300;
@@ -107,12 +85,6 @@ p.list-info {
   margin-bottom: 0.5em;
 }
 
-p.game,
-ol.game>li {
-  font-family: "Average", serif;
-  font-size: 18px;
-}
-
 div.list-links {
   display: grid;
   grid-template-columns: repeat(3, auto);
@@ -122,14 +94,6 @@ div.list-links {
   &>p>a {
     color: #e8e8f0;
   }
-}
-
-span.rule,
-a.rule {
-  color: #e8e8f0;
-  font-family: "Ubuntu", "Trebuchet MS", sans-serif;
-  font-weight: bold;
-  font-size: 17px;
 }
 
 div#quotes {
@@ -188,7 +152,7 @@ p#q-right {
 }
 
 p#list-return {
-  margin: 1em auto 0.5em;
+  margin: 1em 8px 0.5em;
 
   &>a {
     color: #e8e8f0;
@@ -196,16 +160,11 @@ p#list-return {
 }
 
 p#list-about {
-  margin: 0.5em auto 1em;
+  margin: 0.5em 8px 1em;
 
   &>a {
     color: #e8e8f0;
   }
-}
-
-p#game-question {
-  font-family: "Average", serif;
-  text-align: center;
 }
 
 #bold {

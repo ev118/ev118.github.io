@@ -3,32 +3,25 @@
 
 <head>
   <title>da rulez</title>
-  <link rel="stylesheet" href="../style.css" type="text/css" />
+  <link rel="stylesheet" href="special.css" type="text/css" />
   <script>
-    var rules = new String();
-    var check = '<h3 class="game">I am the one who knocks</h3>\n<p id="game-question">In order to live up to this to' +
-      ' the fullest extent, I play what card on A&spades;?</p>\n<div class="game">\n' +
-      '<img src="Qspades.jpg" onclick="spades()" />\n<img src="Qdiamonds.jpg" onclick="diamonds()" />\n' +
-      '<img src="Qclubs.jpg" onclick="clubs()" />\n<img src="Qhearts.png" onclick="hearts()" />\n</div>';
+    var rules = "";
+    var check = '<p id="game-prompt">I am the one who knocks</h2>\n<p id="game-question">Walter White thus plays what' +
+      ' card on the Ace of Spades?</p>\n<div class="game">\n<img src="Qspades.jpg" onclick="closeTab()" />\n' +
+      '<img src="Qdiamonds.jpg" onclick="closeTab()" />\n<img src="Qclubs.jpg" onclick="closeTab()" />\n' +
+      '<img src="Qhearts.jpg" onclick="loadRules()" />\n</div>';
 
     function loadCheck() {
       rules = document.body.innerHTML;
       document.body.innerHTML = check;
     }
 
-    function spades() {
+    function closeTab() {
       document.body.innerHTML = "";
+      window.close();
     }
 
-    function diamonds() {
-      document.body.innerHTML = "";
-    }
-
-    function clubs() {
-      document.body.innerHTML = "";
-    }
-
-    function hearts() {
+    function loadRules() {
       document.body.innerHTML = rules;
     }
   </script>
