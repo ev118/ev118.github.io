@@ -6,10 +6,10 @@
   <link rel="stylesheet" href="special.css" type="text/css" />
   <script>
     var rules = "";
-    var check = '<p id="game-prompt">I AM THE ONE WHO KNOCKS</h2>\n<p id="game-question">Walter White thus plays what' +
-      ' card on the Ace of Spades?</p>\n<div class="game">\n<img src="Qspades.jpg" onclick="deletePage()" />\n' +
-      '<img src="Qdiamonds.jpg" onclick="deletePage()" />\n<img src="Qclubs.jpg" onclick="deletePage()" />\n' +
-      '<img src="Qhearts.jpg" onclick="loadRules()" />\n</div>';
+    var check = '<p id="game-prompt">I AM THE ONE WHO KNOCKS</h2><p id="game-question">Walter White thus plays what' +
+      ' card on the Ace of Spades?</p><div class="game"><a href="#" onclick="deletePage()"><img src="Qspades.jpg" />' +
+      '</a><a href="#" onclick="deletePage()"><img src="Qdiamonds.jpg" /></a><a href="#" onclick="deletePage()"><img' +
+      'src="Qclubs.jpg" /></a><a href="#" onclick="loadRules()"><img src="Qhearts.jpg" /></a></div>';
 
     function loadCheck() {
       rules = document.body.innerHTML;
@@ -26,7 +26,7 @@
   </script>
 </head>
 
-<body onload="loadCheck()">
+<body onpageshow="loadCheck()">
   <h1 class="game">ma&#x028a;: a game</h1>
   <h3 class="game">The only rule I can tell you is that I can&rsquo;t tell you any other rules.</h3>
 

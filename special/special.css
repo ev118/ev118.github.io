@@ -51,7 +51,7 @@ div.game {
   gap: 25px;
   justify-content: center;
 
-  &>img {
+  &>a>img {
     width: 200px;
     height: 290px;
   }
