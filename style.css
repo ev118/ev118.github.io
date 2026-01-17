@@ -31,7 +31,7 @@ h2 {
   font-weight: normal;
 
   &.home {
-    margin: 2em auto 0.75em;
+    margin: 1em auto 0.75em;
   }
 
   &.about {
@@ -105,12 +105,12 @@ div#quotes {
 
 div#grid {
   display: grid;
-  grid-template-columns: 50px 1fr 50px 1fr 50px 1fr;
+  grid-template-columns: 50px 1fr 50px 1fr 50px 80px;
   gap: 30px 15px;
   align-items: center;
   justify-content: center;
   align-content: center;
-  margin: 0 0 1.2em 1.5em;
+  margin: 0 2% 4em;
 
   &>p {
     justify-self: left;
@@ -118,14 +118,54 @@ div#grid {
     font-size: 1.75em;
     font-weight: 300;
     margin: 0;
+
+    &#grid-coords {
+      grid-column: span 6;
+      justify-self: center;
+      text-align: center;
+    }
   }
 
   &>a>img,
   &>img {
     width: 50px;
     height: auto;
-    justify-self: right;
+    justify-self: center;
     margin: 0;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  div#grid {
+    display: grid;
+    grid-template-columns: 50px auto;
+    gap: 30px 15px;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    margin: 0 2% 4em;
+
+    &>p {
+      justify-self: left;
+      font-family: "Ubuntu", "Trebuchet MS", sans-serif;
+      font-size: 1.75em;
+      font-weight: 300;
+      margin: 0;
+
+      &#grid-coords {
+        grid-column: span 2;
+        justify-self: center;
+        text-align: center;
+      }
+    }
+
+    &>a>img,
+    &>img {
+      width: 50px;
+      height: auto;
+      justify-self: center;
+      margin: 0;
+    }
   }
 }
 
