@@ -105,7 +105,7 @@ div#quotes {
 
 div#grid {
   display: grid;
-  grid-template-columns: 50px 1fr 50px 1fr;
+  grid-template-columns: 50px 1fr 50px 1fr 50px 1fr;
   gap: 30px 15px;
   align-items: center;
   justify-content: center;
