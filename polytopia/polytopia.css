@@ -2,11 +2,11 @@
 @import url(https://fonts.googleapis.com/css?family=Alegreya%20Sans);
 
 body {
-  background-color: #101414;
+  background-color: ghostwhite;
 }
 
 h1 {
-  color: ghostwhite;
+  color: #0c0c04;
   font-family: "Alegreya Sans", sans-serif;
   font-weight: bold;
   font-size: 2.5em;
@@ -18,7 +18,7 @@ h1 {
 }
 
 h2 {
-  color: #c8c8c8;
+  color: #404040;
   font-family: "Alegreya Sans", sans-serif;
   font-weight: normal;
   font-size: 1.75em;
@@ -31,7 +31,7 @@ h2 {
 }
 
 p {
-  color: #e8e8f0;
+  color: #101414;
   font-family: "Alegreya", serif;
   font-weight: normal;
   font-size: 1.125em;

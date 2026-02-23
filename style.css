@@ -3,11 +3,11 @@
 @import url(https://fonts.googleapis.com/css?family=Poiret%20One);
 
 body {
-  background-color: #101414;
+  background-color: ghostwhite;
 }
 
 h1 {
-  color: ghostwhite;
+  color: #0c0c04;
   font-family: "Playwrite ES", cursive;
   font-size: 4rem;
   line-height: 1.25;
@@ -15,6 +15,7 @@ h1 {
   margin: 0.5em auto;
 
   &.home {
+    color: ghostwhite;
     margin-bottom: 1.5em;
   }
 
@@ -24,13 +25,14 @@ h1 {
 }
 
 h2 {
-  color: #c8c8c8;
+  color: #404040;
   font-family: "Poiret One", "Trebuchet MS", sans-serif;
   font-size: 3rem;
   text-align: center;
   font-weight: normal;
 
   &.home {
+    color: #c8c8c8;
     margin: 1em auto 0.75em;
   }
 
@@ -45,13 +47,14 @@ h2 {
 }
 
 h3 {
-  color: #e8e8f0;
+  color: #101414;
   font-family: "Ubuntu", "Trebuchet MS", sans-serif;
   font-size: 2.5em;
   font-weight: 500;
   text-align: center;
 
   &.home {
+    color: #e8e8f0;
     margin: 0.5em auto;
   }
 
@@ -63,7 +66,7 @@ h3 {
 
 p,
 ul {
-  color: #e8e8f0;
+  color: #101414;
   font-family: "Ubuntu", "Trebuchet MS", sans-serif;
   font-weight: 300;
   font-size: 24px;
@@ -80,7 +83,7 @@ ul.about {
 }
 
 p.list-info {
-  color: #c8c8c8;
+  color: #404040;
   font-family: "Poiret One", "Trebuchet MS", sans-serif;
   margin-bottom: 0.5em;
 }
@@ -92,7 +95,7 @@ div.list-links {
   justify-items: start;
 
   &>p>a {
-    color: #e8e8f0;
+    color: #0c0c04;
   }
 }
 
@@ -110,7 +113,7 @@ div#grid {
   align-items: center;
   justify-content: center;
   align-content: center;
-  margin: 0 2% 4em;
+  margin: 0 5% 4em;
 
   &>p {
     justify-self: left;
@@ -197,7 +200,7 @@ p#list-return {
   margin: 1em 8px 0.5em;
 
   &>a {
-    color: #e8e8f0;
+    color: #101414;
   }
 }
 
@@ -205,7 +208,15 @@ p#list-about {
   margin: 0.5em 8px 1em;
 
   &>a {
-    color: #e8e8f0;
+    color: #101414;
+  }
+}
+
+p#about-return {
+  margin-top: 1em;
+
+  &>a {
+    color: #101414;
   }
 }
 
