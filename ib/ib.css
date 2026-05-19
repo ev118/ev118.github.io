@@ -20,7 +20,7 @@ h2 {
   font-weight: bold;
   font-size: 1.5em;
   text-align: left;
-  margin: 0.75em 8px 0.25em;
+  margin: 0.75em calc(50% - 400px) 0.25em;
 }
 
 h3 {
@@ -38,10 +38,10 @@ li {
   color: #101414;
   font-family: "Cambria", serif;
   font-size: 1.125em;
-  text-align: left;
+  text-align: justify;
   text-indent: 2.5em;
   line-height: 1.5;
-  margin: 0 8px;
+  margin: 0 calc(50% - 400px);
 }
 
 li {
@@ -146,7 +146,7 @@ p.noindent {
 
 p.block {
   text-indent: 0;
-  margin-left: 50px;
+  margin-left: calc(50% - 350px);
 }
 
 p.return {
@@ -154,6 +154,7 @@ p.return {
   font-size: 1.25em;
   text-indent: 0;
   margin-top: 1.5em;
+  margin-left: 8px;
 }
 
 p#blockmath {
@@ -199,6 +200,33 @@ tr#bold {
   &>th,
   &>td {
     font-weight: bold;
+  }
+}
+
+@media screen and (max-width: 840px) {
+  h2 {
+    color: #101414;
+    font-family: "Lato", sans-serif;
+    font-weight: bold;
+    font-size: 1.5em;
+    text-align: left;
+    margin: 0.75em 8px 0.25em;
+  }
+
+  p,
+  li {
+    color: #101414;
+    font-family: "Cambria", serif;
+    font-size: 1.125em;
+    text-align: justify;
+    text-indent: 2.5em;
+    line-height: 1.5;
+    margin: 0 8px;
+  }
+
+  p.block {
+    text-indent: 0;
+    margin-left: 50px;
   }
 }
 
