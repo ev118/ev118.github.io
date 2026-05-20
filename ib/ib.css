@@ -11,7 +11,7 @@ h1 {
   font-weight: bold;
   font-size: 2.5em;
   text-align: center;
-  margin: 0.5em auto 0;
+  margin: 0.5em calc(50% - 400px) 0;
 }
 
 h2 {
@@ -90,14 +90,10 @@ td,
 th {
   font-family: "Lato", sans-serif;
   font-weight: normal;
-  color: #101414;
+  color: #101717;
   text-align: center;
   border: 1px solid #101414;
   padding: 4px;
-}
-
-hr {
-  margin: 1em auto 0.5em;
 }
 
 div.doubleimg {
@@ -168,6 +164,11 @@ p#rq {
   text-indent: 0;
 }
 
+p#divider {
+  text-align: center;
+  margin: 1em auto 0.5em;
+}
+
 a.fn {
   text-decoration: none;
   font-style: normal;
@@ -204,6 +205,15 @@ tr#bold {
 }
 
 @media screen and (max-width: 840px) {
+  h1 {
+    color: #101414;
+    font-family: "Lato", sans-serif;
+    font-weight: bold;
+    font-size: 2.5em;
+    text-align: center;
+    margin: 0.5em 8px 0;
+  }
+
   h2 {
     color: #101414;
     font-family: "Lato", sans-serif;

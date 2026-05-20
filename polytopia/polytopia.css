@@ -12,10 +12,7 @@ h1 {
   font-weight: bold;
   font-size: 2.5em;
   text-align: center;
-
-  &.story {
-    margin: 0.5em auto 0;
-  }
+  margin: 0.5em calc(50% - 400px) 0;
 }
 
 h2 {
@@ -25,10 +22,7 @@ h2 {
   font-size: 1.75em;
   text-align: center;
   line-height: 1.25;
-
-  &.story {
-    margin: 0.25em auto 1em;
-  }
+  margin: 0.25em auto 1em;
 }
 
 p {
@@ -58,12 +52,28 @@ p {
     margin: 1em auto;
   }
 
+  &#note {
+    font-family: "Alegreya Sans", sans-serif;
+    font-style: italic;
+    text-indent: 0;
+    margin-top: 2em;
+  }
+
   &>em {
     font-variation-settings: 'ital' 1;
   }
 }
 
 @media screen and (max-width: 840px) {
+  h1 {
+    color: #0c0c04;
+    font-family: "Alegreya Sans", sans-serif;
+    font-weight: bold;
+    font-size: 2.5em;
+    text-align: center;
+    margin: 0.5em calc(50% - 400px) 0;
+  }
+
   p {
     color: #101414;
     font-family: "Alegreya", serif;
@@ -90,6 +100,13 @@ p {
       text-align: center;
       margin: 1em auto;
     }
+
+    &#note {
+    font-family: "Alegreya Sans", sans-serif;
+    font-style: italic;
+    text-indent: 0;
+    margin-top: 2em;
+  }
 
     &>em {
       font-variation-settings: 'ital' 1;
