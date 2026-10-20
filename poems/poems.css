@@ -1,0 +1,115 @@
+@import url(https://fonts.googleapis.com/css?family=Alegreya);
+@import url(https://fonts.googleapis.com/css?family=Alegreya:ital);
+@import url(https://fonts.googleapis.com/css?family=Alegreya%20Sans);
+
+body {
+  background-color: ghostwhite;
+}
+
+h1 {
+  color: #0c0c04;
+  font-family: "Alegreya Sans", sans-serif;
+  font-weight: bold;
+  font-size: 2.5em;
+  text-align: left;
+  margin: 0.5em calc(50% - 400px) 0;
+}
+
+h2 {
+  color: #404040;
+  font-family: "Alegreya Sans", sans-serif;
+  font-weight: normal;
+  font-size: 1.75em;
+  text-align: left;
+  line-height: 1.25;
+  margin: 0.25em auto 1em;
+}
+
+p {
+  color: #101414;
+  font-family: "Alegreya", serif;
+  font-weight: normal;
+  font-size: 1.125em;
+  text-align: left;
+  text-indent: 0;
+  line-height: 1.5;
+  margin: 0 calc(50% - 400px);
+
+  &.return {
+    font-family: "Alegreya Sans", sans-serif;
+    font-size: 1.5em;
+    margin-top: 1.5em;
+    margin-left: 8px;
+  }
+
+  &#divider {
+    text-align: center;
+    margin: 1em auto;
+  }
+
+  &#note {
+    font-family: "Alegreya Sans", sans-serif;
+    font-style: italic;
+    margin-top: 2em;
+  }
+
+  &>em {
+    font-variation-settings: 'ital' 1;
+  }
+}
+
+@media screen and (max-width: 840px) {
+  h1 {
+    color: #0c0c04;
+    font-family: "Alegreya Sans", sans-serif;
+    font-weight: bold;
+    font-size: 2.5em;
+    text-align: left;
+    margin: 0.5em calc(50% - 400px) 0;
+  }
+
+  p {
+    color: #101414;
+    font-family: "Alegreya", serif;
+    font-weight: normal;
+    font-size: 1.125em;
+    text-align: left;
+    text-indent: 0;
+    line-height: 1.5;
+    margin: 0 8px;
+
+    &.return {
+      font-family: "Alegreya Sans", sans-serif;
+      font-size: 1.5em;
+      margin-top: 1.5em;
+      margin-left: 8px;
+    }
+
+    &#divider {
+      text-align: center;
+      margin: 1em auto;
+    }
+
+    &#note {
+    font-family: "Alegreya Sans", sans-serif;
+    font-style: italic;
+    text-indent: 0;
+    margin-top: 2em;
+  }
+
+    &>em {
+      font-variation-settings: 'ital' 1;
+    }
+  }
+}
+
+div#block {
+  &>p {
+    text-indent: 4em;
+    font-style: italic;
+  }
+}
+
+a {
+  color: #4098e0;
+}
