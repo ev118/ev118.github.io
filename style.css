@@ -71,20 +71,59 @@ p {
   font-size: 24px;
   line-height: 1.375;
   margin: 0 8px;
-}
 
-p.about {
-  margin-bottom: 0.75em;
+  &.about {
+    margin-bottom: 0.75em;
+  }
+
+  &.list-info {
+    color: #404040;
+    font-family: "Poiret One", "Trebuchet MS", sans-serif;
+    font-size: 30px;
+  }
+
+
+  &#q-left, #q-right {
+    color: #e8e8f0;
+    margin-bottom: 0.5em;
+  }
+
+  &#q-left {
+    text-align: left;
+    margin-right: 50%;
+  }
+
+  &#q-right {
+    text-align: right;
+    margin-left: 50%;
+  }
+
+  &#list-return {
+    margin: 1em 8px 0.5em;
+
+    &>a {
+      color: #101414;
+    }
+  }
+
+  &#list-about {
+    margin: 0.5em 8px 1em;
+
+    &>a {
+      color: #101414;
+    }
+  }
+
+  &#about-return {
+    margin-top: 2em;
+
+    &>a {
+      color: #4098e0;
+    }
+  }
 }
 
 ul.about {
-  margin-bottom: 0.5em;
-}
-
-p.list-info {
-  color: #404040;
-  font-family: "Poiret One", "Trebuchet MS", sans-serif;
-  font-size: 30px;
   margin-bottom: 0.5em;
 }
 
@@ -93,6 +132,7 @@ div.list-links {
   grid-template-columns: repeat(3, auto);
   row-gap: 8px;
   justify-items: start;
+  margin-top: 1em;
 
   &>p>a {
     color: #0c0c04;
@@ -140,42 +180,6 @@ div#grid {
   }
 }
 
-@media screen and (max-width: 800px) {
-  div#grid {
-    display: grid;
-    grid-template-columns: auto auto;
-    gap: 30px 15px;
-    align-items: center;
-    justify-content: center;
-    align-content: center;
-    margin: 0 2% 4em;
-
-    &>p {
-      justify-self: left;
-      font-family: "Ubuntu", "Trebuchet MS", sans-serif;
-      font-size: 1.75em;
-      font-weight: 300;
-      margin: 0;
-
-      &#grid-coords {
-        color: #e8e8f0;
-        grid-column: span 2;
-        justify-self: center;
-        text-align: center;
-      }
-    }
-
-    &>a {
-      text-align: right;
-      &>img {
-        width: 50px;
-        height: auto;
-        margin: 0;
-      }
-    }
-  }
-}
-
 span#pronouns {
   color: #4098e0;
   font-family: "Poiret One", "Trebuchet MS", sans-serif;
@@ -188,43 +192,18 @@ span#coords {
   color: #40ff00;
 }
 
-p#q-left {
-  color: #e8e8f0;
-  text-align: left;
-  margin: 0 50% 0.5em 8px;
-}
-
-p#q-right {
-  color: #e8e8f0;
-  text-align: right;
-  margin: 0 8px 0.5em 50%;
-}
-
-p#list-return {
-  margin: 1em 8px 0.5em;
-
-  &>a {
-    color: #101414;
-  }
-}
-
-p#list-about {
-  margin: 0.5em 8px 1em;
-
-  &>a {
-    color: #101414;
-  }
-}
-
-p#about-return {
-  margin-top: 2em;
-
-  &>a {
-    color: #4098e0;
-  }
-}
-
 #bold {
   color: #e08700;
   font-weight: 500;
+}
+
+@media screen and (max-width: 800px) {
+  div#grid {
+    grid-template-columns: auto auto;
+    margin: 0 2% 4em;
+
+    &>p#grid-coords {
+      grid-column: span 2;
+    }
+  }
 }

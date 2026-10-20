@@ -33,8 +33,7 @@ h3 {
   line-height: 1.25;
 }
 
-p,
-li {
+p {
   color: #101414;
   font-family: "Cambria", serif;
   font-size: 1.125em;
@@ -42,18 +41,79 @@ li {
   text-indent: 2.5em;
   line-height: 1.5;
   margin: 0 calc(50% - 400px);
+
+  &.caption {
+    font-style: italic;
+    text-align: center;
+    text-indent: 0;
+    margin-top: 0.25em;
+    margin-bottom: 0.1em;
+  }
+
+  &.noindent {
+    text-indent: 0;
+  }
+
+  &.block {
+    text-indent: 0;
+    margin-left: calc(50% - 350px);
+  }
+
+  &.return {
+    font-family: "Lato", sans-serif;
+    font-size: 1.25em;
+    text-indent: 0;
+    margin-top: 1.5em;
+    margin-left: 8px;
+  }
+
+  &#blockmath {
+    text-align: center;
+    text-indent: 0;
+    margin: 0.5em auto;
+  }
+
+  &#rq {
+    font-family: "Lato", sans-serif;
+    text-indent: 0;
+  }
+
+  &#divider {
+    text-align: center;
+    margin: 1em auto 0.5em;
+  }
 }
 
 li {
+  color: #101414;
+  font-family: "Cambria", serif;
+  font-size: 1.125em;
+  text-align: justify;
   text-indent: 0;
+  line-height: 1.5;
+  margin: 0 calc(50% - 400px);
 }
 
 a {
   color: #4098e0;
+
+  &.fn {
+    text-decoration: none;
+    font-style: normal;
+
+    &:not(#ref-star) {
+      vertical-align: super;
+      font-size: x-small;
+    }
+  }
+
+  &.ref {
+    vertical-align: super;
+    font-size: small;
+  }
 }
 
-sup,
-sub {
+sup, sub {
   font-size: 0.6em;
 }
 
@@ -84,10 +144,13 @@ table {
 
 tr {
   height: 30px;
+
+  &#bold>th, #bold>td {
+    font-weight: bold;
+  }
 }
 
-td,
-th {
+td, th {
   font-family: "Lato", sans-serif;
   font-weight: normal;
   color: #101717;
@@ -128,62 +191,6 @@ span.bigmath {
   line-height: 2.5;
 }
 
-p.caption {
-  font-style: italic;
-  text-align: center;
-  text-indent: 0;
-  margin-top: 0.25em;
-  margin-bottom: 0.1em;
-}
-
-p.noindent {
-  text-indent: 0;
-}
-
-p.block {
-  text-indent: 0;
-  margin-left: calc(50% - 350px);
-}
-
-p.return {
-  font-family: "Lato", sans-serif;
-  font-size: 1.25em;
-  text-indent: 0;
-  margin-top: 1.5em;
-  margin-left: 8px;
-}
-
-p#blockmath {
-  text-align: center;
-  text-indent: 0;
-  margin: 0.5em auto;
-}
-
-p#rq {
-  font-family: "Lato", sans-serif;
-  text-indent: 0;
-}
-
-p#divider {
-  text-align: center;
-  margin: 1em auto 0.5em;
-}
-
-a.fn {
-  text-decoration: none;
-  font-style: normal;
-
-  &:not(#ref-star) {
-    vertical-align: super;
-    font-size: x-small;
-  }
-}
-
-a.ref {
-  vertical-align: super;
-  font-size: small;
-}
-
 ul#physnotes {
   margin: 0.1em;
 }
@@ -194,50 +201,6 @@ ol#chemprod {
 
 ol#eenotes {
   margin: 0.1em;
-}
-
-tr#bold {
-
-  &>th,
-  &>td {
-    font-weight: bold;
-  }
-}
-
-@media screen and (max-width: 840px) {
-  h1 {
-    color: #101414;
-    font-family: "Lato", sans-serif;
-    font-weight: bold;
-    font-size: 2.5em;
-    text-align: center;
-    margin: 0.5em 8px 0;
-  }
-
-  h2 {
-    color: #101414;
-    font-family: "Lato", sans-serif;
-    font-weight: bold;
-    font-size: 1.5em;
-    text-align: left;
-    margin: 0.75em 8px 0.25em;
-  }
-
-  p,
-  li {
-    color: #101414;
-    font-family: "Cambria", serif;
-    font-size: 1.125em;
-    text-align: justify;
-    text-indent: 2.5em;
-    line-height: 1.5;
-    margin: 0 8px;
-  }
-
-  p.block {
-    text-indent: 0;
-    margin-left: 50px;
-  }
 }
 
 #phys1>tbody>tr {
@@ -272,9 +235,7 @@ tr#bold {
   width: 120px;
 }
 
-#chem1,
-#chem2,
-#chem3 {
+#chem1, #chem2, #chem3 {
   &>tbody>tr>th {
     font-weight: bold;
 
@@ -288,18 +249,36 @@ tr#bold {
   }
 }
 
-#chem4,
-#chem5,
-#chem6 {
+#chem4, #chem5, #chem6 {
   &>tbody>tr>td {
+    &>* {
+      border-left: none;
+    }
+
     &:nth-child(odd) {
       text-align: right;
-      border-right: none;
     }
 
     &:nth-child(even) {
       text-align: left;
-      border-left: none;
+    }
+  }
+}
+
+@media screen and (max-width: 840px) {
+  h1 {
+    margin: 0.5em 8px 0;
+  }
+
+  h2 {
+    margin: 0.75em 8px 0.25em;
+  }
+
+  p, li {
+    margin: 0 8px;
+
+    &.block {
+      margin-left: 50px;
     }
   }
 }
